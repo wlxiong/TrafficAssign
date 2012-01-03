@@ -11,6 +11,12 @@ void set_flow(double f){
 		links[i].flow = f;
 }
 
+void set_single_flow(double f){
+	int i;
+	for(i=0; i<metadata.n_link; i++)
+		links[i].single_flow = f;
+}
+
 void set_direction(double d){
 	int i;
 	for(i=0; i<metadata.n_link; i++){
@@ -53,6 +59,15 @@ void update_travel_time(){
 			*(1 + links[i].b * pow(links[i].flow/links[i].capacity, links[i].power)); 
 }
 
+void update_marginal_cost(){
+	int i;
+	double flow;
+	for(i=0; i<metadata.n_link; i++)
+		flow = links[i].flow + links[i].single_flow;
+		links[i].cost = links[i].free_time * links[i].b * links[i].power 
+			* pow(flow/links[i].capacity, links[i].power); 
+}
+
 void update_general_cost(){
 	int i;
 	for(i=0; i<metadata.n_link; i++)
@@ -63,7 +78,6 @@ void update_general_cost(){
 void update_route_cost(){
 	int p, r, l, i;
 
-	update_travel_time();
 	for(p=0; p<metadata.n_pair; p++){
 		for(r=0; r<pairs[p].n_route; r++){
 			pairs[p].routes[r].cost = 0.0;
@@ -115,6 +129,14 @@ void path_to_link(){
 	}
 }
 
+void path_to_link(int p, int r, double d){
+	int k, l;
+	for(k=0; k<pairs[p].paths[r].leng; k++){
+		l = pairs[p].paths[r].links[k];
+		links[l].direction += d;
+	}
+}
+
 double update_link_flow(double step){
 	int i;
 	double sum_flow = 0.0, sqr_flow = 0.0, last_flow;
@@ -124,6 +146,31 @@ double update_link_flow(double step){
 		last_flow = links[i].flow;
 		links[i].flow += step * links[i].direction;
 		sqr_flow += (links[i].flow - last_flow)*(links[i].flow - last_flow);
+	}
+	if(sum_flow == 0.0)
+		return 0.0;
+	return sqrt(sqr_flow)/sum_flow;
+}
+
+void remove_single_flow(int p){
+	int r, k, l;
+	for(r=0; r<pairs[p].n_path; r++){
+		for(k=0; k<pairs[p].paths[r].leng; k++){
+			l = pairs[p].paths[r].links[k];
+			links[l].flow -= pairs[p].paths[r].flow;
+		}
+	}
+}
+
+double update_single_flow(double step){
+	int i;
+	double sum_flow = 0.0, sqr_flow = 0.0, last_flow;
+
+	for(i=0; i<metadata.n_link; i++){
+		sum_flow += links[i].single_flow;
+		last_flow = links[i].single_flow;
+		links[i].single_flow += step * links[i].direction;
+		sqr_flow += (links[i].single_flow - last_flow)*(links[i].single_flow - last_flow);
 	}
 	if(sum_flow == 0.0)
 		return 0.0;
@@ -191,6 +238,8 @@ double bisection(double eps, double a, double b, double (*diff)(double)){
     double fa, fb, fm;
     int i=1;
 
+	if(b-a < eps)
+		return (a+b)/2;
     fa = diff(a);
     fb = diff(b);
     mid = (a+b)/2.0;
@@ -217,6 +266,8 @@ double golden_section(double eps, double a, double b, double (*func)(double)){
     double fa, fb;
     int i = 1;
 
+	if(b-a < eps)
+		return (a+b)/2;
     xR = a + I*golden_rate;
     xL = b - I*golden_rate;
     fa = (*func)(xL);
@@ -243,3 +294,4 @@ double golden_section(double eps, double a, double b, double (*func)(double)){
 
     return (xL+xR)/2.0;
 }
+

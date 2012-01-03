@@ -13,15 +13,15 @@
 struct LINK{
 	int init_node, term_node, type;
 	double capacity, length, free_time, b, power, speed_limit, toll; 
-	double flow, cost, direction;
+	double flow, cost, direction, single_flow;
 	double L, w, x;
 };
 
 struct META{
 	int n_zone, n_node, n_link, n_pair, first_node;
 	double total_flow, toll_factor, distance_factor;
-	double theta, lambda, determ_part, stoch_part, 
-		line_search_eps, obj_converg_eps, flow_converg_eps;
+	double theta, lambda, determ_part, stoch_part, distant_tol, 
+		line_search_eps, obj_converg_eps, flow_converg_eps, cost_converg_eps;
 	double (*objective)(double);
 	char case_name[MAX_LINE], algo[MAX_LINE];
 };
@@ -40,7 +40,7 @@ struct PAIR{
 struct NODE{
 	int node_id, n_adj, n_rev, pre, x, y;
 	int adj_list[MAX_DEG], rev_list[MAX_DEG];
-	double cost, r, s;
+	double cost, r, s, distant, cost_distant, shortest_distant;
 	int visited;
 };
 

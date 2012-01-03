@@ -25,15 +25,15 @@ void run_case(const char* case_file){
 		rep_error("Can't load case file:", case_file);
 	}
 
-// ~ case_name | algorithm | line_search_eps | obj_converg_eps | flow_converg_eps | 
+// ~ case_name | algorithm | distant_tol | line_search_eps | obj_converg_eps | flow_converg_eps | 
 //   theta | lambda | stoch_part | determ_part <| toll_factor | distance_factor>
 	while(getln(fin, line) != NULL){
 		if(line[0] == '~')
 			continue;
-		sscanf(line, "%s %s %lf %lf %lf %lf %lf %lf %lf", 
-			&metadata.case_name, &metadata.algo, &metadata.line_search_eps, 
-			&metadata.obj_converg_eps, &metadata.flow_converg_eps, &metadata.theta, 
-			&metadata.lambda, &metadata.stoch_part, &metadata.determ_part);
+		sscanf(line, "%s %s %lf %lf %lf %lf %lf %lf %lf %lf", 
+			&metadata.case_name, &metadata.algo, metadata.distant_tol, 
+			&metadata.line_search_eps, &metadata.obj_converg_eps, &metadata.flow_converg_eps, 
+			&metadata.theta, &metadata.lambda, &metadata.stoch_part, &metadata.determ_part);
 		printf("\n >Run case \"%s\"<\n\n", metadata.case_name);
 
 		load_case();
@@ -57,7 +57,7 @@ void run_case(const char* case_file){
 		}
 		else if(!strcmp(metadata.algo, "COL")){
 			metadata.objective = SUE_route_logit;
-			col_gen_logit(metadata.obj_converg_eps);
+			column_gen();
 		}
 		else{
 			show_msg("Can't find algorithm", metadata.algo);

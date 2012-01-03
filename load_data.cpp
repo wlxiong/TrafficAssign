@@ -22,7 +22,7 @@ void print_trip(FILE* fout, const PAIR& pair){
 
 void verify_data(const char* verify_file){
 	FILE* fout;
-	int i; 
+	int i;
 	
 	show_msg("Verify data:", verify_file);
 	if((fout = fopen(verify_file, "w")) == NULL)

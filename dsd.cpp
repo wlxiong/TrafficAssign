@@ -25,7 +25,7 @@ bool cmp_route(ROUTE& a, ROUTE& b){
 	return true;
 }
 
-bool column_gen(){
+bool generate_route(){
 	int O = -1, D, t, l, p, r, n;
 	ROUTE tmp;
 	bool new_route = false;
@@ -110,43 +110,31 @@ void init_route_set(){
 	set_flow(0.0);
 	set_route_flow(0.0);
 	update_travel_time();
-	column_gen();
+	generate_route();
 
+	update_travel_time();
 	update_route_cost();
 	logit_route_direction();
 	set_direction(0.0);
 	route_to_link();
 	update_link_flow(1.0);
 	update_travel_time();
-	column_gen();
+	generate_route();
 }
 
-void logit_route_load(){
+void init_route_flow(){
 
-	printf("logit_route_load()\n");
+	printf("init_route_flow()\n");
 	set_flow(0.0);
 	set_route_flow(0.0);
+	update_travel_time();
 	update_route_cost();
 	logit_route_direction();
-//	printf("Logit Load\n");
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	getchar();
-//	for(int i=0; i<metadata.n_pair; i++)
-//		for(int j=0; j<pairs[i].n_route; j++)
-//			printf(" P %d, R %d: f = %lf, d = %lf, c = %lf\n ", 
-//				i+1, j+1, pairs[i].routes[j].flow, 
-//				pairs[i].routes[j].direction, pairs[i].routes[j].cost);
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	cout<<endl;
+
 	set_direction(0.0);
 	route_to_link();
 	update_route_flow(1.0);
 	update_link_flow(1.0);
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	getchar();
 }
 
 double master_problem(double criterion){
@@ -154,6 +142,7 @@ double master_problem(double criterion){
 	
 //	printf("master_porblem()\n");
 	while(eps > criterion){
+		update_travel_time();
 		update_route_cost();
 		logit_route_direction();
 		set_direction(0.0);
@@ -189,14 +178,14 @@ void dsd_logit(double criterion){
 	bool new_route = true;
 
 	init_route_set();
-	logit_route_load();
+	init_route_flow();
 	printf("\ndsd_logit()\n");
 	while(new_route || eps > criterion){
 //		for(int i=0; i<metadata.n_pair; i++)
 //			printf("\t %d: %d", i+1, pairs[i].n_route);
 //		getchar();
 		INT = master_problem(metadata.flow_converg_eps);
-		new_route = column_gen();
+		new_route = generate_route();
 		eps = _INT - INT;
 //		cout<<"\n-----\n";
 		cout<<" eps "<<eps;

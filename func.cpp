@@ -13,6 +13,16 @@ double SO_link_obj(double step){
 	return INT;
 }
 
+double SO_link_sub(double step){
+	double INT = 0.0, flow;
+	int i;
+	for(i=0; i<metadata.n_link; i++){
+		flow = links[i].flow + step*links[i].direction + links[i].single_flow;
+		INT += links[i].cost*flow;
+	}
+	return INT;
+}
+
 double UE_link_obj(double step){
 	double INT = 0.0, flow;
 	int i;
@@ -116,4 +126,26 @@ double SUE_mult_logit(double step){
 	}
 //	printf("int1 %lf int2 %lf int3 %lf\n", INT1, INT2, INT3);
 	return INT1 + INT2 + INT3;
+}
+
+double SUE_SO(double step){
+	double INT1 = 0.0, INT2 = 0.0, INT3 = 0.0, flow;
+	int p, r, l;
+
+	for(p=0; p<metadata.n_pair; p++){
+		for(r=0; r<pairs[p].n_route; r++){
+			flow = pairs[p].routes[r].flow + step*pairs[p].routes[r].direction;
+			INT1 += flow*log(flow);
+		}
+	}
+	INT1 /= metadata.theta;
+	
+	for(l=0; l<metadata.n_link; l++){
+		flow = links[l].flow + step*links[l].direction + links[i].single_flow;
+		INT3 += links[l].free_time*links[l].b*flow/(links[l].power + 1)
+			* pow(flow/links[l].capacity, links[l].power);
+	}
+	for(l=0; l<metadata.n_link; l++){
+		INT3 += links[l].free_time*flow;
+	}
 }
