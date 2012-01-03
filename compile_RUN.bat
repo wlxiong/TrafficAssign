@@ -1,0 +1,1 @@
+g++ -c basic_util.cpp global_var.cpp load_data.cpp save_data.cpp shortest_path.cpp logit_load.cpp show_status.cpp func.cpp dsd.cpp column_gen.cpp mult_equ.cpp frank_wolf.cpp msa.cpp main.cpp
