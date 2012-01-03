@@ -1,6 +1,7 @@
 #include <queue>
 #include <set>
 #include "data_struct.h"
+#include "basic_util.h"
 #include "global_var.h"
 #include "show_status.h"
 using namespace std;
@@ -124,7 +125,8 @@ void bellman_ford_dist(int s){
 		Q.pop();
 		for(i=0; i<nodes[n].n_adj; i++){
 			l = nodes[n].adj_list[i];
-			c = links[l].length + nodes[n].shortest_distant;
+			c = nodes[n].shortest_distant + links[l].length;
+//			c = nodes[n].shortest_distant + travel_time(l);
 			t = links[l].term_node;
 			if(c < nodes[t].shortest_distant){
 				nodes[t].shortest_distant = c;
@@ -152,10 +154,39 @@ void bellman_ford_dist_to_go(int s){
 		Q.pop();
 		for(i=0; i<nodes[n].n_rev; i++){
 			l = nodes[n].rev_list[i];
-			c = links[l].length + nodes[n].distant_to_go;
+			c = nodes[n].distant_to_go + links[l].length;
+//			c = nodes[n].distant_to_go + travel_time(l);
 			t = links[l].init_node;
 			if(c < nodes[t].distant_to_go){
 				nodes[t].distant_to_go = c;
+//				nodes[t].pre = l;
+				if(t >= metadata.first_node)
+					Q.push(t);
+			}
+		}
+	}
+}
+
+void bellman_ford_time(int s){
+	queue<int> Q;
+	int n, i, l, t;
+	double c;
+
+	for(i=1; i<=metadata.n_node; i++){
+		nodes[i].travel_time = INFINITE;
+//		nodes[i].pre = -1;
+	}
+	nodes[s].travel_time = 0.0;
+	Q.push(s);
+	while(!Q.empty()){
+		n = Q.front();
+		Q.pop();
+		for(i=0; i<nodes[n].n_adj; i++){
+			l = nodes[n].adj_list[i];
+			c = nodes[n].travel_time + travel_time(l);
+			t = links[l].term_node;
+			if(c < nodes[t].travel_time){
+				nodes[t].travel_time = c;
 //				nodes[t].pre = l;
 				if(t >= metadata.first_node)
 					Q.push(t);
@@ -176,7 +207,7 @@ void remove_label(NODE& n, int p){
 	n.n_path--;
 }
 
-void bellman_ford_con(int s, int e, double b){
+void bellman_ford_constrained(int s, int e, double b){
 // constrained shortest path
 	typedef pair<int, int> vertex;
 	queue<vertex> Q;
@@ -189,6 +220,7 @@ void bellman_ford_con(int s, int e, double b){
 	nodes[s].time[0] = 0.0;
 	nodes[s].distant[0] = 0.0;
 	nodes[s].pre_link[0] = -1;
+	nodes[s].pre_pos[0] = -1;
 	nodes[s].n_path = 1;
 	v = vertex(s, 0);
 	Q.push(v);
@@ -201,8 +233,9 @@ void bellman_ford_con(int s, int e, double b){
 			l = nodes[n].adj_list[i];
 			time = nodes[n].time[p] + links[l].cost;
 			distant = nodes[n].distant[p] + links[l].length;
+//			distant = nodes[n].distant[p] + travel_time(l);
 			t = links[l].term_node;
-			if(distant+nodes[t].distant_to_go>b)
+			if(distant + nodes[t].distant_to_go > b)
 				continue;
 
 			for(j=0; j<nodes[t].n_path; j++){
@@ -215,7 +248,7 @@ void bellman_ford_con(int s, int e, double b){
 			}
 			if(nodes[t].n_path==0 || j==nodes[t].n_path){
 				if(nodes[t].n_path == MAX_LABEL)
-					rep_error("Exceed max lable number", "bellman_ford_con()");
+					rep_error("Exceed max lable number", "bellman_ford_constrained()");
 				nodes[t].time[nodes[t].n_path] = time;
 				nodes[t].distant[nodes[t].n_path] = distant;
 				nodes[t].pre_link[nodes[t].n_path] = l;
@@ -227,8 +260,12 @@ void bellman_ford_con(int s, int e, double b){
 		}
 	}
 
-	if(nodes[e].n_path == 0)
-		rep_error("No path satisfies the constraint", "bellman_ford_con()");
+	if(nodes[e].n_path == 0){
+		printf(" O%d - D%d\n", s, e);
+		printf(" travel time: shortest %lf, equilibrium %lf, constraint %lf\n", 
+			nodes[e].travel_time, nodes[e].shortest_distant, b);
+		rep_error("No path satisfies the constraint", "bellman_ford_constrained()");
+	}
 	p = 0;
 	for(j=1; j<nodes[e].n_path; j++){
 		if(nodes[e].time[j]<nodes[e].time[p])

@@ -25,7 +25,7 @@ bool cmp_route(ROUTE& a, ROUTE& b){
 	return true;
 }
 
-bool column_gen(){
+bool column_gen_route(){
 	int O = -1, D, t, l, p, r, n;
 	ROUTE tmp;
 	bool new_route = false;
@@ -40,7 +40,7 @@ bool column_gen(){
 		}
 		D = pairs[p].destination;
 		if(nodes[D].pre == -1)
-			rep_error("Network is disconnected", "column_gen()");
+			rep_error("Network is disconnected", "column_gen_route()");
 
 		tmp.cost = 0.0;
 		tmp.flow = 0.0;
@@ -49,7 +49,7 @@ bool column_gen(){
 		t = D;
 		while(t!=O){
 			if(tmp.leng == MAX_ROUTE_LENG)
-				rep_error("Exceed max route length", "column_gen()");
+				rep_error("Exceed max route length", "column_gen_route()");
 			l = nodes[t].pre;
 			tmp.links[ tmp.leng++ ] = l;
 			tmp.cost += links[l].cost;
@@ -63,13 +63,13 @@ bool column_gen(){
 		if(r == pairs[p].n_route){
 			n = pairs[p].n_route++;
 			if(n == MAX_ROUTE)
-				rep_error("Exceed max route number", "column_gen()");
+				rep_error("Exceed max route number", "column_gen_route()");
 			pairs[p].routes[n] = tmp;
 			new_route = true;
 		}
 	}
 
-	printf("column_gen() new_route (%d)\n", new_route);
+	printf("column_gen_route() new_route (%d)\n", new_route);
 	return new_route;
 }
 
@@ -105,7 +105,7 @@ void init_route_set(){
 	set_flow(0.0);
 	set_route_flow(0.0);
 	update_travel_time();
-	column_gen();
+	column_gen_route();
 
 	update_route_cost();
 	logit_route_direction();
@@ -113,7 +113,7 @@ void init_route_set(){
 	route_to_link_direction();
 	update_link_flow(1.0);
 	update_travel_time();
-	column_gen();
+	column_gen_route();
 }
 
 void logit_route_load(){
@@ -130,22 +130,22 @@ void logit_route_load(){
 	update_link_flow(1.0);
 }
 
-double master_problem(double criterion){
+double master_problem_route(double criterion){
 	double eps = INFINITE, _INT = 0.0, INT, step;
 	
-//	printf("master_porblem()\n");
+//	printf("master_porblem_route()\n");
 	while(eps > criterion){
 		update_route_cost();
 		logit_route_direction();
 		set_direction(0.0);
 		route_to_link_direction();
 
-		step = golden_section(metadata.line_search_eps, 0.0, 1.0, metadata.objective);
+		step = golden_section(metadata.line_search_eps, 0.0, 1.0, SUE_route_logit);
 		eps = update_route_flow(step);
 		update_link_flow(step);
 	}
 
-	return metadata.objective(step);
+	return SUE_route_logit(step);
 }
 
 void dsd_logit(double criterion){
@@ -157,10 +157,10 @@ void dsd_logit(double criterion){
 	logit_route_load();
 	printf("\ndsd_logit()\n");
 	while(new_route || eps > criterion){
-		INT = master_problem(metadata.flow_converg_eps);
-		new_route = column_gen();
+		INT = master_problem_route(metadata.flow_converg_eps);
+		new_route = column_gen_route();
 		eps = (_INT - INT)/INT;
-		printf(" eps %lf, _INT %lf, INT %lf\n", eps, _INT, INT);
+		printf(" eps %e, _INT %e, INT %e\n", eps, _INT, INT);
 		printf("new route: %d\n\n", new_route);
 		_INT = INT;
 	}

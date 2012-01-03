@@ -11,13 +11,8 @@
 #define MAX_DEG 64
 // max labels of a node
 #define MAX_LABEL 128
-
-struct LINK{
-	int init_node, term_node, type;
-	double capacity, length, free_time, b, power, speed_limit, toll; 
-	double flow, cost, direction, marginal_cost;
-	double L, w, x;
-};
+// max tasks
+#define MAX_TASK 128
 
 struct META{
 	int n_zone, n_node, n_link, n_pair, first_node;
@@ -26,6 +21,13 @@ struct META{
 		line_search_eps, obj_converg_eps, flow_converg_eps;
 	double (*objective)(double);
 	char case_name[MAX_LINE], algo[MAX_LINE];
+};
+
+struct LINK{
+	int init_node, term_node, type;
+	double capacity, length, free_time, b, power, speed_limit, toll; 
+	double flow, cost, direction, marginal_cost;
+	double L, w, x;
 };
 
 struct ROUTE{
@@ -43,7 +45,7 @@ struct NODE{
 	int node_id, n_adj, n_rev, pre, x, y;
 	int adj_list[MAX_DEG], rev_list[MAX_DEG];
 	double cost, r, s;
-	double shortest_distant, distant_to_go, distant[MAX_LABEL], time[MAX_LABEL];
+	double shortest_distant, distant_to_go, travel_time, distant[MAX_LABEL], time[MAX_LABEL];
 	int visited, n_path, pre_link[MAX_LABEL], pre_pos[MAX_LABEL];
 };
 

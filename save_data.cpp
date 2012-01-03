@@ -34,11 +34,86 @@ void print_flow(const char* ps_file){
 			nodes[s].x/1000, nodes[s].y/1000, nodes[t].x/1000, nodes[t].y/1000);
 		fprintf(fout, "grestore\n\n");
 	}
-	fprintf(fout, "0 setgray\n");
-	fprintf(fout, "1 setlinewidth\n");
+
+	fprintf(fout, "gsave\n");
+	fprintf(fout, "  0 setgray\n");
+	fprintf(fout, "  1 setlinewidth\n");
 	for(i=1; i<=metadata.n_node; i++){
-		fprintf(fout, "%d %d 5 0 360 arc fill\n", nodes[i].x/1000, nodes[i].y/1000);
+		fprintf(fout, "  %d %d 8 0 360 arc fill\n", nodes[i].x/1000, nodes[i].y/1000);
 	}
+	fprintf(fout, "grestore\n\n");
+
+	fprintf(fout, "gsave\n\n");
+	fprintf(fout, "  1.0 setgray\n");
+	fprintf(fout, "  /Times-Roman findfont\n");
+	fprintf(fout, "  10 scalefont\n  setfont\n");
+	for(i=1; i<=metadata.n_node; i++){
+		fprintf(fout, "  newpath\n  %d %d moveto\n  (%2d) show\n", nodes[i].x/1000-5, nodes[i].y/1000-3, i);
+	}
+	fprintf(fout, "grestore\n\n");
+	fprintf(fout, "showpage\n");
+
+	fclose(fout);
+}
+
+void print_path(const char* ps_file, const int p){
+	FILE* fout;
+	double max_flow = 0.0;
+	int i, j, l, s, t;
+
+	show_msg("Print flow:", ps_file);
+	if((fout = fopen(ps_file, "w")) == NULL)
+		rep_error("Can't open output file ", ps_file);
+
+	fprintf(fout, "%%!\n");
+	fprintf(fout, "%% Traffic Assignment Output\n");
+	fprintf(fout, "%% %s \n\n", ps_file);
+	
+	for(i=0; i<metadata.n_link; i++){
+		max_flow = max_flow > links[i].flow? max_flow:links[i].flow;
+	}
+	for(i=0; i<metadata.n_link; i++){
+		s = links[i].init_node;
+		t = links[i].term_node;
+		fprintf(fout, "gsave\n");
+		fprintf(fout, "  %.3lf setgray\n", .8);
+		fprintf(fout, "  %.0lf setlinewidth\n", links[i].flow/max_flow*10);
+		fprintf(fout, "  %d %d moveto %d %d lineto stroke\n", 
+			nodes[s].x/1000, nodes[s].y/1000, nodes[t].x/1000, nodes[t].y/1000);
+		fprintf(fout, "grestore\n\n");
+	}
+	for(i=0; i<pairs[p].n_path; i++){
+		for(j=0; j<pairs[p].paths[i].leng; j++){
+			l = pairs[p].paths[i].links[j];
+			s = links[l].init_node;
+			t = links[l].term_node;
+			fprintf(fout, "gsave\n");
+			fprintf(fout, "  %.3lf setgray\n", .1);
+			fprintf(fout, "  %.0lf setlinewidth\n", 2.0);
+			fprintf(fout, "  %d %d moveto %d %d lineto stroke\n", 
+				nodes[s].x/1000, nodes[s].y/1000, nodes[t].x/1000, nodes[t].y/1000);
+			fprintf(fout, "grestore\n\n");
+		}
+	}
+
+	fprintf(fout, "gsave\n");
+	fprintf(fout, "  0 setgray\n");
+	fprintf(fout, "  1 setlinewidth\n");
+	for(i=1; i<=metadata.n_node; i++){
+		fprintf(fout, "  %d %d 8 0 360 arc stroke\n", nodes[i].x/1000, nodes[i].y/1000);
+	}
+	fprintf(fout, "grestore\n\n");
+
+	fprintf(fout, "gsave\n\n");
+	fprintf(fout, "  0 setgray\n");
+	fprintf(fout, "  /Times-Roman findfont\n");
+	fprintf(fout, "  10 scalefont\n  setfont\n");
+	for(i=1; i<=metadata.n_node; i++){
+		fprintf(fout, "  newpath\n  %d %d moveto\n  (%2d) show\n", nodes[i].x/1000-5, nodes[i].y/1000-3, i);
+	}
+	fprintf(fout, "grestore\n\n");
+	fprintf(fout, "showpage\n");
+	fclose(fout);
 }
 
 void save_flow(const char* flow_file){
@@ -64,6 +139,7 @@ void save_flow(const char* flow_file){
 		fprintf(fout, "%4d  %4d  %lf  %lf\n", 
 			links[i].init_node, links[i].term_node, links[i].flow, links[i].cost);
 	}
+	fclose(fout);
 }
 
 void save_route(const char* route_file){
@@ -123,29 +199,102 @@ void save_route(const char* route_file){
 	
 	fprintf(fout, "\n<Input Total Flows> %lf\n", metadata.total_flow);
 	fprintf(fout, "<Output Total Flows> %lf\n", total_flow);
+	fclose(fout);
+}
+
+void save_route_plain(const char* route_file){
+	FILE* fout;
+	int i, p, r, nm;
+	double mean_cost = 0.0, total_flow = 0.0, trip = 0.0;
+
+	show_msg("Save routes:", route_file);
+	if((fout = fopen(route_file, "w")) == NULL)
+		rep_error("Can't open output file ", route_file);
+
+	fprintf(fout, "<METADATA>\n"); 
+	fprintf(fout, "<File Name> %s\n", route_file);
+	fprintf(fout, "<Number of Pairs> %d\n", metadata.n_pair);
+	fprintf(fout, "<Number of Zones> %d\n", metadata.n_zone);
+	fprintf(fout, "<theta | lambda> %lf | %lf\n", metadata.theta, metadata.lambda);
+	fprintf(fout, "<stoch | determ> %lf | %lf\n", metadata.stoch_part, metadata.determ_part);
+	fprintf(fout, "<distant tolerance> %lf\n", metadata.distant_tol);
+	fprintf(fout, "<optimal objective> %lf\n", metadata.objective(0.0));
+	fprintf(fout, "<system cost> %lf\n", SO_link_obj(0.0));
+
+	fprintf(fout, "\n<ROUTES>\n<PATHS>\n");
+	fprintf(fout, "~ Origin | Destination | Flow | Cost\n");
+	for(p=0; p<metadata.n_pair; p++){
+		// ouput route info
+		if(pairs[p].n_route != 0){
+			trip = 0.0;
+			mean_cost = 0.0;
+			nm = pairs[p].n_route;
+			for(r=0; r<pairs[p].n_route; r++){
+				if(pairs[p].routes[r].flow<0.01){
+					nm--;
+					continue;
+				}
+				trip += pairs[p].routes[r].flow;
+				mean_cost += pairs[p].routes[r].cost*pairs[p].routes[r].flow;
+//				fprintf(fout, "   <R%d>    %.3lf    %.3lf\n", 
+//					r+1, pairs[p].routes[r].flow, pairs[p].routes[r].cost);
+			}
+			fprintf(fout, " %d\t%.3lf\n", nm, mean_cost/trip);
+			total_flow += trip;
+		}
+	}
+	fputs("\n\n\n", fout);
+
+	for(p=0; p<metadata.n_pair; p++){
+		// ouput route info
+		// ouput path info
+		if(pairs[p].n_path != 0){
+			trip = 0.0;
+			mean_cost = 0.0;
+			nm = pairs[p].n_path;
+			for(r=0; r<pairs[p].n_path; r++){
+				if(pairs[p].paths[r].flow<0.01){
+					nm--;
+					continue;
+				}
+				trip += pairs[p].paths[r].flow;
+				mean_cost += pairs[p].paths[r].cost*pairs[p].paths[r].flow;
+//				fprintf(fout, "   <P%d>    %.3lf    %.3lf\n", 
+//					r+1, pairs[p].paths[r].flow, pairs[p].paths[r].cost);
+			}
+			fprintf(fout, " %d\t%.3lf\n", nm, mean_cost/trip);
+			total_flow += trip;
+		}
+	}
+	
+	fprintf(fout, "\n<Input Total Flows> %lf\n", metadata.total_flow);
+	fprintf(fout, "<Output Total Flows> %lf\n", total_flow);
+	fclose(fout);
 }
 
 void save_data(){
-	char case_file_name[MAX_LINE], ps_file[MAX_LINE], node_file[MAX_LINE], 
+	char case_file_name[MAX_LINE], ps_file[MAX_LINE], pps_file[MAX_LINE], node_file[MAX_LINE], 
 		flow_file[MAX_LINE], route_file[MAX_LINE];
-	sprintf(case_file_name, "%s_%s_%.2lf_%.2lf_%.2lf_%.2lf_%.2lf", 
-		metadata.case_name, metadata.algo, metadata.theta, metadata.lambda, 
-		metadata.stoch_part, metadata.determ_part, metadata.distant_tol);
+	sprintf(case_file_name, "%s_%s_%.2lf_%.2lf_%.2lf", metadata.case_name, metadata.algo, 
+		metadata.theta, metadata.determ_part, metadata.distant_tol);
 	sprintf(ps_file, "./%s/%s_flow.ps", metadata.case_name, case_file_name);
+	sprintf(pps_file, "./%s/%s_path.ps", metadata.case_name, case_file_name);
 	sprintf(flow_file, "./%s/%s_flow.txt", metadata.case_name, case_file_name);
 	sprintf(route_file, "./%s/%s_route.txt", metadata.case_name, case_file_name);
 	sprintf(node_file, "./%s/%s_node.txt", metadata.case_name, metadata.case_name);
 
 	show_msg("Save data:", metadata.case_name);
 	save_flow(flow_file);
-	save_route(route_file);
+	save_route_plain(route_file);
 	show_msg("Save link flow file:", flow_file);
 	if(load_node(node_file)){
 		print_flow(ps_file);
+		print_path(pps_file, 156);
 		show_msg("Print link flow file:", ps_file);
 	}
 }
 
+/*
 double find_path_flow(int o, int d, int s, double f){
 	double min_x = f, x, path_f;
 	int i, n, t, l;
@@ -228,3 +377,4 @@ void verify_assign(){
 //			printf("f[%2d] = %lf\n", i+1, links[i].direction);
 	}
 }
+*/

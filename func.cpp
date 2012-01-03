@@ -2,6 +2,7 @@
 #include <cstdio>
 #include "global_var.h"
 #include "basic_util.h"
+#include "show_status.h"
 
 double SO_link_obj(double step){
 	double INT = 0.0, flow;
@@ -77,9 +78,9 @@ double SUE_SO_mixed(double step){
 			INT += flow*log(flow);
 		}
 	}
+	if(metadata.theta <= 0.0)
+		rep_error("Theta is zero.", "SUE_SO_mixed()");
 	INT /= metadata.theta;
-//	printf("SUE_SO_mixed() step %lf\n", step);
-//	printf("SUE_SO_mixed() INT1 %lf\n", INT);
 
 // the second term of objective
 	set_direction(0.0);
@@ -90,7 +91,6 @@ double SUE_SO_mixed(double step){
 		INT += links[l].free_time*links[l].b*flow/(links[l].power + 1.0)
 			* pow(flow/links[l].capacity, links[l].power);
 	}
-//	printf("SUE_SO_mixed() INT2 %lf\n", INT);
 
 // the third term of objective
 	set_flow(0.0);
@@ -101,7 +101,6 @@ double SUE_SO_mixed(double step){
 		flow = links[l].flow + step*links[l].direction;
 		INT += links[l].free_time*flow;
 	}
-//	printf("SUE_SO_mixed() INT3 %lf\n", INT);
 
 // the fouth term of objective
 	set_flow(0.0);
@@ -112,7 +111,6 @@ double SUE_SO_mixed(double step){
 		flow = links[l].flow + step*links[l].direction;
 		INT += links[l].free_time*flow/(links[l].power + 1.0);
 	}
-//	printf("SUE_SO_mixed() INT4 %lf\n", INT);
 
 	route_to_link_flow();
 	route_to_link_direction();

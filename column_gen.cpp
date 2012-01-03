@@ -26,7 +26,7 @@ bool column_gen_path(){
 		D = pairs[p].destination;
 		bellman_ford_dist(O);
 		bellman_ford_dist_to_go(D);
-		bellman_ford_con(O, D, metadata.distant_tol*nodes[D].shortest_distant);
+		bellman_ford_constrained(O, D, metadata.distant_tol*nodes[D].shortest_distant);
 //		printf(" O %d, D %d \n", O, D);
 		if(nodes[D].pre == -1)
 			rep_error("Network is disconnected", "column_gen_path()");
@@ -90,13 +90,13 @@ void init_path_set(){
 	update_marginal_cost();
 	column_gen_path();
 
-	update_path_cost();
-	search_path_direction();
-	set_direction(0.0);
-	path_to_link_direction();
-	update_link_flow(1.0);
-	update_marginal_cost();
-	column_gen_path();
+//	update_path_cost();
+//	search_path_direction();
+//	set_direction(0.0);
+//	path_to_link_direction();
+//	update_link_flow(1.0);
+//	update_marginal_cost();
+//	column_gen_path();
 }
 
 void init_path_flow(){
@@ -122,14 +122,14 @@ double master_problem_path(double criterion){
 		set_direction(0.0);
 		path_to_link_direction();
 
-		step = golden_section(metadata.line_search_eps, 0.0, 1.0, metadata.objective);
+		step = golden_section(metadata.line_search_eps, 0.0, 1.0, SO_link_obj);
 		eps = update_path_flow(step);
 		update_link_flow(step);
 //		printf("step %lf, eps %lf\n", step, eps);
 //		getchar();
 	}
 
-	return metadata.objective(step);
+	return SO_link_obj(step);
 }
 
 void column_FW(double criterion){
@@ -137,6 +137,7 @@ void column_FW(double criterion){
 	char ch;
 	bool new_path = true;
 
+//	init_link_length();
 	init_path_set();
 	init_path_flow();
 	printf("\ncolumn_FW()\n");
@@ -144,8 +145,8 @@ void column_FW(double criterion){
 		INT = master_problem_path(metadata.flow_converg_eps);
 		new_path = column_gen_path();
 		eps = (_INT - INT)/INT;
-		printf(" eps %lf, _INT %lf, INT %lf\n", eps, _INT, INT);
-		printf("new path: %d\n\n", new_path);
+		printf(" eps %e, _INT %e, INT %e\n", eps, _INT, INT);
+//		printf("new path: %d\n\n", new_path);
 		_INT = INT;
 	}
 }

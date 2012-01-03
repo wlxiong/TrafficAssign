@@ -13,7 +13,6 @@ using namespace std;
 void search_direction(){
 	int i, Origin = -1, t, l;
 	
-	printf("search_direction()\n");
 	for(i=0; i<metadata.n_link; i++)
 		links[i].direction = -links[i].flow;
 	for(i=0; i<metadata.n_pair; i++){
@@ -34,7 +33,6 @@ void search_direction(){
 			t = links[l].init_node;
 		}
 	}
-	printf("search_direction()");
 }
 
 void all_or_nothing(){
@@ -46,26 +44,22 @@ void frank_wolf(double criterion){
 	double step, eps = INFINITE, _INT = 0.0, INT;
 	char ch;
 
+	printf("frank_wolf()\n");
 	set_flow(0.0);
 	update_travel_time();
 	all_or_nothing();
-//	for(int i = 0; i<metadata.n_link; i++)
-//		cout<<"flow "<<i<<' '<<links[i].flow<<endl;
 	while(eps > criterion){
-//		cin>>ch;
 		update_travel_time();
 		search_direction();
-//		for(int i = 0; i<metadata.n_link; i++)
-//			cout<<"direction "<<i<<' '<<links[i].direction<<endl;
-		step = golden_section(metadata.line_search_eps, 0.0, 1.0, UE_link_obj);
 //		step = bisection(1e-12, 0.0, 1.0, UE_link_diff);
+		step = golden_section(metadata.line_search_eps, 0.0, 1.0, UE_link_obj);
 		eps = update_link_flow(step);
-		INT = UE_link_obj(step);
-		cout<<" step "<<step<<endl;
-		cout<<" eps "<<eps<<endl;
-		cout<<" INT"<<INT<<endl;
-		cout<<" D_INT "<<INT - _INT<<endl;
-		_INT = INT;
+//		INT = UE_link_obj(step);
+//		cout<<" step "<<step<<endl;
+//		cout<<" eps "<<eps<<endl;
+//		cout<<" INT"<<INT<<endl;
+//		cout<<" D_INT "<<INT - _INT<<endl;
+//		_INT = INT;
 	}
 }
 

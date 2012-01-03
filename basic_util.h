@@ -7,6 +7,8 @@ void set_route_flow(double f);
 void set_path_flow(double f);
 void set_route_direction(double d);
 void set_path_direction(double d);
+void init_link_length();
+double travel_time(int i);
 void update_travel_time();
 void update_marginal_cost();
 void update_general_cost();

@@ -151,6 +151,8 @@ void load_trip(const char* trip_file){
 		else{
 			istringstream lin(line); 
 			while(lin>>tmp.destination>>ch>>tmp.trip>>ch){
+//				if(tmp.trip == 0.0)
+//					continue;
 				pairs[n_pair++] = tmp;
 //				disp_trip(tmp);
 				if(n_pair == MAX_PAIR)

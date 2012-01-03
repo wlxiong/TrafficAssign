@@ -2,6 +2,7 @@
 #include <cmath>
 #include "data_struct.h"
 #include "global_var.h"
+#include "frank_wolf.h"
 #include "func.h"
 using namespace std;
 
@@ -44,6 +45,19 @@ void set_path_direction(double d){
 	for(p=0; p<metadata.n_pair; p++)
 		for(r=0; r<pairs[p].n_path; r++)
 			pairs[p].paths[r].direction = d;
+}
+
+void init_link_length(){
+	int i;
+	printf("init_link_length()\n");
+	frank_wolf(metadata.flow_converg_eps);
+	for(i=0; i<metadata.n_link; i++)
+		links[i].length = links[i].cost;
+}
+
+double travel_time(int i){
+	return links[i].free_time * 
+		(1 + links[i].b * pow(links[i].flow/links[i].capacity, links[i].power)); 
 }
 
 void update_travel_time(){
