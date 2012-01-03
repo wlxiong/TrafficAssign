@@ -52,10 +52,11 @@ void save_flow(const char* flow_file){
 	fprintf(fout, "<METADATA>\n"); 
 	fprintf(fout, "<File Name> %s\n", flow_file);
 	fprintf(fout, "<Number of Links> %d\n", metadata.n_link);
-	fprintf(fout, "<theta | lambda> %lf | %lf", metadata.theta, metadata.lambda);
-	fprintf(fout, "<stoch | determ> %lf | %lf", metadata.stoch_part, metadata.determ_part);
-	fprintf(fout, "<Optimal Objective> %lf\n", metadata.objective(0.0));
-	fprintf(fout, "<System Cost> %lf\n", SO_link_obj(0.0));
+	fprintf(fout, "<theta | lambda> %lf | %lf\n", metadata.theta, metadata.lambda);
+	fprintf(fout, "<stoch | determ> %lf | %lf\n", metadata.stoch_part, metadata.determ_part);
+	fprintf(fout, "<distant tolerance> %lf\n", metadata.distant_tol);
+	fprintf(fout, "<optimal objective> %lf\n", metadata.objective(0.0));
+	fprintf(fout, "<system cost> %lf\n", SO_link_obj(0.0));
 
 	fprintf(fout, "\n<LINKS>\n");
 	fprintf(fout, "~ Init node | Term node | Flow | Cost\n"); 
@@ -78,10 +79,11 @@ void save_route(const char* route_file){
 	fprintf(fout, "<File Name> %s\n", route_file);
 	fprintf(fout, "<Number of Pairs> %d\n", metadata.n_pair);
 	fprintf(fout, "<Number of Zones> %d\n", metadata.n_zone);
-	fprintf(fout, "<theta | lambda> %lf | %lf", metadata.theta, metadata.lambda);
-	fprintf(fout, "<stoch | determ> %lf | %lf", metadata.stoch_part, metadata.determ_part);
-	fprintf(fout, "<Optimal Objective> %lf\n", metadata.objective(0.0));
-	fprintf(fout, "<System Cost> %lf\n", SO_link_obj(0.0));
+	fprintf(fout, "<theta | lambda> %lf | %lf\n", metadata.theta, metadata.lambda);
+	fprintf(fout, "<stoch | determ> %lf | %lf\n", metadata.stoch_part, metadata.determ_part);
+	fprintf(fout, "<distant tolerance> %lf\n", metadata.distant_tol);
+	fprintf(fout, "<optimal objective> %lf\n", metadata.objective(0.0));
+	fprintf(fout, "<system cost> %lf\n", SO_link_obj(0.0));
 
 	fprintf(fout, "\n<ROUTES>\n<PATHS>\n");
 	fprintf(fout, "~ Origin | Destination | Flow | Cost\n");
@@ -126,9 +128,9 @@ void save_route(const char* route_file){
 void save_data(){
 	char case_file_name[MAX_LINE], ps_file[MAX_LINE], node_file[MAX_LINE], 
 		flow_file[MAX_LINE], route_file[MAX_LINE];
-	sprintf(case_file_name, "%s_%s_%.1lf_%.1lf_%.1lf_%.1lf", 
-		metadata.case_name, metadata.algo, metadata.theta, 
-		metadata.lambda, metadata.stoch_part, metadata.determ_part);
+	sprintf(case_file_name, "%s_%s_%.2lf_%.2lf_%.2lf_%.2lf_%.2lf", 
+		metadata.case_name, metadata.algo, metadata.theta, metadata.lambda, 
+		metadata.stoch_part, metadata.determ_part, metadata.distant_tol);
 	sprintf(ps_file, "./%s/%s_flow.ps", metadata.case_name, case_file_name);
 	sprintf(flow_file, "./%s/%s_flow.txt", metadata.case_name, case_file_name);
 	sprintf(route_file, "./%s/%s_route.txt", metadata.case_name, case_file_name);

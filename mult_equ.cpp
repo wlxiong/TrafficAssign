@@ -26,7 +26,7 @@ void logit_mult_direction(){
 	load_part_trip(metadata.stoch_part);
 	logit_route_direction();
 	load_part_trip(metadata.determ_part);
-	logit_path_direction();
+	search_path_direction();
 }
 
 void init_mult_set(){
@@ -45,64 +45,34 @@ void logit_mult_load(){
 	update_route_cost();
 	update_path_cost();
 	logit_mult_direction();
-//	printf("Logit Load\n");
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	getchar();
-//	for(int i=0; i<metadata.n_pair; i++)
-//		for(int j=0; j<pairs[i].n_route; j++)
-//			printf(" P %d, R %d: f = %lf, d = %lf, c = %lf\n ", 
-//				i+1, j+1, pairs[i].routes[j].flow, 
-//				pairs[i].routes[j].direction, pairs[i].routes[j].cost);
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	cout<<endl;
+
 	set_direction(0.0);
-	route_to_link();
-	path_to_link();
+	route_to_link_direction();
+	path_to_link_direction();
 	update_route_flow(1.0);
 	update_path_flow(1.0);
 	update_link_flow(1.0);
-//	for(int i=0; i<metadata.n_link; i++)
-//		printf(" link  f %lf  d %lf\n", links[i].flow, links[i].direction);
-//	getchar();
 }
 
 double master_problem_mult(double criterion){
 	double eps = INFINITE, e1, e2, _INT = 0.0, INT, step;
 	
-//	printf("master_porblem_mult()\n");
+	printf("master_porblem_mult()\n");
 	while(eps > criterion){
 		update_route_cost();
 		update_path_cost();
 		logit_mult_direction();
-		set_direction(0.0);
-		route_to_link();
-		path_to_link();
-//		for(int i=1; i<100; i++)
-//			printf(" obj  %lf\n", SUE_route_logit(i/100.0));
-//		getchar();
-//		for(int i=0; i<metadata.n_pair; i++)
-//			for(int j=0; j<pairs[i].n_route; j++)
-//				printf(" P %d, R %d: f = %lf, d = %lf, c = %lf\n ", 
-//					i+1, j+1, pairs[i].routes[j].flow, 
-//					pairs[i].routes[j].direction, pairs[i].routes[j].cost);
-//		for(int i=0; i<metadata.n_link; i++)
-//			printf(" link  f %lf  c %lf  d %lf\n", links[i].flow, links[i].cost, links[i].direction);
+
+//		for(double ii=0.0; ii<1.0; ii+=0.01){
+//			printf(" ii %lf, obj %lf\n", ii, metadata.objective(ii));
+//		}
 //		getchar();
 		step = golden_section(metadata.line_search_eps, 0.0, 1.0, metadata.objective);
 		e1 = update_route_flow(step);
 		e2 = update_path_flow(step);
 		eps = e1<e2? e2:e1;
-//		printf("e1 %lf  e2 %lf  eps %lf  step %lf\n", e1, e2, eps, step);
-//		getchar();
 		update_link_flow(step);
-//		INT = objective(step);
-//		cout<<" step "<<step;
-//		cout<<" eps "<<eps;
-//		cout<<" D_INT "<<INT - _INT;
-//		cout<<" INT "<<INT<<endl;
-//		_INT = INT;
+//		printf(" step %lf\n", step);
 	}
 
 	return metadata.objective(step);
@@ -131,29 +101,16 @@ void mult_logit(double criterion){
 	logit_mult_load();
 	printf("\nmult_logit()\n");
 	while(new_route || eps > criterion){
-//		for(int i=0; i<metadata.n_pair; i++)
-//			printf("\t %d: %d", i+1, pairs[i].n_route);
-//		getchar();
 		INT = master_problem_mult(metadata.flow_converg_eps);
 		new_route = column_gen_mult();
-		eps = _INT - INT;
-//		cout<<"\n-----\n";
-		cout<<" eps "<<eps;
-		cout<<" INT "<<INT<<endl;
+		eps = (_INT - INT)/INT;
+		printf(" eps %lf, _INT %lf, INT %lf\n\n", eps, _INT, INT);
+//		printf("new route: %d\n\n", new_route);
 		_INT = INT;
-		printf("new route: %d\n\n", new_route);
-//		for(int i=0; i<metadata.n_pair; i++)
-//		for(int j=0; j<pairs[i].n_route; j++)
-//			printf(" P %d, R %d: f = %lf, d = %lf, c = %lf\n ", 
-//				i+1, j+1, pairs[i].routes[j].flow, 
-//				pairs[i].routes[j].direction, pairs[i].routes[j].cost);
 	}
-//	for(int i=0; i<metadata.n_pair; i++)
-//		printf("  %4d: r(%d) p(%d)  ", i+1, pairs[i].n_route, pairs[i].n_path);
 
 	for(i=0; i<metadata.n_pair; i++)
 		pairs[i].trip = trips[i];
-
 }
 
 /*

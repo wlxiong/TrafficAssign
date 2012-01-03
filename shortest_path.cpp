@@ -93,7 +93,6 @@ void bellman_ford(int s){
 	Q.push(s);
 	while(!Q.empty()){
 		n = Q.front();
-//		cout<<" n "<<n<<endl;
 		Q.pop();
 		for(i=0; i<nodes[n].n_adj; i++){
 			l = nodes[n].adj_list[i];
@@ -109,20 +108,19 @@ void bellman_ford(int s){
 	}
 }
 
-void bellman_ford_leng(int s){
+void bellman_ford_dist(int s){
 	queue<int> Q;
 	int n, i, l, t;
 	double c;
 
 	for(i=1; i<=metadata.n_node; i++){
 		nodes[i].shortest_distant = INFINITE;
-		nodes[i].pre = -1;
+//		nodes[i].pre = -1;
 	}
 	nodes[s].shortest_distant = 0.0;
 	Q.push(s);
 	while(!Q.empty()){
 		n = Q.front();
-//		cout<<" n "<<n<<endl;
 		Q.pop();
 		for(i=0; i<nodes[n].n_adj; i++){
 			l = nodes[n].adj_list[i];
@@ -130,7 +128,7 @@ void bellman_ford_leng(int s){
 			t = links[l].term_node;
 			if(c < nodes[t].shortest_distant){
 				nodes[t].shortest_distant = c;
-				nodes[t].pre = l;
+//				nodes[t].pre = l;
 				if(t >= metadata.first_node)
 					Q.push(t);
 			}
@@ -138,6 +136,115 @@ void bellman_ford_leng(int s){
 	}
 }
 
+void bellman_ford_dist_to_go(int s){
+	queue<int> Q;
+	int n, i, l, t;
+	double c;
+
+	for(i=1; i<=metadata.n_node; i++){
+		nodes[i].distant_to_go = INFINITE;
+//		nodes[i].pre = -1;
+	}
+	nodes[s].distant_to_go = 0.0;
+	Q.push(s);
+	while(!Q.empty()){
+		n = Q.front();
+		Q.pop();
+		for(i=0; i<nodes[n].n_rev; i++){
+			l = nodes[n].rev_list[i];
+			c = links[l].length + nodes[n].distant_to_go;
+			t = links[l].init_node;
+			if(c < nodes[t].distant_to_go){
+				nodes[t].distant_to_go = c;
+//				nodes[t].pre = l;
+				if(t >= metadata.first_node)
+					Q.push(t);
+			}
+		}
+	}
+}
+
+void remove_label(NODE& n, int p){
+	int i;
+
+	for(i=p; i<n.n_path-1; i++){
+		n.time[i] = n.time[i+1];
+		n.distant[i] = n.distant[i+1];
+		n.pre_link[i] = n.pre_link[i+1];
+		n.pre_pos[i] = n.pre_pos[i+1];
+	}
+	n.n_path--;
+}
+
+void bellman_ford_con(int s, int e, double b){
+// constrained shortest path
+	typedef pair<int, int> vertex;
+	queue<vertex> Q;
+	vertex v, w;
+	int n, i, j, l, t, p;
+	double time, distant;
+
+	for(i=1; i<=metadata.n_node; i++)
+		nodes[i].n_path = 0;
+	nodes[s].time[0] = 0.0;
+	nodes[s].distant[0] = 0.0;
+	nodes[s].pre_link[0] = -1;
+	nodes[s].n_path = 1;
+	v = vertex(s, 0);
+	Q.push(v);
+	while(!Q.empty()){
+		v = Q.front();
+		Q.pop();
+		n = v.first;
+		p = v.second;
+		for(i=0; i<nodes[n].n_adj; i++){
+			l = nodes[n].adj_list[i];
+			time = nodes[n].time[p] + links[l].cost;
+			distant = nodes[n].distant[p] + links[l].length;
+			t = links[l].term_node;
+			if(distant+nodes[t].distant_to_go>b)
+				continue;
+
+			for(j=0; j<nodes[t].n_path; j++){
+				if(nodes[t].time[j]>time && nodes[t].distant[j]>distant){
+					remove_label(nodes[t], j);
+					j--;
+				}
+				else if(nodes[t].time[j]<time && nodes[t].distant[j]<distant)
+					break;
+			}
+			if(nodes[t].n_path==0 || j==nodes[t].n_path){
+				if(nodes[t].n_path == MAX_LABEL)
+					rep_error("Exceed max lable number", "bellman_ford_con()");
+				nodes[t].time[nodes[t].n_path] = time;
+				nodes[t].distant[nodes[t].n_path] = distant;
+				nodes[t].pre_link[nodes[t].n_path] = l;
+				nodes[t].pre_pos[nodes[t].n_path] = p;
+				if(t >= metadata.first_node)
+					Q.push(vertex(t, nodes[t].n_path));
+				nodes[t].n_path++;
+			}
+		}
+	}
+
+	if(nodes[e].n_path == 0)
+		rep_error("No path satisfies the constraint", "bellman_ford_con()");
+	p = 0;
+	for(j=1; j<nodes[e].n_path; j++){
+		if(nodes[e].time[j]<nodes[e].time[p])
+			p = j;
+	}
+	
+	t = e;
+	while(t!=s){
+		l = nodes[t].pre_link[p];
+		nodes[t].pre = l;
+		p = nodes[t].pre_pos[p];
+		t = links[l].init_node;
+	}
+}
+
+/*
 double bellman_ford_arg(int s, int e, double max_length, double mu){
 	queue<int> Q;
 	int n, i, l, t;
@@ -152,7 +259,6 @@ double bellman_ford_arg(int s, int e, double max_length, double mu){
 	Q.push(s);
 	while(!Q.empty()){
 		n = Q.front();
-//		cout<<" n "<<n<<endl;
 		Q.pop();
 		for(i=0; i<nodes[n].n_adj; i++){
 			l = nodes[n].adj_list[i];
@@ -160,28 +266,37 @@ double bellman_ford_arg(int s, int e, double max_length, double mu){
 			t = links[l].term_node;
 			if(c < nodes[t].cost_distant){
 				nodes[t].cost_distant = c;
-				nodes[t].distant = links[l].length + nodes[n].distant;
+//				nodes[t].distant = links[l].length + nodes[n].distant;
 				nodes[t].pre = l;
 				if(t >= metadata.first_node)
 					Q.push(t);
 			}
 		}
 	}
-	
+//	printf(" cost_distant %lf, mu %lf, max_length %lf, distant %lf\n", 
+//		nodes[e].cost_distant, mu, max_length, nodes[e].distant);
 	return nodes[e].cost_distant - mu*max_length;
 }
 
-double golden_section_max(int s, int e, double l, double eps, double (*func)(int, int, double, double)){
-    double a = 0.0, b = 1.0, _fb = INFINITE;
+double golden_section_max(int s, int e, double l, double eps, 
+	double (*func)(int, int, double, double)){
+    double a = 0.0, b = 1e12, _fb = -1.0;
 	double xL, xR, I = b - a;
     double fa, fb;
 
+//	for(double ii=0.0; ii<1e2; ii+=1.0){
+//		printf(" SP(%.1lf): %.1lf \n", ii, -(*func)(s, e, l, ii));
+//	}
+//	getchar();
+
 	fb = -(*func)(s, e, l, b);
-	while(_fb>fb){
+	while(_fb<fb){
 		_fb = fb;
 		b = 2*b;
 		fb = -(*func)(s, e, l, b);
 	}
+
+
     xR = a + I*golden_rate;
     xL = b - I*golden_rate;
     fa = -(*func)(s, e, l, xL);
@@ -208,9 +323,19 @@ double golden_section_max(int s, int e, double l, double eps, double (*func)(int
     return (xL+xR)/2.0;
 }
 
-void lagrangian_relax(int O, int D){
-	if(nodes[D].shortest_distant == INFINITE)
-		rep_error("Network is disconnected", "lagrangian_reflax()");
-	golden_section_max(O, D, nodes[D].shortest_distant*metadata.distant_tol, 
+void lagrangian_relax(int O, int D, double tol){
+// tol>=1.0, so there is always a solution. 
+
+//	for(int i=0; i<metadata.n_link; i++){
+//		printf(" #%d: flow %lf, cost %lf, length %lf\n", 
+//			i+1, links[i].flow, links[i].cost, links[i].length);
+//	}
+//	getchar();
+	bellman_ford_leng(O);
+	if(nodes[D].pre == -1)
+		rep_error("Network is disconnected", "lagrangian_relax()");
+	golden_section_max(O, D, nodes[D].shortest_distant*tol, 
 		metadata.line_search_eps, bellman_ford_arg);
 }
+*/
+
