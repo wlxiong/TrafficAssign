@@ -1,0 +1,34 @@
+<METADATA>
+<File Name> ./TestNet/TestNet_MIX_0.20_1.00_0.50_0.50_1.15_route.txt
+<Number of Pairs> 1
+<Number of Zones> 6
+<theta | lambda> 0.200000 | 1.000000
+<stoch | determ> 0.500000 | 0.500000
+<distant tolerance> 1.150000
+<optimal objective> 1559611.334629
+<system cost> 7777000.297650
+
+<ROUTES>
+<PATHS>
+~ Origin | Destination | Flow | Cost
+   <R1>    6.136    77727.334
+   <R2>    12.231    77763.331
+   <R3>    6.950    77783.233
+   <R4>    11.342    77787.362
+   <R5>    7.177    77779.488
+   <R6>    2.845    77799.971
+   <R7>    3.132    77770.179
+   <R8>    0.185    77733.539
+OD(1,12) route_flow/trip 0.500, mean_cost 77771.855
+   <P1>    13.460    77770.742
+   <P2>    7.786    77750.788
+   <P3>    11.495    77798.567
+   <P4>    10.560    77761.977
+   <P5>    2.856    77777.601
+   <P6>    3.653    77796.343
+   <P7>    0.190    77751.432
+OD(1,12) path_flow/trip 0.500, mean_cost 77774.370
+
+
+<Input Total Flows> 100.000000
+<Output Total Flows> 100.000000

@@ -1,0 +1,4078 @@
+<METADATA>
+<File Name> ./SiouxFalls/SiouxFalls_MIX_0.02_0.30_2.00_route.txt
+<Number of Pairs> 576
+<Number of Zones> 24
+<theta | lambda> 0.020000 | 0.000000
+<stoch | determ> 0.300000 | 0.700000
+<distant tolerance> 2.000000
+<optimal objective> 29746138.622582
+<system cost> 8500829.994426
+
+<ROUTES>
+<PATHS>
+~ Origin | Destination | Flow | Cost
+
+   <R1>    30.000    6.007
+OD(1,2) route_flow/trip 0.300, mean_cost 6.007
+   <P1>    70.000    6.007
+OD(1,2) path_flow/trip 0.700, mean_cost 6.007
+
+   <R1>    30.000    4.041
+OD(1,3) route_flow/trip 0.300, mean_cost 4.041
+   <P1>    70.000    4.041
+OD(1,3) path_flow/trip 0.700, mean_cost 4.041
+
+   <R1>    150.000    8.778
+OD(1,4) route_flow/trip 0.300, mean_cost 8.778
+   <P1>    350.000    8.775
+OD(1,4) path_flow/trip 0.700, mean_cost 8.775
+
+   <R1>    60.000    11.375
+OD(1,5) route_flow/trip 0.300, mean_cost 11.375
+   <P1>    140.000    11.370
+OD(1,5) path_flow/trip 0.700, mean_cost 11.370
+
+   <R1>    90.000    14.464
+OD(1,6) route_flow/trip 0.300, mean_cost 14.464
+   <P1>    210.000    14.474
+OD(1,6) path_flow/trip 0.700, mean_cost 14.474
+
+   <R1>    85.866    38.514
+   <R2>    64.134    53.017
+OD(1,7) route_flow/trip 0.300, mean_cost 44.715
+   <P1>    350.000    38.515
+   <P2>    0.000    53.005
+OD(1,7) path_flow/trip 0.700, mean_cost 38.515
+
+   <R1>    137.386    30.503
+   <R2>    102.614    45.006
+OD(1,8) route_flow/trip 0.300, mean_cost 36.704
+   <P1>    560.000    30.504
+   <P2>    0.000    44.993
+OD(1,8) path_flow/trip 0.700, mean_cost 30.504
+
+   <R1>    150.000    23.813
+OD(1,9) route_flow/trip 0.300, mean_cost 23.813
+   <P1>    350.000    23.790
+OD(1,9) path_flow/trip 0.700, mean_cost 23.790
+
+   <R1>    133.559    30.611
+   <R2>    126.873    33.144
+   <R3>    129.568    31.526
+OD(1,10) route_flow/trip 0.300, mean_cost 31.739
+   <P1>    866.349    30.582
+   <P2>    0.006    33.228
+   <P3>    43.646    31.566
+OD(1,10) path_flow/trip 0.700, mean_cost 30.629
+
+   <R1>    76.157    19.531
+   <R2>    73.843    21.148
+OD(1,11) route_flow/trip 0.300, mean_cost 20.327
+   <P1>    342.318    19.525
+   <P2>    7.682    21.187
+OD(1,11) path_flow/trip 0.700, mean_cost 19.561
+
+   <R1>    60.000    8.147
+OD(1,12) route_flow/trip 0.300, mean_cost 8.147
+   <P1>    140.000    8.147
+OD(1,12) path_flow/trip 0.700, mean_cost 8.147
+
+   <R1>    150.000    11.209
+OD(1,13) route_flow/trip 0.300, mean_cost 11.209
+   <P1>    350.000    11.209
+OD(1,13) path_flow/trip 0.700, mean_cost 11.209
+
+   <R1>    39.451    32.181
+   <R2>    12.297    90.355
+   <R3>    38.252    33.798
+OD(1,14) route_flow/trip 0.300, mean_cost 40.817
+   <P1>    205.391    32.137
+   <P2>    0.000    56.996
+   <P3>    4.609    33.799
+OD(1,14) path_flow/trip 0.700, mean_cost 32.174
+
+   <R1>    31.164    44.354
+   <R2>    28.538    48.683
+   <R3>    30.907    44.834
+   <R4>    29.360    47.367
+   <R5>    30.032    45.749
+OD(1,15) route_flow/trip 0.300, mean_cost 46.146
+   <P1>    15.786    44.253
+   <P2>    321.719    44.828
+   <P3>    0.000    47.474
+   <P4>    12.495    45.812
+OD(1,15) path_flow/trip 0.700, mean_cost 44.837
+
+   <R1>    88.359    40.502
+   <R2>    61.641    58.391
+OD(1,16) route_flow/trip 0.300, mean_cost 47.853
+   <P1>    350.000    40.503
+   <P2>    0.000    58.378
+OD(1,16) path_flow/trip 0.700, mean_cost 40.503
+
+   <R1>    31.129    50.070
+   <R2>    30.425    51.741
+   <R3>    28.902    54.273
+   <R4>    29.544    52.656
+OD(1,17) route_flow/trip 0.300, mean_cost 52.143
+   <P1>    0.000    50.067
+   <P2>    266.569    51.712
+   <P3>    0.002    54.358
+   <P4>    13.429    52.696
+OD(1,17) path_flow/trip 0.700, mean_cost 51.759
+
+   <R1>    17.173    40.607
+   <R2>    12.827    55.110
+OD(1,18) route_flow/trip 0.300, mean_cost 46.808
+   <P1>    70.000    40.608
+   <P2>    0.000    55.097
+OD(1,18) path_flow/trip 0.700, mean_cost 40.608
+
+   <R1>    20.809    55.776
+   <R2>    23.687    49.334
+   <R3>    22.502    51.866
+   <R4>    23.002    50.249
+OD(1,19) route_flow/trip 0.300, mean_cost 51.690
+   <P1>    0.000    55.770
+   <P2>    199.927    49.328
+   <P3>    0.001    51.975
+   <P4>    10.072    50.313
+OD(1,19) path_flow/trip 0.700, mean_cost 49.375
+
+   <R1>    33.283    45.042
+   <R2>    24.860    59.545
+   <R3>    31.857    47.153
+OD(1,20) route_flow/trip 0.300, mean_cost 49.795
+   <P1>    204.382    45.043
+   <P2>    0.000    59.532
+   <P3>    5.618    47.113
+OD(1,20) path_flow/trip 0.700, mean_cost 45.098
+
+   <R1>    20.302    35.775
+   <R2>    9.698    72.693
+OD(1,21) route_flow/trip 0.300, mean_cost 47.709
+   <P1>    70.000    35.740
+   <P2>    0.000    67.872
+OD(1,21) path_flow/trip 0.700, mean_cost 35.740
+
+   <R1>    36.242    41.455
+   <R2>    20.145    70.793
+   <R3>    27.963    54.530
+   <R4>    35.650    42.233
+OD(1,22) route_flow/trip 0.300, mean_cost 49.658
+   <P1>    160.711    41.405
+   <P2>    0.000    70.780
+   <P3>    0.000    54.631
+   <P4>    119.289    42.292
+OD(1,22) path_flow/trip 0.700, mean_cost 41.783
+
+   <R1>    66.317    30.831
+   <R2>    23.683    82.195
+OD(1,23) route_flow/trip 0.300, mean_cost 44.347
+   <P1>    210.000    30.843
+OD(1,23) path_flow/trip 0.700, mean_cost 30.843
+
+   <R1>    23.125    26.186
+   <R2>    6.875    86.746
+OD(1,24) route_flow/trip 0.300, mean_cost 40.065
+   <P1>    70.000    26.186
+OD(1,24) path_flow/trip 0.700, mean_cost 26.186
+
+   <R1>    30.000    6.008
+OD(2,1) route_flow/trip 0.300, mean_cost 6.008
+   <P1>    70.000    6.008
+OD(2,1) path_flow/trip 0.700, mean_cost 6.008
+
+
+   <R1>    30.000    10.049
+OD(2,3) route_flow/trip 0.300, mean_cost 10.049
+   <P1>    70.000    10.049
+OD(2,3) path_flow/trip 0.700, mean_cost 10.049
+
+   <R1>    28.922    18.381
+   <R2>    31.078    14.786
+OD(2,4) route_flow/trip 0.300, mean_cost 16.519
+   <P1>    0.000    18.409
+   <P2>    140.000    14.783
+OD(2,4) path_flow/trip 0.700, mean_cost 14.783
+
+   <R1>    15.239    15.788
+   <R2>    14.761    17.382
+OD(2,5) route_flow/trip 0.300, mean_cost 16.573
+   <P1>    0.000    15.814
+   <P2>    70.000    17.377
+OD(2,5) path_flow/trip 0.700, mean_cost 17.377
+
+   <R1>    120.000    8.457
+OD(2,6) route_flow/trip 0.300, mean_cost 8.457
+   <P1>    280.000    8.466
+OD(2,6) path_flow/trip 0.700, mean_cost 8.466
+
+   <R1>    37.799    32.507
+   <R2>    22.201    59.025
+OD(2,7) route_flow/trip 0.300, mean_cost 42.319
+   <P1>    140.000    32.508
+OD(2,7) path_flow/trip 0.700, mean_cost 32.508
+
+   <R1>    75.597    24.496
+   <R2>    44.403    51.014
+OD(2,8) route_flow/trip 0.300, mean_cost 34.308
+   <P1>    280.000    24.497
+OD(2,8) path_flow/trip 0.700, mean_cost 24.497
+
+   <R1>    30.477    28.227
+   <R2>    29.523    29.821
+OD(2,9) route_flow/trip 0.300, mean_cost 29.012
+   <P1>    0.000    28.235
+   <P2>    140.000    29.798
+OD(2,9) path_flow/trip 0.700, mean_cost 29.798
+
+   <R1>    25.875    57.217
+   <R2>    40.241    35.025
+   <R3>    38.981    36.619
+   <R4>    37.030    39.152
+   <R5>    37.873    37.534
+OD(2,10) route_flow/trip 0.300, mean_cost 39.937
+   <P1>    0.000    57.180
+   <P2>    399.853    36.589
+   <P3>    0.003    39.236
+   <P4>    20.144    37.574
+OD(2,10) path_flow/trip 0.700, mean_cost 36.637
+
+   <R1>    19.253    29.134
+   <R2>    20.688    25.539
+   <R3>    20.060    27.156
+OD(2,11) route_flow/trip 0.300, mean_cost 27.233
+   <P1>    0.000    29.159
+   <P2>    136.927    25.532
+   <P3>    3.073    27.194
+OD(2,11) path_flow/trip 0.700, mean_cost 25.569
+
+   <R1>    30.000    14.155
+OD(2,12) route_flow/trip 0.300, mean_cost 14.155
+   <P1>    70.000    14.155
+OD(2,12) path_flow/trip 0.700, mean_cost 14.155
+
+   <R1>    90.000    17.216
+OD(2,13) route_flow/trip 0.300, mean_cost 17.216
+   <P1>    210.000    17.216
+OD(2,13) path_flow/trip 0.700, mean_cost 17.216
+
+   <R1>    8.692    41.784
+   <R2>    2.911    96.363
+   <R3>    9.056    39.806
+   <R4>    9.340    38.188
+OD(2,14) route_flow/trip 0.300, mean_cost 45.364
+   <P1>    0.000    41.772
+   <P2>    0.000    63.004
+   <P3>    1.536    39.807
+   <P4>    68.464    38.145
+OD(2,14) path_flow/trip 0.700, mean_cost 38.182
+
+   <R1>    7.265    54.237
+   <R2>    7.783    50.842
+   <R3>    7.394    53.375
+   <R4>    7.558    51.757
+OD(2,15) route_flow/trip 0.300, mean_cost 52.519
+   <P1>    0.000    54.233
+   <P2>    66.642    50.835
+   <P3>    0.000    53.482
+   <P4>    3.357    51.820
+OD(2,15) path_flow/trip 0.700, mean_cost 50.882
+
+   <R1>    77.490    34.494
+   <R2>    42.510    64.399
+OD(2,16) route_flow/trip 0.300, mean_cost 45.088
+   <P1>    280.000    34.495
+   <P2>    0.000    37.882
+OD(2,16) path_flow/trip 0.700, mean_cost 34.495
+
+   <R1>    23.861    44.063
+   <R2>    18.341    57.748
+   <R3>    17.797    58.663
+OD(2,17) route_flow/trip 0.300, mean_cost 52.577
+   <P1>    139.971    44.060
+   <P2>    0.029    56.156
+OD(2,17) path_flow/trip 0.700, mean_cost 44.062
+
+
+   <R1>    8.299    49.768
+   <R2>    7.429    55.341
+   <R3>    7.057    57.874
+   <R4>    7.215    56.257
+OD(2,19) route_flow/trip 0.300, mean_cost 54.616
+   <P1>    0.000    49.763
+   <P2>    0.114    53.773
+   <P3>    69.886    56.423
+OD(2,19) path_flow/trip 0.700, mean_cost 56.419
+
+   <R1>    18.899    39.035
+   <R2>    11.101    65.553
+OD(2,20) route_flow/trip 0.300, mean_cost 48.847
+   <P1>    70.000    39.035
+   <P2>    0.000    60.730
+OD(2,20) path_flow/trip 0.700, mean_cost 39.035
+
+
+   <R1>    6.668    50.283
+   <R2>    3.917    76.801
+   <R3>    5.437    60.538
+   <R4>    7.046    47.463
+   <R5>    6.932    48.240
+OD(2,22) route_flow/trip 0.300, mean_cost 54.469
+   <P1>    0.000    50.283
+   <P2>    0.000    79.111
+   <P3>    0.000    60.638
+   <P4>    40.178    47.413
+   <P5>    29.822    48.300
+OD(2,22) path_flow/trip 0.700, mean_cost 47.791
+
+
+
+   <R1>    30.000    4.040
+OD(3,1) route_flow/trip 0.300, mean_cost 4.040
+   <P1>    70.000    4.040
+OD(3,1) path_flow/trip 0.700, mean_cost 4.040
+
+   <R1>    30.000    10.047
+OD(3,2) route_flow/trip 0.300, mean_cost 10.047
+   <P1>    70.000    10.047
+OD(3,2) path_flow/trip 0.700, mean_cost 10.047
+
+
+   <R1>    60.000    4.737
+OD(3,4) route_flow/trip 0.300, mean_cost 4.737
+   <P1>    140.000    4.734
+OD(3,4) path_flow/trip 0.700, mean_cost 4.734
+
+   <R1>    30.000    7.334
+OD(3,5) route_flow/trip 0.300, mean_cost 7.334
+   <P1>    70.000    7.329
+OD(3,5) path_flow/trip 0.700, mean_cost 7.329
+
+   <R1>    46.787    14.523
+   <R2>    43.213    18.504
+OD(3,6) route_flow/trip 0.300, mean_cost 16.435
+   <P1>    76.999    14.506
+   <P2>    133.001    18.514
+OD(3,6) path_flow/trip 0.700, mean_cost 17.044
+
+   <R1>    10.971    38.574
+   <R2>    8.896    48.976
+   <R3>    10.133    42.554
+OD(3,7) route_flow/trip 0.300, mean_cost 43.003
+   <P1>    25.666    38.547
+   <P2>    0.000    48.964
+   <P3>    44.334    42.555
+OD(3,7) path_flow/trip 0.700, mean_cost 41.086
+
+   <R1>    21.942    30.562
+   <R2>    17.792    40.965
+   <R3>    20.266    34.543
+OD(3,8) route_flow/trip 0.300, mean_cost 34.991
+   <P1>    51.333    30.536
+   <P2>    0.000    40.952
+   <P3>    88.667    34.544
+OD(3,8) path_flow/trip 0.700, mean_cost 33.074
+
+   <R1>    30.000    19.772
+OD(3,9) route_flow/trip 0.300, mean_cost 19.772
+   <P1>    70.000    19.749
+OD(3,9) path_flow/trip 0.700, mean_cost 19.749
+
+   <R1>    30.821    26.570
+   <R2>    29.278    29.103
+   <R3>    29.900    27.485
+OD(3,10) route_flow/trip 0.300, mean_cost 27.698
+   <P1>    199.927    26.541
+   <P2>    0.001    29.187
+   <P3>    10.072    27.525
+OD(3,10) path_flow/trip 0.700, mean_cost 26.588
+
+   <R1>    45.694    15.490
+   <R2>    44.306    17.107
+OD(3,11) route_flow/trip 0.300, mean_cost 16.286
+   <P1>    205.391    15.484
+   <P2>    4.609    17.146
+OD(3,11) path_flow/trip 0.700, mean_cost 15.520
+
+   <R1>    60.000    4.106
+OD(3,12) route_flow/trip 0.300, mean_cost 4.106
+   <P1>    140.000    4.106
+OD(3,12) path_flow/trip 0.700, mean_cost 4.106
+
+   <R1>    30.000    7.167
+OD(3,13) route_flow/trip 0.300, mean_cost 7.167
+   <P1>    70.000    7.168
+OD(3,13) path_flow/trip 0.700, mean_cost 7.168
+
+   <R1>    13.150    28.139
+   <R2>    4.099    86.314
+   <R3>    12.751    29.757
+OD(3,14) route_flow/trip 0.300, mean_cost 36.776
+   <P1>    68.464    28.096
+   <P2>    0.000    52.955
+   <P3>    1.536    29.758
+OD(3,14) path_flow/trip 0.700, mean_cost 28.133
+
+   <R1>    6.233    40.313
+   <R2>    5.708    44.642
+   <R3>    6.181    40.793
+   <R4>    5.872    43.326
+   <R5>    6.006    41.708
+OD(3,15) route_flow/trip 0.300, mean_cost 42.105
+   <P1>    3.157    40.212
+   <P2>    64.344    40.786
+   <P3>    0.000    43.433
+   <P4>    2.499    41.771
+OD(3,15) path_flow/trip 0.700, mean_cost 40.796
+
+   <R1>    17.172    40.561
+   <R2>    13.005    54.350
+   <R3>    15.860    44.542
+   <R4>    13.963    50.806
+OD(3,16) route_flow/trip 0.300, mean_cost 46.986
+   <P1>    51.333    40.535
+   <P2>    0.000    54.337
+   <P3>    88.667    44.543
+   <P4>    0.000    50.765
+OD(3,16) path_flow/trip 0.700, mean_cost 43.073
+
+   <R1>    7.318    50.129
+   <R2>    7.765    47.699
+   <R3>    7.377    50.232
+   <R4>    7.540    48.614
+OD(3,17) route_flow/trip 0.300, mean_cost 49.145
+   <P1>    0.000    50.099
+   <P2>    66.642    47.671
+   <P3>    0.000    50.317
+   <P4>    3.357    48.655
+OD(3,17) path_flow/trip 0.700, mean_cost 47.718
+
+
+
+
+
+   <R1>    9.060    37.414
+   <R2>    5.036    66.752
+   <R3>    6.991    50.489
+   <R4>    8.912    38.191
+OD(3,22) route_flow/trip 0.300, mean_cost 45.617
+   <P1>    40.178    37.364
+   <P2>    0.000    69.062
+   <P3>    0.000    50.590
+   <P4>    29.822    38.251
+OD(3,22) path_flow/trip 0.700, mean_cost 37.742
+
+   <R1>    22.106    26.790
+   <R2>    7.894    78.154
+OD(3,23) route_flow/trip 0.300, mean_cost 40.306
+   <P1>    70.000    26.802
+OD(3,23) path_flow/trip 0.700, mean_cost 26.802
+
+
+   <R1>    150.000    8.776
+OD(4,1) route_flow/trip 0.300, mean_cost 8.776
+   <P1>    350.000    8.779
+OD(4,1) path_flow/trip 0.700, mean_cost 8.779
+
+   <R1>    28.907    18.420
+   <R2>    31.093    14.783
+OD(4,2) route_flow/trip 0.300, mean_cost 16.536
+   <P1>    0.000    18.387
+   <P2>    140.000    14.786
+OD(4,2) path_flow/trip 0.700, mean_cost 14.786
+
+   <R1>    60.000    4.736
+OD(4,3) route_flow/trip 0.300, mean_cost 4.736
+   <P1>    140.000    4.739
+OD(4,3) path_flow/trip 0.700, mean_cost 4.739
+
+
+   <R1>    150.000    2.597
+OD(4,5) route_flow/trip 0.300, mean_cost 2.597
+   <P1>    350.000    2.595
+OD(4,5) path_flow/trip 0.700, mean_cost 2.595
+
+   <R1>    68.015    9.787
+   <R2>    51.985    23.240
+OD(4,6) route_flow/trip 0.300, mean_cost 15.615
+   <P1>    280.000    9.772
+OD(4,6) path_flow/trip 0.700, mean_cost 9.772
+
+   <R1>    46.599    33.837
+   <R2>    37.785    44.239
+   <R3>    35.616    47.290
+OD(4,7) route_flow/trip 0.300, mean_cost 41.105
+   <P1>    280.000    33.814
+   <P2>    0.000    44.230
+OD(4,7) path_flow/trip 0.700, mean_cost 33.814
+
+   <R1>    81.547    25.825
+   <R2>    66.124    36.228
+   <R3>    62.329    39.279
+OD(4,8) route_flow/trip 0.300, mean_cost 33.094
+   <P1>    490.000    25.802
+OD(4,8) path_flow/trip 0.700, mean_cost 25.802
+
+   <R1>    210.000    15.036
+OD(4,9) route_flow/trip 0.300, mean_cost 15.036
+   <P1>    490.000    15.015
+OD(4,9) path_flow/trip 0.700, mean_cost 15.015
+
+   <R1>    181.845    21.833
+   <R2>    178.155    22.748
+OD(4,10) route_flow/trip 0.300, mean_cost 22.286
+   <P1>    798.326    21.807
+   <P2>    41.674    22.791
+OD(4,10) path_flow/trip 0.700, mean_cost 21.856
+
+   <R1>    420.000    10.753
+OD(4,11) route_flow/trip 0.300, mean_cost 10.753
+   <P1>    980.000    10.750
+OD(4,11) path_flow/trip 0.700, mean_cost 10.750
+
+   <R1>    180.000    8.842
+OD(4,12) route_flow/trip 0.300, mean_cost 8.842
+   <P1>    420.000    8.845
+OD(4,12) path_flow/trip 0.700, mean_cost 8.845
+
+   <R1>    180.000    11.904
+OD(4,13) route_flow/trip 0.300, mean_cost 11.904
+   <P1>    420.000    11.906
+OD(4,13) path_flow/trip 0.700, mean_cost 11.906
+
+   <R1>    114.355    23.403
+   <R2>    35.645    81.577
+OD(4,14) route_flow/trip 0.300, mean_cost 37.227
+   <P1>    350.000    23.363
+OD(4,14) path_flow/trip 0.700, mean_cost 23.363
+
+   <R1>    50.618    35.576
+   <R2>    50.201    36.056
+   <R3>    49.181    36.971
+OD(4,15) route_flow/trip 0.300, mean_cost 36.194
+   <P1>    15.687    35.478
+   <P2>    321.287    36.053
+   <P3>    13.026    37.037
+OD(4,15) path_flow/trip 0.700, mean_cost 36.063
+
+   <R1>    95.175    35.824
+   <R2>    72.081    49.613
+   <R3>    72.744    49.278
+OD(4,16) route_flow/trip 0.300, mean_cost 44.043
+   <P1>    560.000    35.801
+   <P2>    0.000    49.603
+   <P3>    0.000    49.281
+OD(4,16) path_flow/trip 0.700, mean_cost 35.801
+
+   <R1>    48.381    45.393
+   <R2>    51.331    42.963
+   <R3>    50.289    43.878
+OD(4,17) route_flow/trip 0.300, mean_cost 44.053
+   <P1>    0.000    45.365
+   <P2>    332.636    42.937
+   <P3>    17.364    43.921
+OD(4,17) path_flow/trip 0.700, mean_cost 42.986
+
+   <R1>    11.650    35.929
+   <R2>    9.446    46.332
+   <R3>    8.904    49.383
+OD(4,18) route_flow/trip 0.300, mean_cost 43.198
+   <P1>    70.000    35.906
+   <P2>    0.000    46.322
+   <P3>    0.000    49.387
+OD(4,18) path_flow/trip 0.700, mean_cost 35.906
+
+   <R1>    12.786    51.098
+   <R2>    15.932    40.076
+   <R3>    15.801    40.556
+   <R4>    15.480    41.471
+OD(4,19) route_flow/trip 0.300, mean_cost 42.911
+   <P1>    0.000    51.068
+   <P2>    133.054    40.553
+   <P3>    6.946    41.538
+OD(4,19) path_flow/trip 0.700, mean_cost 40.602
+
+   <R1>    34.949    40.364
+   <R2>    28.339    50.767
+   <R3>    26.712    53.818
+OD(4,20) route_flow/trip 0.300, mean_cost 47.633
+   <P1>    210.000    40.341
+   <P2>    0.000    50.757
+   <P3>    0.000    53.821
+OD(4,20) path_flow/trip 0.700, mean_cost 40.341
+
+   <R1>    38.041    36.469
+   <R2>    21.959    63.915
+OD(4,21) route_flow/trip 0.300, mean_cost 46.514
+   <P1>    140.000    36.438
+   <P2>    0.000    63.906
+OD(4,21) path_flow/trip 0.700, mean_cost 36.438
+
+   <R1>    21.238    42.740
+   <R2>    21.137    42.803
+   <R3>    14.416    62.015
+   <R4>    20.636    44.135
+   <R5>    21.461    42.150
+   <R6>    21.112    42.928
+OD(4,22) route_flow/trip 0.300, mean_cost 45.234
+   <P1>    0.000    42.635
+   <P2>    0.000    62.005
+   <P3>    0.000    44.194
+   <P4>    160.711    42.103
+   <P5>    119.289    42.990
+OD(4,22) path_flow/trip 0.700, mean_cost 42.481
+
+   <R1>    61.709    31.402
+   <R2>    26.615    73.417
+   <R3>    61.675    31.526
+OD(4,23) route_flow/trip 0.300, mean_cost 38.908
+   <P1>    4.294    31.380
+   <P2>    345.706    31.541
+OD(4,23) path_flow/trip 0.700, mean_cost 31.539
+
+   <R1>    44.141    26.881
+   <R2>    15.859    77.968
+OD(4,24) route_flow/trip 0.300, mean_cost 40.385
+   <P1>    140.000    26.883
+OD(4,24) path_flow/trip 0.700, mean_cost 26.883
+
+   <R1>    60.000    11.369
+OD(5,1) route_flow/trip 0.300, mean_cost 11.369
+   <P1>    140.000    11.374
+OD(5,1) path_flow/trip 0.700, mean_cost 11.374
+
+   <R1>    15.231    15.824
+   <R2>    14.769    17.376
+OD(5,2) route_flow/trip 0.300, mean_cost 16.588
+   <P1>    0.000    15.792
+   <P2>    70.000    17.381
+OD(5,2) path_flow/trip 0.700, mean_cost 17.381
+
+   <R1>    30.000    7.329
+OD(5,3) route_flow/trip 0.300, mean_cost 7.329
+   <P1>    70.000    7.334
+OD(5,3) path_flow/trip 0.700, mean_cost 7.334
+
+   <R1>    150.000    2.593
+OD(5,4) route_flow/trip 0.300, mean_cost 2.593
+   <P1>    350.000    2.595
+OD(5,4) path_flow/trip 0.700, mean_cost 2.595
+
+
+   <R1>    35.524    7.190
+   <R2>    24.476    25.833
+OD(5,6) route_flow/trip 0.300, mean_cost 14.795
+   <P1>    140.000    7.177
+OD(5,6) path_flow/trip 0.700, mean_cost 7.177
+
+   <R1>    33.133    31.240
+   <R2>    26.867    41.643
+OD(5,7) route_flow/trip 0.300, mean_cost 35.898
+   <P1>    140.000    31.219
+   <P2>    0.000    41.635
+OD(5,7) path_flow/trip 0.700, mean_cost 31.219
+
+   <R1>    82.833    23.229
+   <R2>    67.167    33.631
+OD(5,8) route_flow/trip 0.300, mean_cost 27.887
+   <P1>    350.000    23.207
+OD(5,8) path_flow/trip 0.700, mean_cost 23.207
+
+   <R1>    240.000    12.439
+OD(5,9) route_flow/trip 0.300, mean_cost 12.439
+   <P1>    560.000    12.421
+OD(5,9) path_flow/trip 0.700, mean_cost 12.421
+
+   <R1>    159.304    19.237
+   <R2>    140.696    25.341
+OD(5,10) route_flow/trip 0.300, mean_cost 22.100
+   <P1>    699.996    19.212
+   <P2>    0.004    25.386
+OD(5,10) path_flow/trip 0.700, mean_cost 19.212
+
+   <R1>    150.000    13.346
+OD(5,11) route_flow/trip 0.300, mean_cost 13.346
+   <P1>    350.000    13.345
+OD(5,11) path_flow/trip 0.700, mean_cost 13.345
+
+   <R1>    60.000    11.435
+OD(5,12) route_flow/trip 0.300, mean_cost 11.435
+   <P1>    140.000    11.440
+OD(5,12) path_flow/trip 0.700, mean_cost 11.440
+
+   <R1>    60.000    14.496
+OD(5,13) route_flow/trip 0.300, mean_cost 14.496
+   <P1>    140.000    14.501
+OD(5,13) path_flow/trip 0.700, mean_cost 14.501
+
+   <R1>    22.292    25.996
+   <R2>    7.708    78.980
+OD(5,14) route_flow/trip 0.300, mean_cost 39.609
+   <P1>    70.000    25.957
+   <P2>    0.000    45.627
+OD(5,14) path_flow/trip 0.700, mean_cost 25.957
+
+   <R1>    31.861    33.460
+   <R2>    28.139    39.564
+OD(5,15) route_flow/trip 0.300, mean_cost 36.323
+   <P1>    139.999    33.458
+   <P2>    0.001    39.632
+OD(5,15) path_flow/trip 0.700, mean_cost 33.458
+
+   <R1>    85.356    33.227
+   <R2>    64.644    47.017
+OD(5,16) route_flow/trip 0.300, mean_cost 39.170
+   <P1>    350.000    33.206
+   <P2>    0.000    43.622
+OD(5,16) path_flow/trip 0.700, mean_cost 33.206
+
+   <R1>    20.013    42.796
+   <R2>    21.234    40.366
+   <R3>    18.753    46.471
+OD(5,17) route_flow/trip 0.300, mean_cost 43.084
+   <P1>    0.000    42.771
+   <P2>    139.999    40.342
+   <P3>    0.001    46.516
+OD(5,17) path_flow/trip 0.700, mean_cost 40.342
+
+
+   <R1>    9.017    48.501
+   <R2>    11.143    37.959
+   <R3>    9.841    44.064
+OD(5,19) route_flow/trip 0.300, mean_cost 43.130
+   <P1>    0.000    48.473
+   <P2>    70.000    37.959
+   <P3>    0.000    44.132
+OD(5,19) path_flow/trip 0.700, mean_cost 37.959
+
+   <R1>    16.567    37.767
+   <R2>    13.433    48.170
+OD(5,20) route_flow/trip 0.300, mean_cost 42.426
+   <P1>    70.000    37.746
+   <P2>    0.000    48.162
+OD(5,20) path_flow/trip 0.700, mean_cost 37.746
+
+   <R1>    10.458    45.683
+   <R2>    7.629    61.319
+   <R3>    11.914    39.062
+OD(5,21) route_flow/trip 0.300, mean_cost 47.030
+   <P1>    0.000    45.682
+   <P2>    0.000    61.312
+   <P3>    70.000    39.033
+OD(5,21) path_flow/trip 0.700, mean_cost 39.033
+
+   <R1>    13.669    40.623
+   <R2>    9.354    59.419
+   <R3>    12.072    46.728
+   <R4>    12.554    44.743
+   <R5>    12.350    45.520
+OD(5,22) route_flow/trip 0.300, mean_cost 46.652
+   <P1>    127.091    40.615
+   <P2>    0.000    59.410
+   <P3>    0.000    46.789
+   <P4>    2.492    44.698
+   <P5>    10.418    45.584
+OD(5,22) path_flow/trip 0.700, mean_cost 41.057
+
+   <R1>    12.107    33.995
+   <R2>    5.793    70.820
+   <R3>    12.100    34.119
+OD(5,23) route_flow/trip 0.300, mean_cost 41.155
+   <P1>    0.859    33.974
+   <P2>    0.000    73.089
+   <P3>    69.141    34.136
+OD(5,23) path_flow/trip 0.700, mean_cost 34.134
+
+
+   <R1>    90.000    14.642
+OD(6,1) route_flow/trip 0.300, mean_cost 14.642
+   <P1>    210.000    14.623
+OD(6,1) path_flow/trip 0.700, mean_cost 14.623
+
+   <R1>    120.000    8.634
+OD(6,2) route_flow/trip 0.300, mean_cost 8.634
+   <P1>    280.000    8.615
+OD(6,2) path_flow/trip 0.700, mean_cost 8.615
+
+   <R1>    46.810    14.661
+   <R2>    43.190    18.683
+OD(6,3) route_flow/trip 0.300, mean_cost 16.591
+   <P1>    93.947    14.681
+   <P2>    116.053    18.664
+OD(6,3) path_flow/trip 0.700, mean_cost 16.882
+
+   <R1>    68.045    9.925
+   <R2>    51.955    23.420
+OD(6,4) route_flow/trip 0.300, mean_cost 15.767
+   <P1>    280.000    9.943
+OD(6,4) path_flow/trip 0.700, mean_cost 9.943
+
+   <R1>    35.538    7.332
+   <R2>    24.462    26.016
+OD(6,5) route_flow/trip 0.300, mean_cost 14.949
+   <P1>    140.000    7.348
+OD(6,5) path_flow/trip 0.700, mean_cost 7.348
+
+
+   <R1>    84.664    24.050
+   <R2>    35.336    67.659
+OD(6,7) route_flow/trip 0.300, mean_cost 36.892
+   <P1>    280.000    24.042
+OD(6,7) path_flow/trip 0.700, mean_cost 24.042
+
+   <R1>    169.328    16.039
+   <R2>    70.672    59.648
+OD(6,8) route_flow/trip 0.300, mean_cost 28.880
+   <P1>    560.000    16.030
+OD(6,8) path_flow/trip 0.700, mean_cost 16.030
+
+   <R1>    71.076    19.771
+   <R2>    48.924    38.455
+OD(6,9) route_flow/trip 0.300, mean_cost 27.388
+   <P1>    280.000    19.769
+OD(6,9) path_flow/trip 0.700, mean_cost 19.769
+
+   <R1>    51.695    48.760
+   <R2>    80.397    26.568
+   <R3>    55.339    45.253
+   <R4>    52.570    47.785
+OD(6,10) route_flow/trip 0.300, mean_cost 40.304
+   <P1>    0.000    48.714
+   <P2>    559.997    26.560
+   <P3>    0.003    32.734
+OD(6,10) path_flow/trip 0.700, mean_cost 26.560
+
+   <R1>    47.925    20.678
+   <R2>    36.593    34.172
+   <R3>    35.482    35.790
+OD(6,11) route_flow/trip 0.300, mean_cost 29.261
+   <P1>    280.000    20.692
+OD(6,11) path_flow/trip 0.700, mean_cost 20.692
+
+   <R1>    31.206    18.766
+   <R2>    28.794    22.789
+OD(6,12) route_flow/trip 0.300, mean_cost 20.697
+   <P1>    62.631    18.787
+   <P2>    77.369    22.770
+OD(6,12) path_flow/trip 0.700, mean_cost 20.988
+
+   <R1>    31.206    21.828
+   <R2>    28.794    25.850
+OD(6,13) route_flow/trip 0.300, mean_cost 23.758
+   <P1>    62.631    21.849
+   <P2>    77.369    25.832
+OD(6,13) path_flow/trip 0.700, mean_cost 24.050
+
+   <R1>    15.164    33.327
+   <R2>    3.609    104.997
+   <R3>    11.227    48.440
+OD(6,14) route_flow/trip 0.300, mean_cost 47.605
+   <P1>    70.000    33.305
+   <P2>    0.000    53.624
+   <P3>    0.000    48.422
+OD(6,14) path_flow/trip 0.700, mean_cost 33.305
+
+   <R1>    16.711    45.780
+   <R2>    12.722    59.476
+   <R3>    12.085    62.008
+   <R4>    18.482    40.791
+OD(6,15) route_flow/trip 0.300, mean_cost 50.416
+   <P1>    0.000    45.767
+   <P2>    139.999    40.806
+   <P3>    0.001    46.980
+OD(6,15) path_flow/trip 0.700, mean_cost 40.806
+
+   <R1>    194.269    26.037
+   <R2>    75.731    73.033
+OD(6,16) route_flow/trip 0.300, mean_cost 39.219
+   <P1>    630.000    26.029
+   <P2>    0.000    29.415
+OD(6,16) path_flow/trip 0.700, mean_cost 26.029
+
+   <R1>    64.116    35.606
+   <R2>    35.015    66.382
+   <R3>    50.870    47.698
+OD(6,17) route_flow/trip 0.300, mean_cost 46.891
+   <P1>    350.000    35.594
+   <P2>    0.000    49.930
+OD(6,17) path_flow/trip 0.700, mean_cost 35.594
+
+   <R1>    21.166    26.143
+   <R2>    8.834    69.751
+OD(6,18) route_flow/trip 0.300, mean_cost 38.984
+   <P1>    70.000    26.134
+OD(6,18) path_flow/trip 0.700, mean_cost 26.134
+
+   <R1>    18.961    41.312
+   <R2>    12.061    63.975
+   <R3>    11.457    66.508
+   <R4>    17.522    45.291
+OD(6,19) route_flow/trip 0.300, mean_cost 51.840
+   <P1>    0.001    41.296
+   <P2>    139.999    45.306
+OD(6,19) path_flow/trip 0.700, mean_cost 45.306
+
+   <R1>    63.498    30.578
+   <R2>    26.502    74.186
+OD(6,20) route_flow/trip 0.300, mean_cost 43.419
+   <P1>    210.000    30.569
+OD(6,20) path_flow/trip 0.700, mean_cost 30.569
+
+   <R1>    9.265    43.726
+   <R2>    3.867    87.335
+   <R3>    8.095    50.416
+   <R4>    8.773    46.394
+OD(6,21) route_flow/trip 0.300, mean_cost 51.933
+   <P1>    0.000    43.718
+   <P2>    0.000    68.659
+   <P3>    38.686    50.363
+   <P4>    31.314    46.380
+OD(6,21) path_flow/trip 0.700, mean_cost 48.581
+
+   <R1>    19.818    41.826
+   <R2>    8.271    85.435
+   <R3>    17.031    49.407
+   <R4>    14.880    56.097
+OD(6,22) route_flow/trip 0.300, mean_cost 53.529
+   <P1>    139.991    41.817
+   <P2>    0.000    56.915
+   <P3>    0.000    49.383
+   <P4>    0.008    56.028
+OD(6,22) path_flow/trip 0.700, mean_cost 41.818
+
+   <R1>    7.426    41.327
+   <R2>    5.859    53.228
+   <R3>    2.446    96.837
+   <R4>    6.848    45.473
+   <R5>    7.421    41.451
+OD(6,23) route_flow/trip 0.300, mean_cost 49.153
+   <P1>    0.858    41.322
+   <P2>    38.686    45.466
+   <P3>    30.456    41.484
+OD(6,23) path_flow/trip 0.700, mean_cost 43.683
+
+   <R1>    7.357    53.713
+   <R2>    2.827    101.388
+   <R3>    9.510    40.828
+   <R4>    10.306    36.806
+OD(6,24) route_flow/trip 0.300, mean_cost 48.314
+   <P1>    0.000    53.724
+   <P2>    38.686    40.809
+   <P3>    31.314    36.826
+OD(6,24) path_flow/trip 0.700, mean_cost 39.027
+
+   <R1>    84.175    39.249
+   <R2>    65.825    51.453
+OD(7,1) route_flow/trip 0.300, mean_cost 44.604
+   <P1>    350.000    39.230
+   <P2>    0.000    51.469
+OD(7,1) path_flow/trip 0.700, mean_cost 39.230
+
+   <R1>    37.153    33.241
+   <R2>    22.847    57.460
+OD(7,2) route_flow/trip 0.300, mean_cost 42.463
+   <P1>    140.000    33.223
+OD(7,2) path_flow/trip 0.700, mean_cost 33.223
+
+   <R1>    10.827    39.268
+   <R2>    9.183    47.413
+   <R3>    9.990    43.290
+OD(7,3) route_flow/trip 0.300, mean_cost 43.100
+   <P1>    31.315    39.289
+   <P2>    0.000    47.429
+   <P3>    38.684    43.272
+OD(7,3) path_flow/trip 0.700, mean_cost 41.490
+
+   <R1>    45.948    34.532
+   <R2>    38.968    42.677
+   <R3>    35.084    48.027
+OD(7,4) route_flow/trip 0.300, mean_cost 41.122
+   <P1>    279.997    34.550
+   <P2>    0.003    42.691
+OD(7,4) path_flow/trip 0.700, mean_cost 34.550
+
+   <R1>    32.466    31.939
+   <R2>    27.534    40.084
+OD(7,5) route_flow/trip 0.300, mean_cost 35.676
+   <P1>    139.999    31.956
+   <P2>    0.001    40.096
+OD(7,5) path_flow/trip 0.700, mean_cost 31.956
+
+   <R1>    83.509    24.607
+   <R2>    36.491    65.917
+OD(7,6) route_flow/trip 0.300, mean_cost 37.169
+   <P1>    280.000    24.608
+OD(7,6) path_flow/trip 0.700, mean_cost 24.608
+
+
+   <R1>    300.000    7.791
+OD(7,8) route_flow/trip 0.300, mean_cost 7.791
+   <P1>    700.000    7.792
+OD(7,8) path_flow/trip 0.700, mean_cost 7.792
+
+   <R1>    83.804    35.028
+   <R2>    96.196    27.839
+OD(7,9) route_flow/trip 0.300, mean_cost 31.186
+   <P1>    0.000    34.996
+   <P2>    420.000    27.839
+OD(7,9) path_flow/trip 0.700, mean_cost 27.839
+
+   <R1>    167.437    28.097
+   <R2>    146.035    34.636
+   <R3>    114.518    46.941
+   <R4>    142.010    36.205
+OD(7,10) route_flow/trip 0.300, mean_cost 35.578
+   <P1>    1313.681    28.058
+   <P2>    16.309    34.630
+   <P3>    0.010    36.201
+OD(7,10) path_flow/trip 0.700, mean_cost 28.139
+
+   <R1>    35.750    40.309
+   <R2>    32.183    45.284
+   <R3>    27.295    53.430
+   <R4>    24.451    59.152
+   <R5>    30.321    48.417
+OD(7,11) route_flow/trip 0.300, mean_cost 48.474
+   <P1>    345.706    40.222
+   <P2>    4.292    53.440
+   <P3>    0.000    59.060
+   <P4>    0.002    48.365
+OD(7,11) path_flow/trip 0.700, mean_cost 40.384
+
+   <R1>    75.791    43.373
+   <R2>    64.278    51.519
+   <R3>    69.931    47.396
+OD(7,12) route_flow/trip 0.300, mean_cost 47.206
+   <P1>    219.208    43.395
+   <P2>    0.001    51.535
+   <P3>    270.791    47.377
+OD(7,12) path_flow/trip 0.700, mean_cost 45.596
+
+   <R1>    32.753    44.486
+   <R2>    26.706    54.580
+   <R3>    29.054    50.457
+   <R4>    31.487    46.435
+OD(7,13) route_flow/trip 0.300, mean_cost 48.690
+   <P1>    9.890    44.502
+   <P2>    151.116    50.439
+   <P3>    118.994    46.457
+OD(7,13) path_flow/trip 0.700, mean_cost 48.537
+
+   <R1>    15.296    37.189
+   <R2>    15.646    36.218
+   <R3>    15.261    37.338
+   <R4>    13.797    42.468
+OD(7,14) route_flow/trip 0.300, mean_cost 38.188
+   <P1>    0.000    37.280
+   <P2>    4.093    37.289
+   <P3>    0.000    42.498
+   <P4>    135.907    36.344
+OD(7,14) path_flow/trip 0.700, mean_cost 36.372
+
+   <R1>    52.008    25.117
+   <R2>    53.195    24.145
+   <R3>    44.798    32.585
+OD(7,15) route_flow/trip 0.300, mean_cost 27.002
+   <P1>    0.000    25.111
+   <P2>    350.000    24.175
+   <P3>    0.000    32.572
+OD(7,15) path_flow/trip 0.700, mean_cost 24.175
+
+   <R1>    420.000    5.374
+OD(7,16) route_flow/trip 0.300, mean_cost 5.374
+   <P1>    980.000    5.374
+OD(7,16) path_flow/trip 0.700, mean_cost 5.374
+
+   <R1>    207.616    14.943
+   <R2>    92.384    55.766
+OD(7,17) route_flow/trip 0.300, mean_cost 27.514
+   <P1>    700.000    14.938
+   <P2>    0.000    25.888
+OD(7,17) path_flow/trip 0.700, mean_cost 14.938
+
+   <R1>    60.000    2.092
+OD(7,18) route_flow/trip 0.300, mean_cost 2.092
+   <P1>    140.000    2.092
+OD(7,18) path_flow/trip 0.700, mean_cost 2.092
+
+   <R1>    43.755    20.648
+   <R2>    44.754    19.676
+   <R3>    31.491    37.084
+OD(7,19) route_flow/trip 0.300, mean_cost 24.599
+   <P1>    0.000    20.641
+   <P2>    280.000    19.705
+OD(7,19) path_flow/trip 0.700, mean_cost 19.705
+
+   <R1>    150.000    6.527
+OD(7,20) route_flow/trip 0.300, mean_cost 6.527
+   <P1>    350.000    6.527
+OD(7,20) path_flow/trip 0.700, mean_cost 6.527
+
+   <R1>    60.000    19.676
+OD(7,21) route_flow/trip 0.300, mean_cost 19.676
+   <P1>    140.000    19.677
+OD(7,21) path_flow/trip 0.700, mean_cost 19.677
+
+   <R1>    80.673    17.776
+   <R2>    69.327    25.357
+OD(7,22) route_flow/trip 0.300, mean_cost 21.280
+   <P1>    350.000    17.775
+   <P2>    0.000    25.342
+OD(7,22) path_flow/trip 0.700, mean_cost 17.775
+
+   <R1>    31.511    29.177
+   <R2>    28.489    34.308
+OD(7,23) route_flow/trip 0.300, mean_cost 31.613
+   <P1>    139.999    29.130
+   <P2>    0.001    34.340
+OD(7,23) path_flow/trip 0.700, mean_cost 29.131
+
+   <R1>    15.618    29.663
+   <R2>    14.382    33.729
+OD(7,24) route_flow/trip 0.300, mean_cost 31.612
+   <P1>    70.000    29.682
+   <P2>    0.000    33.671
+OD(7,24) path_flow/trip 0.700, mean_cost 29.682
+
+   <R1>    134.681    31.457
+   <R2>    105.319    43.661
+OD(8,1) route_flow/trip 0.300, mean_cost 36.813
+   <P1>    560.000    31.439
+   <P2>    0.000    43.677
+OD(8,1) path_flow/trip 0.700, mean_cost 31.439
+
+   <R1>    74.306    25.449
+   <R2>    45.694    49.669
+OD(8,2) route_flow/trip 0.300, mean_cost 34.672
+   <P1>    280.000    25.431
+OD(8,2) path_flow/trip 0.700, mean_cost 25.431
+
+   <R1>    21.655    31.476
+   <R2>    18.365    39.621
+   <R3>    19.980    35.498
+OD(8,3) route_flow/trip 0.300, mean_cost 35.309
+   <P1>    62.631    31.497
+   <P2>    0.000    39.637
+   <P3>    77.369    35.480
+OD(8,3) path_flow/trip 0.700, mean_cost 33.698
+
+   <R1>    80.409    26.740
+   <R2>    68.195    34.885
+   <R3>    61.396    40.235
+OD(8,4) route_flow/trip 0.300, mean_cost 33.331
+   <P1>    490.000    26.758
+OD(8,4) path_flow/trip 0.700, mean_cost 26.758
+
+   <R1>    81.165    24.147
+   <R2>    68.835    32.292
+OD(8,5) route_flow/trip 0.300, mean_cost 27.885
+   <P1>    350.000    24.164
+OD(8,5) path_flow/trip 0.700, mean_cost 24.164
+
+   <R1>    167.018    16.816
+   <R2>    72.982    58.125
+OD(8,6) route_flow/trip 0.300, mean_cost 29.378
+   <P1>    560.000    16.816
+OD(8,6) path_flow/trip 0.700, mean_cost 16.816
+
+   <R1>    300.000    8.011
+OD(8,7) route_flow/trip 0.300, mean_cost 8.011
+   <P1>    700.000    8.011
+OD(8,7) path_flow/trip 0.700, mean_cost 8.011
+
+
+   <R1>    240.000    20.047
+OD(8,9) route_flow/trip 0.300, mean_cost 20.047
+   <P1>    560.000    20.047
+OD(8,9) path_flow/trip 0.700, mean_cost 20.047
+
+   <R1>    226.568    32.721
+   <R2>    253.432    26.845
+OD(8,10) route_flow/trip 0.300, mean_cost 29.619
+   <P1>    0.000    32.683
+   <P2>    1120.000    26.838
+OD(8,10) path_flow/trip 0.700, mean_cost 26.838
+
+   <R1>    46.995    44.933
+   <R2>    54.257    37.493
+   <R3>    46.016    45.638
+   <R4>    40.170    52.605
+   <R5>    52.563    39.057
+OD(8,11) route_flow/trip 0.300, mean_cost 43.383
+   <P1>    0.000    44.847
+   <P2>    0.002    45.648
+   <P3>    0.001    52.625
+   <P4>    6.885    37.508
+   <P5>    553.113    39.002
+OD(8,11) path_flow/trip 0.700, mean_cost 38.983
+
+   <R1>    64.964    35.582
+   <R2>    55.096    43.727
+   <R3>    59.941    39.604
+OD(8,12) route_flow/trip 0.300, mean_cost 39.414
+   <P1>    187.893    35.603
+   <P2>    0.001    43.743
+   <P3>    232.106    39.586
+OD(8,12) path_flow/trip 0.700, mean_cost 37.804
+
+   <R1>    64.964    38.644
+   <R2>    55.096    46.789
+   <R3>    59.941    42.666
+OD(8,13) route_flow/trip 0.300, mean_cost 42.476
+   <P1>    187.893    38.665
+   <P2>    0.001    46.805
+   <P3>    232.106    42.647
+OD(8,13) path_flow/trip 0.700, mean_cost 40.866
+
+   <R1>    26.221    41.814
+   <R2>    22.206    50.143
+   <R3>    24.433    45.349
+   <R4>    22.091    50.479
+   <R5>    25.049    44.229
+OD(8,14) route_flow/trip 0.300, mean_cost 46.174
+   <P1>    0.000    41.905
+   <P2>    8.186    45.300
+   <P3>    0.000    50.509
+   <P4>    271.814    44.355
+OD(8,14) path_flow/trip 0.700, mean_cost 44.383
+
+   <R1>    50.629    29.741
+   <R2>    40.273    41.068
+   <R3>    40.732    40.596
+   <R4>    48.367    32.156
+OD(8,15) route_flow/trip 0.300, mean_cost 35.381
+   <P1>    0.022    29.736
+   <P2>    0.000    41.084
+   <P3>    0.000    40.583
+   <P4>    419.978    32.187
+OD(8,15) path_flow/trip 0.700, mean_cost 32.186
+
+   <R1>    341.262    9.999
+   <R2>    318.738    13.385
+OD(8,16) route_flow/trip 0.300, mean_cost 11.634
+   <P1>    1540.000    9.999
+   <P2>    0.000    13.385
+OD(8,16) path_flow/trip 0.700, mean_cost 9.999
+
+   <R1>    267.402    19.567
+   <R2>    152.598    47.974
+OD(8,17) route_flow/trip 0.300, mean_cost 29.888
+   <P1>    980.000    19.563
+   <P2>    0.000    22.950
+OD(8,17) path_flow/trip 0.700, mean_cost 19.563
+
+   <R1>    90.000    10.104
+OD(8,18) route_flow/trip 0.300, mean_cost 10.104
+   <P1>    210.000    10.104
+OD(8,18) path_flow/trip 0.700, mean_cost 10.104
+
+   <R1>    79.923    25.273
+   <R2>    76.351    27.688
+   <R3>    53.725    45.096
+OD(8,19) route_flow/trip 0.300, mean_cost 31.222
+   <P1>    0.026    25.266
+   <P2>    489.974    27.716
+OD(8,19) path_flow/trip 0.700, mean_cost 27.716
+
+   <R1>    270.000    14.539
+OD(8,20) route_flow/trip 0.300, mean_cost 14.539
+   <P1>    630.000    14.539
+OD(8,20) path_flow/trip 0.700, mean_cost 14.539
+
+   <R1>    120.000    27.687
+OD(8,21) route_flow/trip 0.300, mean_cost 27.687
+   <P1>    280.000    27.688
+OD(8,21) path_flow/trip 0.700, mean_cost 27.688
+
+   <R1>    80.673    25.787
+   <R2>    69.327    33.368
+OD(8,22) route_flow/trip 0.300, mean_cost 29.291
+   <P1>    350.000    25.786
+   <P2>    0.000    33.353
+OD(8,22) path_flow/trip 0.700, mean_cost 25.786
+
+   <R1>    47.266    37.189
+   <R2>    42.734    42.319
+OD(8,23) route_flow/trip 0.300, mean_cost 39.625
+   <P1>    209.999    37.142
+   <P2>    0.001    42.351
+OD(8,23) path_flow/trip 0.700, mean_cost 37.142
+
+   <R1>    31.236    37.674
+   <R2>    28.764    41.740
+OD(8,24) route_flow/trip 0.300, mean_cost 39.624
+   <P1>    140.000    37.694
+   <P2>    0.000    41.682
+OD(8,24) path_flow/trip 0.700, mean_cost 37.694
+
+   <R1>    150.000    23.614
+OD(9,1) route_flow/trip 0.300, mean_cost 23.614
+   <P1>    350.000    23.631
+OD(9,1) path_flow/trip 0.700, mean_cost 23.631
+
+   <R1>    30.462    28.069
+   <R2>    29.538    29.621
+OD(9,2) route_flow/trip 0.300, mean_cost 28.833
+   <P1>    0.000    28.049
+   <P2>    140.000    29.638
+OD(9,2) path_flow/trip 0.700, mean_cost 29.638
+
+   <R1>    30.000    19.574
+OD(9,3) route_flow/trip 0.300, mean_cost 19.574
+   <P1>    70.000    19.591
+OD(9,3) path_flow/trip 0.700, mean_cost 19.591
+
+   <R1>    210.000    14.838
+OD(9,4) route_flow/trip 0.300, mean_cost 14.838
+   <P1>    490.000    14.852
+OD(9,4) path_flow/trip 0.700, mean_cost 14.852
+
+   <R1>    240.000    12.245
+OD(9,5) route_flow/trip 0.300, mean_cost 12.245
+   <P1>    560.000    12.257
+OD(9,5) path_flow/trip 0.700, mean_cost 12.257
+
+   <R1>    71.047    19.435
+   <R2>    48.953    38.078
+OD(9,6) route_flow/trip 0.300, mean_cost 27.040
+   <P1>    280.000    19.434
+OD(9,6) path_flow/trip 0.700, mean_cost 19.434
+
+   <R1>    61.758    34.111
+   <R2>    68.113    29.204
+   <R3>    50.129    44.527
+OD(9,7) route_flow/trip 0.300, mean_cost 35.155
+   <P1>    0.000    34.065
+   <P2>    420.000    29.214
+   <P3>    0.000    44.566
+OD(9,7) path_flow/trip 0.700, mean_cost 29.214
+
+   <R1>    240.000    21.192
+OD(9,8) route_flow/trip 0.300, mean_cost 21.192
+   <P1>    560.000    21.203
+OD(9,8) path_flow/trip 0.700, mean_cost 21.203
+
+
+   <R1>    840.000    6.798
+OD(9,10) route_flow/trip 0.300, mean_cost 6.798
+   <P1>    1960.000    6.791
+OD(9,10) path_flow/trip 0.700, mean_cost 6.791
+
+   <R1>    223.954    19.010
+   <R2>    196.046    25.591
+OD(9,11) route_flow/trip 0.300, mean_cost 22.082
+   <P1>    980.000    18.955
+   <P2>    0.000    25.602
+OD(9,11) path_flow/trip 0.700, mean_cost 18.955
+
+   <R1>    82.647    31.840
+   <R2>    97.353    23.680
+OD(9,12) route_flow/trip 0.300, mean_cost 27.427
+   <P1>    0.000    31.761
+   <P2>    420.000    23.697
+OD(9,12) path_flow/trip 0.700, mean_cost 23.697
+
+   <R1>    82.647    34.902
+   <R2>    97.353    26.742
+OD(9,13) route_flow/trip 0.300, mean_cost 30.488
+   <P1>    0.000    34.823
+   <P2>    420.000    26.758
+OD(9,13) path_flow/trip 0.700, mean_cost 26.758
+
+   <R1>    73.027    31.660
+   <R2>    36.171    66.542
+   <R3>    70.802    33.093
+OD(9,14) route_flow/trip 0.300, mean_cost 39.233
+   <P1>    191.366    31.568
+   <P2>    228.634    33.206
+OD(9,14) path_flow/trip 0.700, mean_cost 32.459
+
+   <R1>    270.000    21.021
+OD(9,15) route_flow/trip 0.300, mean_cost 21.021
+   <P1>    630.000    21.037
+OD(9,15) path_flow/trip 0.700, mean_cost 21.037
+
+   <R1>    118.176    28.738
+   <R2>    105.135    34.578
+   <R3>    84.125    45.720
+   <R4>    112.564    31.191
+OD(9,16) route_flow/trip 0.300, mean_cost 34.259
+   <P1>    978.203    28.694
+   <P2>    1.797    38.173
+OD(9,16) path_flow/trip 0.700, mean_cost 28.711
+
+   <R1>    120.195    38.307
+   <R2>    149.805    27.927
+OD(9,17) route_flow/trip 0.300, mean_cost 32.548
+   <P1>    0.000    38.258
+   <P2>    630.000    27.921
+OD(9,17) path_flow/trip 0.700, mean_cost 27.921
+
+   <R1>    21.230    32.021
+   <R2>    21.537    31.296
+   <R3>    17.233    42.438
+OD(9,18) route_flow/trip 0.300, mean_cost 34.753
+   <P1>    0.000    31.976
+   <P2>    140.000    31.307
+   <P3>    0.000    42.477
+OD(9,18) path_flow/trip 0.700, mean_cost 31.307
+
+   <R1>    48.947    44.012
+   <R2>    71.053    25.520
+OD(9,19) route_flow/trip 0.300, mean_cost 33.063
+   <P1>    0.000    43.961
+   <P2>    280.000    25.538
+OD(9,19) path_flow/trip 0.700, mean_cost 25.538
+
+   <R1>    60.337    36.456
+   <R2>    58.455    38.026
+   <R3>    61.208    35.731
+OD(9,20) route_flow/trip 0.300, mean_cost 36.720
+   <P1>    0.000    36.411
+   <P2>    420.000    35.741
+   <P3>    0.000    38.065
+OD(9,20) path_flow/trip 0.700, mean_cost 35.741
+
+   <R1>    52.039    33.244
+   <R2>    37.961    48.880
+OD(9,21) route_flow/trip 0.300, mean_cost 39.839
+   <P1>    210.000    33.262
+   <P2>    0.000    48.891
+OD(9,21) path_flow/trip 0.700, mean_cost 33.262
+
+   <R1>    124.675    28.184
+   <R2>    85.325    46.980
+OD(9,22) route_flow/trip 0.300, mean_cost 35.821
+   <P1>    490.000    28.194
+   <P2>    0.000    46.989
+OD(9,22) path_flow/trip 0.700, mean_cost 28.194
+
+   <R1>    33.104    39.659
+   <R2>    33.152    39.586
+   <R3>    22.688    58.381
+   <R4>    32.094    41.092
+   <R5>    28.962    46.364
+OD(9,23) route_flow/trip 0.300, mean_cost 44.076
+   <P1>    83.630    39.585
+   <P2>    0.000    58.345
+   <P3>    94.614    41.223
+   <P4>    3.387    46.393
+   <P5>    168.370    39.550
+OD(9,23) path_flow/trip 0.700, mean_cost 40.077
+
+   <R1>    22.209    43.231
+   <R2>    14.918    62.933
+   <R3>    22.873    41.719
+OD(9,24) route_flow/trip 0.300, mean_cost 47.553
+   <P1>    0.000    43.267
+   <P2>    0.000    62.885
+   <P3>    140.000    41.735
+OD(9,24) path_flow/trip 0.700, mean_cost 41.735
+
+   <R1>    133.717    30.545
+   <R2>    126.774    33.186
+   <R3>    129.509    32.083
+OD(10,1) route_flow/trip 0.300, mean_cost 31.914
+   <P1>    909.606    30.568
+   <P2>    0.393    33.113
+   <P3>    0.000    32.032
+OD(10,1) path_flow/trip 0.700, mean_cost 30.570
+
+   <R1>    25.538    57.669
+   <R2>    40.349    35.000
+   <R3>    39.125    36.553
+   <R4>    37.094    39.193
+   <R5>    37.894    38.090
+OD(10,2) route_flow/trip 0.300, mean_cost 40.068
+   <P1>    0.000    57.611
+   <P2>    419.818    36.576
+   <P3>    0.182    39.120
+   <P4>    0.000    38.039
+OD(10,2) path_flow/trip 0.700, mean_cost 36.577
+
+   <R1>    30.858    26.505
+   <R2>    29.256    29.146
+   <R3>    29.887    28.043
+OD(10,3) route_flow/trip 0.300, mean_cost 27.874
+   <P1>    209.909    26.528
+   <P2>    0.091    29.073
+   <P3>    0.000    27.992
+OD(10,3) path_flow/trip 0.700, mean_cost 26.530
+
+   <R1>    182.875    21.769
+   <R2>    177.125    23.307
+OD(10,4) route_flow/trip 0.300, mean_cost 22.526
+   <P1>    839.637    21.790
+   <P2>    0.363    23.253
+OD(10,4) path_flow/trip 0.700, mean_cost 21.790
+
+   <R1>    160.160    19.176
+   <R2>    139.840    25.904
+OD(10,5) route_flow/trip 0.300, mean_cost 22.312
+   <P1>    700.000    19.195
+   <P2>    0.000    25.848
+OD(10,5) path_flow/trip 0.700, mean_cost 19.195
+
+   <R1>    51.055    49.035
+   <R2>    80.667    26.366
+   <R3>    55.581    45.009
+   <R4>    52.697    47.650
+OD(10,6) route_flow/trip 0.300, mean_cost 40.179
+   <P1>    0.000    48.995
+   <P2>    560.000    26.372
+   <P3>    0.000    33.025
+OD(10,6) path_flow/trip 0.700, mean_cost 26.372
+
+   <R1>    167.200    27.313
+   <R2>    140.108    36.135
+   <R3>    135.709    37.730
+   <R4>    126.983    36.758
+OD(10,7) route_flow/trip 0.300, mean_cost 34.066
+   <P1>    1327.561    27.274
+   <P2>    0.000    36.152
+   <P3>    2.439    36.753
+OD(10,7) path_flow/trip 0.700, mean_cost 27.291
+
+   <R1>    168.249    32.219
+   <R2>    182.802    28.124
+   <R3>    128.949    45.521
+OD(10,8) route_flow/trip 0.300, mean_cost 34.233
+   <P1>    0.000    32.180
+   <P2>    1120.000    28.141
+OD(10,8) path_flow/trip 0.700, mean_cost 28.141
+
+   <R1>    840.000    6.931
+OD(10,9) route_flow/trip 0.300, mean_cost 6.931
+   <P1>    1960.000    6.938
+OD(10,9) path_flow/trip 0.700, mean_cost 6.938
+
+
+   <R1>    720.659    12.212
+   <R2>    479.341    32.522
+OD(10,11) route_flow/trip 0.300, mean_cost 20.325
+   <P1>    2800.000    12.163
+OD(10,11) path_flow/trip 0.700, mean_cost 12.163
+
+   <R1>    316.616    25.043
+   <R2>    283.384    30.611
+OD(10,12) route_flow/trip 0.300, mean_cost 27.673
+   <P1>    731.632    24.970
+   <P2>    668.368    30.634
+OD(10,12) path_flow/trip 0.700, mean_cost 27.674
+
+   <R1>    300.785    28.104
+   <R2>    269.215    33.673
+OD(10,13) route_flow/trip 0.300, mean_cost 30.734
+   <P1>    695.050    28.032
+   <P2>    634.950    33.696
+OD(10,13) path_flow/trip 0.700, mean_cost 30.736
+
+   <R1>    319.875    24.862
+   <R2>    310.125    26.295
+OD(10,14) route_flow/trip 0.300, mean_cost 25.568
+   <P1>    669.782    24.776
+   <P2>    800.218    26.415
+OD(10,14) path_flow/trip 0.700, mean_cost 25.668
+
+   <R1>    1200.000    14.223
+OD(10,15) route_flow/trip 0.300, mean_cost 14.223
+   <P1>    2800.000    14.246
+OD(10,15) path_flow/trip 0.700, mean_cost 14.246
+
+   <R1>    419.663    21.941
+   <R2>    283.664    41.509
+   <R3>    298.725    38.922
+   <R4>    317.948    31.386
+OD(10,16) route_flow/trip 0.300, mean_cost 32.264
+   <P1>    3080.000    21.902
+OD(10,16) path_flow/trip 0.700, mean_cost 21.902
+
+   <R1>    520.847    31.509
+   <R2>    649.153    21.129
+OD(10,17) route_flow/trip 0.300, mean_cost 25.750
+   <P1>    0.000    31.467
+   <P2>    2730.000    21.130
+OD(10,17) path_flow/trip 0.700, mean_cost 21.130
+
+   <R1>    62.848    25.224
+   <R2>    48.439    38.227
+   <R3>    51.011    35.641
+   <R4>    47.703    34.669
+OD(10,18) route_flow/trip 0.300, mean_cost 32.899
+   <P1>    489.101    25.185
+   <P2>    0.899    34.664
+OD(10,18) path_flow/trip 0.700, mean_cost 25.202
+
+   <R1>    220.260    37.215
+   <R2>    319.740    18.722
+OD(10,19) route_flow/trip 0.300, mean_cost 26.265
+   <P1>    0.000    37.169
+   <P2>    1260.000    18.747
+OD(10,19) path_flow/trip 0.700, mean_cost 18.747
+
+   <R1>    273.764    29.659
+   <R2>    265.223    31.228
+   <R3>    211.012    42.662
+OD(10,20) route_flow/trip 0.300, mean_cost 33.872
+   <P1>    990.191    29.620
+   <P2>    0.000    42.679
+   <P3>    759.809    31.273
+OD(10,20) path_flow/trip 0.700, mean_cost 30.338
+
+   <R1>    231.621    26.446
+   <R2>    128.379    55.811
+OD(10,21) route_flow/trip 0.300, mean_cost 36.918
+   <P1>    840.000    26.470
+   <P2>    0.000    44.423
+OD(10,21) path_flow/trip 0.700, mean_cost 26.470
+
+   <R1>    513.156    21.387
+   <R2>    266.844    53.911
+OD(10,22) route_flow/trip 0.300, mean_cost 32.513
+   <P1>    1820.000    21.403
+   <P2>    0.000    42.521
+OD(10,22) path_flow/trip 0.700, mean_cost 21.403
+
+   <R1>    154.651    32.861
+   <R2>    154.876    32.788
+   <R3>    80.536    65.312
+   <R4>    149.937    34.295
+OD(10,23) route_flow/trip 0.300, mean_cost 38.078
+   <P1>    301.066    32.793
+   <P2>    0.000    53.877
+   <P3>    352.803    34.432
+   <P4>    606.130    32.758
+OD(10,23) path_flow/trip 0.700, mean_cost 33.235
+
+   <R1>    69.949    36.433
+   <R2>    35.694    69.864
+   <R3>    68.553    37.412
+   <R4>    65.803    37.340
+OD(10,24) route_flow/trip 0.300, mean_cost 41.933
+   <P1>    350.263    36.476
+   <P2>    0.000    58.417
+   <P3>    88.425    37.334
+   <P4>    121.312    37.299
+OD(10,24) path_flow/trip 0.700, mean_cost 36.790
+
+   <R1>    75.801    19.871
+   <R2>    74.199    20.974
+OD(11,1) route_flow/trip 0.300, mean_cost 20.417
+   <P1>    349.846    19.868
+   <P2>    0.154    20.950
+OD(11,1) path_flow/trip 0.700, mean_cost 19.869
+
+   <R1>    19.178    29.516
+   <R2>    20.629    25.878
+   <R3>    20.193    26.982
+OD(11,2) route_flow/trip 0.300, mean_cost 27.412
+   <P1>    0.000    29.477
+   <P2>    139.938    25.876
+   <P3>    0.062    26.957
+OD(11,2) path_flow/trip 0.700, mean_cost 25.876
+
+   <R1>    45.481    15.831
+   <R2>    44.519    16.934
+OD(11,3) route_flow/trip 0.300, mean_cost 16.377
+   <P1>    209.908    15.828
+   <P2>    0.092    16.910
+OD(11,3) path_flow/trip 0.700, mean_cost 15.829
+
+   <R1>    450.000    11.095
+OD(11,4) route_flow/trip 0.300, mean_cost 11.095
+   <P1>    1050.000    11.090
+OD(11,4) path_flow/trip 0.700, mean_cost 11.090
+
+   <R1>    150.000    13.692
+OD(11,5) route_flow/trip 0.300, mean_cost 13.692
+   <P1>    350.000    13.684
+OD(11,5) path_flow/trip 0.700, mean_cost 13.684
+
+   <R1>    47.761    20.882
+   <R2>    36.505    34.335
+   <R3>    35.734    35.438
+OD(11,6) route_flow/trip 0.300, mean_cost 29.309
+   <P1>    280.000    20.862
+OD(11,6) path_flow/trip 0.700, mean_cost 20.862
+
+   <R1>    35.761    39.308
+   <R2>    31.984    44.932
+   <R3>    25.933    55.335
+   <R4>    29.026    49.725
+   <R5>    27.297    48.754
+OD(11,7) route_flow/trip 0.300, mean_cost 47.013
+   <P1>    349.998    39.316
+   <P2>    0.000    55.319
+   <P3>    0.002    49.816
+   <P4>    0.000    48.795
+OD(11,7) path_flow/trip 0.700, mean_cost 39.316
+
+   <R1>    47.488    44.215
+   <R2>    55.067    36.920
+   <R3>    44.652    47.323
+   <R4>    41.200    51.477
+   <R5>    51.593    40.119
+OD(11,8) route_flow/trip 0.300, mean_cost 43.486
+   <P1>    0.000    44.221
+   <P2>    0.000    47.308
+   <P3>    0.000    51.454
+   <P4>    392.106    36.892
+   <P5>    167.894    40.182
+OD(11,8) path_flow/trip 0.700, mean_cost 37.878
+
+   <R1>    225.151    18.927
+   <R2>    194.849    26.131
+OD(11,9) route_flow/trip 0.300, mean_cost 22.269
+   <P1>    980.000    18.979
+   <P2>    0.000    26.105
+OD(11,9) path_flow/trip 0.700, mean_cost 18.979
+
+   <R1>    705.854    11.996
+   <R2>    464.146    32.928
+OD(11,10) route_flow/trip 0.300, mean_cost 20.300
+   <P1>    2730.000    12.041
+OD(11,10) path_flow/trip 0.700, mean_cost 12.041
+
+
+   <R1>    224.973    12.831
+   <R2>    195.027    19.937
+OD(11,12) route_flow/trip 0.300, mean_cost 16.131
+   <P1>    980.000    12.807
+OD(11,12) path_flow/trip 0.700, mean_cost 12.807
+
+   <R1>    160.695    15.893
+   <R2>    139.305    22.999
+OD(11,13) route_flow/trip 0.300, mean_cost 19.192
+   <P1>    691.407    15.868
+   <P2>    8.593    22.996
+OD(11,13) path_flow/trip 0.700, mean_cost 15.956
+
+   <R1>    399.731    12.650
+   <R2>    80.269    92.672
+OD(11,14) route_flow/trip 0.300, mean_cost 26.032
+   <P1>    1120.000    12.613
+OD(11,14) path_flow/trip 0.700, mean_cost 12.613
+
+   <R1>    160.885    24.823
+   <R2>    102.793    47.151
+   <R3>    156.322    26.219
+OD(11,15) route_flow/trip 0.300, mean_cost 30.807
+   <P1>    203.703    24.728
+   <P2>    776.297    26.287
+OD(11,15) path_flow/trip 0.700, mean_cost 25.963
+
+   <R1>    137.544    33.936
+   <R2>    80.452    60.708
+   <R3>    97.907    50.918
+   <R4>    104.098    43.382
+OD(11,16) route_flow/trip 0.300, mean_cost 45.364
+   <P1>    978.203    33.944
+   <P2>    1.797    43.423
+OD(11,16) path_flow/trip 0.700, mean_cost 33.961
+
+   <R1>    97.854    43.505
+   <R2>    121.954    33.125
+   <R3>    80.192    54.058
+OD(11,17) route_flow/trip 0.300, mean_cost 42.106
+   <P1>    0.000    43.508
+   <P2>    700.000    33.171
+OD(11,17) path_flow/trip 0.700, mean_cost 33.171
+
+   <R1>    9.268    37.219
+   <R2>    6.182    57.427
+   <R3>    7.523    47.636
+   <R4>    7.028    46.665
+OD(11,18) route_flow/trip 0.300, mean_cost 46.208
+   <P1>    70.000    37.226
+   <P2>    0.000    50.286
+   <P3>    0.000    47.727
+   <P4>    0.000    46.705
+OD(11,18) path_flow/trip 0.700, mean_cost 37.226
+
+   <R1>    45.967    29.323
+   <R2>    29.369    51.651
+   <R3>    44.663    30.718
+OD(11,19) route_flow/trip 0.300, mean_cost 35.307
+   <P1>    58.201    29.229
+   <P2>    221.799    30.788
+OD(11,19) path_flow/trip 0.700, mean_cost 30.464
+
+   <R1>    49.403    41.828
+   <R2>    33.050    61.862
+   <R3>    48.000    43.224
+   <R4>    49.547    41.654
+OD(11,20) route_flow/trip 0.300, mean_cost 45.831
+   <P1>    51.498    41.756
+   <P2>    0.000    61.846
+   <P3>    160.558    43.315
+   <P4>    207.944    41.661
+OD(11,20) path_flow/trip 0.700, mean_cost 42.305
+
+   <R1>    50.482    34.789
+   <R2>    22.536    75.010
+   <R3>    46.982    38.442
+OD(11,21) route_flow/trip 0.300, mean_cost 43.773
+   <P1>    275.515    34.725
+   <P2>    0.000    56.464
+   <P3>    4.485    38.512
+OD(11,21) path_flow/trip 0.700, mean_cost 34.785
+
+   <R1>    96.941    31.987
+   <R2>    96.474    32.050
+   <R3>    42.390    73.110
+   <R4>    94.195    33.382
+OD(11,22) route_flow/trip 0.300, mean_cost 37.686
+   <P1>    160.052    31.885
+   <P2>    0.000    54.563
+   <P3>    609.948    33.444
+OD(11,22) path_flow/trip 0.700, mean_cost 33.120
+
+   <R1>    305.197    20.649
+   <R2>    84.803    84.512
+OD(11,23) route_flow/trip 0.300, mean_cost 34.536
+   <P1>    910.000    20.630
+   <P2>    0.000    35.503
+OD(11,23) path_flow/trip 0.700, mean_cost 20.630
+
+   <R1>    82.951    25.201
+   <R2>    23.048    89.064
+   <R3>    74.001    30.870
+OD(11,24) route_flow/trip 0.300, mean_cost 35.709
+   <P1>    420.000    25.170
+   <P2>    0.000    49.340
+   <P3>    0.000    30.845
+OD(11,24) path_flow/trip 0.700, mean_cost 25.170
+
+   <R1>    60.000    8.143
+OD(12,1) route_flow/trip 0.300, mean_cost 8.143
+   <P1>    140.000    8.143
+OD(12,1) path_flow/trip 0.700, mean_cost 8.143
+
+   <R1>    30.000    14.151
+OD(12,2) route_flow/trip 0.300, mean_cost 14.151
+   <P1>    70.000    14.150
+OD(12,2) path_flow/trip 0.700, mean_cost 14.150
+
+   <R1>    60.000    4.103
+OD(12,3) route_flow/trip 0.300, mean_cost 4.103
+   <P1>    140.000    4.103
+OD(12,3) path_flow/trip 0.700, mean_cost 4.103
+
+   <R1>    180.000    8.840
+OD(12,4) route_flow/trip 0.300, mean_cost 8.840
+   <P1>    420.000    8.837
+OD(12,4) path_flow/trip 0.700, mean_cost 8.837
+
+   <R1>    60.000    11.437
+OD(12,5) route_flow/trip 0.300, mean_cost 11.437
+   <P1>    140.000    11.432
+OD(12,5) path_flow/trip 0.700, mean_cost 11.432
+
+   <R1>    31.191    18.627
+   <R2>    28.809    22.607
+OD(12,6) route_flow/trip 0.300, mean_cost 20.538
+   <P1>    51.333    18.609
+   <P2>    88.667    22.617
+OD(12,6) path_flow/trip 0.700, mean_cost 21.147
+
+   <R1>    57.094    42.677
+   <R2>    46.296    53.080
+   <R3>    52.733    46.658
+   <R4>    53.877    45.508
+OD(12,7) route_flow/trip 0.300, mean_cost 46.696
+   <P1>    179.139    42.650
+   <P2>    0.000    53.067
+   <P3>    309.019    46.659
+   <P4>    1.842    45.467
+OD(12,7) path_flow/trip 0.700, mean_cost 45.189
+
+   <R1>    65.826    34.665
+   <R2>    53.376    45.068
+   <R3>    60.798    38.646
+OD(12,8) route_flow/trip 0.300, mean_cost 39.095
+   <P1>    153.998    34.639
+   <P2>    0.000    45.055
+   <P3>    266.002    38.647
+OD(12,8) path_flow/trip 0.700, mean_cost 37.178
+
+   <R1>    82.734    31.928
+   <R2>    97.266    23.876
+OD(12,9) route_flow/trip 0.300, mean_cost 27.577
+   <P1>    0.000    32.019
+   <P2>    420.000    23.852
+OD(12,9) path_flow/trip 0.700, mean_cost 23.852
+
+   <R1>    316.910    24.997
+   <R2>    283.090    30.673
+OD(12,10) route_flow/trip 0.300, mean_cost 27.675
+   <P1>    690.075    25.081
+   <P2>    709.925    30.644
+OD(12,10) path_flow/trip 0.700, mean_cost 27.902
+
+   <R1>    223.981    13.001
+   <R2>    196.019    19.593
+OD(12,11) route_flow/trip 0.300, mean_cost 16.078
+   <P1>    980.000    13.040
+OD(12,11) path_flow/trip 0.700, mean_cost 13.040
+
+
+   <R1>    390.000    3.062
+OD(12,13) route_flow/trip 0.300, mean_cost 3.062
+   <P1>    910.000    3.062
+OD(12,13) path_flow/trip 0.700, mean_cost 3.062
+
+   <R1>    97.768    25.651
+   <R2>    26.670    90.417
+   <R3>    85.562    32.243
+OD(12,14) route_flow/trip 0.300, mean_cost 36.562
+   <P1>    471.470    25.652
+   <P2>    0.000    30.855
+   <P3>    18.530    32.199
+OD(12,14) path_flow/trip 0.700, mean_cost 25.900
+
+   <R1>    55.497    37.825
+   <R2>    52.414    40.537
+   <R3>    48.168    44.896
+   <R4>    53.922    39.220
+OD(12,15) route_flow/trip 0.300, mean_cost 40.482
+   <P1>    45.117    37.768
+   <P2>    231.280    44.889
+   <P3>    213.603    39.327
+OD(12,15) path_flow/trip 0.700, mean_cost 41.809
+
+   <R1>    43.581    46.937
+   <R2>    34.634    58.453
+   <R3>    42.237    48.645
+   <R4>    43.821    46.700
+   <R5>    45.728    44.664
+OD(12,16) route_flow/trip 0.300, mean_cost 48.636
+   <P1>    0.000    46.983
+   <P2>    0.000    54.269
+   <P3>    310.342    48.646
+   <P4>    0.041    46.659
+   <P5>    179.617    44.638
+OD(12,16) path_flow/trip 0.700, mean_cost 47.176
+
+   <R1>    53.578    56.506
+   <R2>    66.774    46.126
+   <R3>    59.648    51.803
+OD(12,17) route_flow/trip 0.300, mean_cost 51.097
+   <P1>    0.000    56.548
+   <P2>    212.978    51.774
+   <P3>    207.022    46.211
+OD(12,17) path_flow/trip 0.700, mean_cost 49.032
+
+   <R1>    14.688    50.221
+   <R2>    16.841    43.419
+   <R3>    13.310    55.172
+   <R4>    15.161    48.750
+OD(12,18) route_flow/trip 0.300, mean_cost 49.038
+   <P1>    0.000    50.266
+   <P2>    138.442    43.378
+   <P3>    1.558    48.751
+OD(12,18) path_flow/trip 0.700, mean_cost 43.438
+
+   <R1>    23.784    42.324
+   <R2>    22.463    45.036
+   <R3>    20.643    49.396
+   <R4>    23.109    43.719
+OD(12,19) route_flow/trip 0.300, mean_cost 44.981
+   <P1>    19.336    42.268
+   <P2>    99.120    49.390
+   <P3>    91.544    43.828
+OD(12,19) path_flow/trip 0.700, mean_cost 46.310
+
+   <R1>    72.194    39.006
+   <R2>    47.806    59.607
+OD(12,20) route_flow/trip 0.300, mean_cost 47.213
+   <P1>    280.000    38.966
+   <P2>    0.000    61.917
+OD(12,20) path_flow/trip 0.700, mean_cost 38.966
+
+   <R1>    64.041    27.628
+   <R2>    25.959    72.755
+OD(12,21) route_flow/trip 0.300, mean_cost 40.644
+   <P1>    210.000    27.593
+   <P2>    0.000    39.213
+OD(12,21) path_flow/trip 0.700, mean_cost 27.593
+
+   <R1>    65.078    33.308
+   <R2>    30.696    70.855
+   <R3>    50.212    46.383
+   <R4>    64.014    34.086
+OD(12,22) route_flow/trip 0.300, mean_cost 42.160
+   <P1>    281.072    33.258
+   <P2>    208.928    34.145
+   <P3>    0.000    46.484
+OD(12,22) path_flow/trip 0.700, mean_cost 33.636
+
+   <R1>    161.162    22.684
+   <R2>    48.838    82.257
+OD(12,23) route_flow/trip 0.300, mean_cost 36.539
+   <P1>    490.000    22.696
+OD(12,23) path_flow/trip 0.700, mean_cost 22.696
+
+   <R1>    119.780    18.039
+   <R2>    30.220    86.809
+OD(12,24) route_flow/trip 0.300, mean_cost 31.894
+   <P1>    350.000    18.039
+OD(12,24) path_flow/trip 0.700, mean_cost 18.039
+
+   <R1>    150.000    11.206
+OD(13,1) route_flow/trip 0.300, mean_cost 11.206
+   <P1>    350.000    11.206
+OD(13,1) path_flow/trip 0.700, mean_cost 11.206
+
+   <R1>    90.000    17.213
+OD(13,2) route_flow/trip 0.300, mean_cost 17.213
+   <P1>    210.000    17.213
+OD(13,2) path_flow/trip 0.700, mean_cost 17.213
+
+   <R1>    30.000    7.166
+OD(13,3) route_flow/trip 0.300, mean_cost 7.166
+   <P1>    70.000    7.166
+OD(13,3) path_flow/trip 0.700, mean_cost 7.166
+
+   <R1>    180.000    11.903
+OD(13,4) route_flow/trip 0.300, mean_cost 11.903
+   <P1>    420.000    11.900
+OD(13,4) path_flow/trip 0.700, mean_cost 11.900
+
+   <R1>    60.000    14.500
+OD(13,5) route_flow/trip 0.300, mean_cost 14.500
+   <P1>    140.000    14.494
+OD(13,5) path_flow/trip 0.700, mean_cost 14.494
+
+   <R1>    31.191    21.689
+   <R2>    28.809    25.670
+OD(13,6) route_flow/trip 0.300, mean_cost 23.601
+   <P1>    51.333    21.671
+   <P2>    88.667    25.679
+OD(13,6) path_flow/trip 0.700, mean_cost 24.210
+
+   <R1>    45.694    42.446
+   <R2>    34.738    56.142
+   <R3>    39.568    49.720
+OD(13,7) route_flow/trip 0.300, mean_cost 48.809
+   <P1>    279.710    42.406
+   <P2>    0.290    49.721
+OD(13,7) path_flow/trip 0.700, mean_cost 42.413
+
+   <R1>    65.826    37.728
+   <R2>    53.376    48.131
+   <R3>    60.798    41.709
+OD(13,8) route_flow/trip 0.300, mean_cost 42.157
+   <P1>    153.998    37.702
+   <P2>    0.000    48.118
+   <P3>    266.002    41.710
+OD(13,8) path_flow/trip 0.700, mean_cost 40.240
+
+   <R1>    82.734    34.991
+   <R2>    97.266    26.938
+OD(13,9) route_flow/trip 0.300, mean_cost 30.639
+   <P1>    0.000    35.081
+   <P2>    420.000    26.915
+OD(13,9) path_flow/trip 0.700, mean_cost 26.915
+
+   <R1>    301.064    28.060
+   <R2>    268.936    33.736
+OD(13,10) route_flow/trip 0.300, mean_cost 30.738
+   <P1>    655.571    28.144
+   <P2>    674.429    33.706
+OD(13,10) path_flow/trip 0.700, mean_cost 30.964
+
+   <R1>    159.987    16.064
+   <R2>    140.013    22.656
+OD(13,11) route_flow/trip 0.300, mean_cost 19.140
+   <P1>    673.528    16.102
+   <P2>    26.472    22.649
+OD(13,11) path_flow/trip 0.700, mean_cost 16.350
+
+   <R1>    390.000    3.063
+OD(13,12) route_flow/trip 0.300, mean_cost 3.063
+   <P1>    910.000    3.063
+OD(13,12) path_flow/trip 0.700, mean_cost 3.063
+
+
+   <R1>    69.011    27.783
+   <R2>    18.495    93.480
+   <R3>    67.841    28.714
+   <R4>    24.652    35.306
+OD(13,14) route_flow/trip 0.300, mean_cost 35.915
+   <P1>    0.001    27.793
+   <P2>    419.999    28.715
+OD(13,14) path_flow/trip 0.700, mean_cost 28.715
+
+   <R1>    57.386    37.475
+   <R2>    46.658    47.959
+   <R3>    52.232    42.282
+   <R4>    53.724    40.887
+OD(13,15) route_flow/trip 0.300, mean_cost 41.873
+   <P1>    0.003    37.426
+   <P2>    0.000    61.162
+   <P3>    388.152    42.389
+   <P4>    101.845    40.830
+OD(13,15) path_flow/trip 0.700, mean_cost 42.065
+
+   <R1>    46.149    50.000
+   <R2>    52.450    43.638
+   <R3>    36.675    61.516
+   <R4>    44.726    51.708
+OD(13,16) route_flow/trip 0.300, mean_cost 50.917
+   <P1>    0.000    50.046
+   <P2>    419.561    43.598
+   <P3>    0.439    51.708
+OD(13,16) path_flow/trip 0.700, mean_cost 43.606
+
+   <R1>    52.091    48.161
+   <R2>    46.194    54.865
+   <R3>    51.714    49.189
+OD(13,17) route_flow/trip 0.300, mean_cost 50.580
+   <P1>    0.000    48.110
+   <P2>    177.481    54.836
+   <P3>    172.519    49.274
+OD(13,17) path_flow/trip 0.700, mean_cost 52.094
+
+   <R1>    12.021    40.357
+   <R2>    8.405    58.235
+   <R3>    9.574    51.813
+OD(13,18) route_flow/trip 0.300, mean_cost 49.022
+   <P1>    69.973    40.317
+   <P2>    0.027    51.814
+OD(13,18) path_flow/trip 0.700, mean_cost 40.321
+
+   <R1>    24.594    41.974
+   <R2>    19.996    52.459
+   <R3>    22.385    46.782
+   <R4>    23.025    45.387
+OD(13,19) route_flow/trip 0.300, mean_cost 46.373
+   <P1>    0.000    41.927
+   <P2>    99.125    52.453
+   <P3>    91.550    46.890
+   <P4>    19.326    45.331
+OD(13,19) path_flow/trip 0.700, mean_cost 49.372
+
+   <R1>    113.504    35.944
+   <R2>    66.496    62.670
+OD(13,20) route_flow/trip 0.300, mean_cost 45.817
+   <P1>    420.000    35.904
+   <P2>    0.000    43.513
+OD(13,20) path_flow/trip 0.700, mean_cost 35.904
+
+   <R1>    132.487    24.566
+   <R2>    47.513    75.818
+OD(13,21) route_flow/trip 0.300, mean_cost 38.094
+   <P1>    420.000    24.531
+   <P2>    0.000    36.151
+OD(13,21) path_flow/trip 0.700, mean_cost 24.531
+
+   <R1>    126.476    30.247
+   <R2>    52.780    73.918
+   <R3>    86.336    49.446
+   <R4>    124.407    31.024
+OD(13,22) route_flow/trip 0.300, mean_cost 40.655
+   <P1>    521.991    30.196
+   <P2>    388.009    31.083
+OD(13,22) path_flow/trip 0.700, mean_cost 30.575
+
+   <R1>    189.259    19.623
+   <R2>    50.741    85.320
+OD(13,23) route_flow/trip 0.300, mean_cost 33.512
+   <P1>    560.000    19.635
+OD(13,23) path_flow/trip 0.700, mean_cost 19.635
+
+   <R1>    196.204    14.978
+   <R2>    43.796    89.871
+OD(13,24) route_flow/trip 0.300, mean_cost 28.644
+   <P1>    560.000    14.977
+OD(13,24) path_flow/trip 0.700, mean_cost 14.977
+
+   <R1>    39.167    32.692
+   <R2>    12.494    89.771
+   <R3>    38.340    33.795
+OD(14,1) route_flow/trip 0.300, mean_cost 41.085
+   <P1>    209.908    32.796
+   <P2>    0.000    57.009
+   <P3>    0.092    33.877
+OD(14,1) path_flow/trip 0.700, mean_cost 32.796
+
+   <R1>    8.641    42.336
+   <R2>    2.965    95.778
+   <R3>    9.099    39.802
+   <R4>    9.295    38.699
+OD(14,2) route_flow/trip 0.300, mean_cost 45.723
+   <P1>    0.000    42.404
+   <P2>    0.000    63.016
+   <P3>    0.031    39.884
+   <P4>    69.969    38.803
+OD(14,2) path_flow/trip 0.700, mean_cost 38.804
+
+   <R1>    13.056    28.652
+   <R2>    4.165    85.731
+   <R3>    12.780    29.755
+OD(14,3) route_flow/trip 0.300, mean_cost 37.046
+   <P1>    69.969    28.756
+   <P2>    0.000    52.969
+   <P3>    0.031    29.837
+OD(14,3) path_flow/trip 0.700, mean_cost 28.756
+
+   <R1>    113.725    23.916
+   <R2>    36.275    80.995
+OD(14,4) route_flow/trip 0.300, mean_cost 37.719
+   <P1>    350.000    24.017
+OD(14,4) path_flow/trip 0.700, mean_cost 24.017
+
+   <R1>    22.159    26.513
+   <R2>    7.841    78.402
+OD(14,5) route_flow/trip 0.300, mean_cost 40.074
+   <P1>    70.000    26.612
+   <P2>    0.000    45.635
+OD(14,5) path_flow/trip 0.700, mean_cost 26.612
+
+   <R1>    15.060    33.703
+   <R2>    3.672    104.235
+   <R3>    11.268    48.259
+OD(14,6) route_flow/trip 0.300, mean_cost 47.803
+   <P1>    70.000    33.789
+   <P2>    0.000    53.057
+   <P3>    0.000    48.351
+OD(14,6) path_flow/trip 0.700, mean_cost 33.789
+
+   <R1>    19.669    38.489
+   <R2>    20.701    35.680
+   <R3>    19.630    38.318
+OD(14,7) route_flow/trip 0.300, mean_cost 37.464
+   <P1>    4.242    38.423
+   <P2>    135.758    38.397
+OD(14,7) path_flow/trip 0.700, mean_cost 38.398
+
+   <R1>    31.484    43.395
+   <R2>    27.560    49.741
+   <R3>    29.668    46.109
+   <R4>    31.288    43.472
+OD(14,8) route_flow/trip 0.300, mean_cost 45.544
+   <P1>    8.679    43.328
+   <P2>    271.321    46.189
+OD(14,8) path_flow/trip 0.700, mean_cost 46.101
+
+   <R1>    72.845    31.748
+   <R2>    36.501    66.157
+   <R3>    70.654    33.460
+OD(14,9) route_flow/trip 0.300, mean_cost 39.397
+   <P1>    191.527    31.907
+   <P2>    228.473    33.378
+OD(14,9) path_flow/trip 0.700, mean_cost 32.707
+
+   <R1>    259.265    24.817
+   <R2>    119.274    63.790
+   <R3>    251.461    26.529
+OD(14,10) route_flow/trip 0.300, mean_cost 32.879
+   <P1>    670.343    24.969
+   <P2>    799.657    26.440
+OD(14,10) path_flow/trip 0.700, mean_cost 25.769
+
+   <R1>    398.177    12.821
+   <R2>    81.823    91.747
+OD(14,11) route_flow/trip 0.300, mean_cost 26.275
+   <P1>    1120.000    12.927
+OD(14,11) path_flow/trip 0.700, mean_cost 12.927
+
+   <R1>    164.509    25.652
+   <R2>    45.491    89.836
+OD(14,12) route_flow/trip 0.300, mean_cost 39.556
+   <P1>    483.989    25.734
+   <P2>    6.011    30.440
+OD(14,12) path_flow/trip 0.700, mean_cost 25.792
+
+   <R1>    80.335    27.374
+   <R2>    21.589    92.898
+   <R3>    78.077    28.713
+OD(14,13) route_flow/trip 0.300, mean_cost 35.814
+   <P1>    5.201    27.377
+   <P2>    414.799    28.796
+OD(14,13) path_flow/trip 0.700, mean_cost 28.778
+
+
+   <R1>    264.530    12.173
+   <R2>    125.470    49.434
+OD(14,15) route_flow/trip 0.300, mean_cost 24.161
+   <P1>    910.000    12.115
+OD(14,15) path_flow/trip 0.700, mean_cost 12.115
+
+   <R1>    75.045    33.117
+   <R2>    65.685    39.510
+   <R3>    69.270    36.873
+OD(14,16) route_flow/trip 0.300, mean_cost 36.355
+   <P1>    392.655    33.051
+   <P2>    97.345    39.589
+OD(14,16) path_flow/trip 0.700, mean_cost 34.350
+
+   <R1>    162.518    22.860
+   <R2>    47.482    84.919
+OD(14,17) route_flow/trip 0.300, mean_cost 36.892
+   <P1>    490.000    22.799
+   <P2>    0.000    47.570
+OD(14,17) path_flow/trip 0.700, mean_cost 22.799
+
+   <R1>    9.834    36.400
+   <R2>    10.351    33.591
+   <R3>    9.815    36.229
+OD(14,18) route_flow/trip 0.300, mean_cost 35.375
+   <P1>    0.000    36.334
+   <P2>    0.032    36.308
+   <P3>    69.968    33.555
+OD(14,18) path_flow/trip 0.700, mean_cost 33.556
+
+   <R1>    57.410    16.673
+   <R2>    32.590    44.965
+OD(14,19) route_flow/trip 0.300, mean_cost 26.918
+   <P1>    210.000    16.616
+OD(14,19) path_flow/trip 0.700, mean_cost 16.616
+
+   <R1>    76.993    29.179
+   <R2>    73.007    31.816
+OD(14,20) route_flow/trip 0.300, mean_cost 30.462
+   <P1>    349.840    29.143
+   <P2>    0.160    31.896
+OD(14,20) path_flow/trip 0.700, mean_cost 29.144
+
+   <R1>    73.497    22.139
+   <R2>    46.503    44.965
+OD(14,21) route_flow/trip 0.300, mean_cost 30.985
+   <P1>    279.995    22.112
+   <P2>    0.005    24.533
+OD(14,21) path_flow/trip 0.700, mean_cost 22.112
+
+   <R1>    180.436    19.337
+   <R2>    179.564    19.400
+OD(14,22) route_flow/trip 0.300, mean_cost 19.369
+   <P1>    738.834    19.272
+   <P2>    101.166    19.466
+OD(14,22) path_flow/trip 0.700, mean_cost 19.296
+
+   <R1>    330.000    7.999
+OD(14,23) route_flow/trip 0.300, mean_cost 7.999
+   <P1>    770.000    8.017
+OD(14,23) path_flow/trip 0.700, mean_cost 8.017
+
+   <R1>    120.000    12.551
+OD(14,24) route_flow/trip 0.300, mean_cost 12.551
+   <P1>    280.000    12.558
+OD(14,24) path_flow/trip 0.700, mean_cost 12.558
+
+   <R1>    30.833    44.765
+   <R2>    28.914    48.240
+   <R3>    30.945    44.901
+   <R4>    29.338    47.542
+   <R5>    29.971    46.439
+OD(15,1) route_flow/trip 0.300, mean_cost 46.340
+   <P1>    0.293    44.965
+   <P2>    349.689    44.893
+   <P3>    0.018    47.438
+   <P4>    0.000    46.357
+OD(15,1) path_flow/trip 0.700, mean_cost 44.894
+
+   <R1>    7.023    56.671
+   <R2>    7.878    50.908
+   <R3>    7.469    53.549
+   <R4>    7.630    52.446
+OD(15,2) route_flow/trip 0.300, mean_cost 53.306
+   <P1>    0.000    56.644
+   <P2>    69.970    50.901
+   <P3>    0.030    53.445
+   <P4>    0.000    52.364
+OD(15,2) path_flow/trip 0.700, mean_cost 50.902
+
+   <R1>    6.167    40.725
+   <R2>    5.783    44.200
+   <R3>    6.189    40.861
+   <R4>    5.868    43.502
+   <R5>    5.994    42.399
+OD(15,3) route_flow/trip 0.300, mean_cost 42.300
+   <P1>    0.059    40.925
+   <P2>    69.938    40.853
+   <P3>    0.004    43.398
+   <P4>    0.000    42.317
+OD(15,3) path_flow/trip 0.700, mean_cost 40.854
+
+   <R1>    50.409    35.989
+   <R2>    50.591    36.125
+   <R3>    49.000    37.663
+OD(15,4) route_flow/trip 0.300, mean_cost 36.581
+   <P1>    0.293    36.186
+   <P2>    349.689    36.115
+   <P3>    0.019    37.578
+OD(15,4) path_flow/trip 0.700, mean_cost 36.115
+
+   <R1>    32.032    33.532
+   <R2>    27.968    40.260
+OD(15,5) route_flow/trip 0.300, mean_cost 36.668
+   <P1>    140.000    33.520
+   <P2>    0.000    40.173
+OD(15,5) path_flow/trip 0.700, mean_cost 33.520
+
+   <R1>    16.174    48.037
+   <R2>    12.892    59.365
+   <R3>    12.223    62.006
+   <R4>    18.711    40.722
+OD(15,6) route_flow/trip 0.300, mean_cost 51.036
+   <P1>    0.000    48.029
+   <P2>    140.000    40.697
+   <P3>    0.000    47.350
+OD(15,6) path_flow/trip 0.700, mean_cost 40.697
+
+   <R1>    73.082    26.315
+   <R2>    76.918    23.507
+OD(15,7) route_flow/trip 0.300, mean_cost 24.875
+   <P1>    0.000    26.307
+   <P2>    350.000    23.529
+OD(15,7) path_flow/trip 0.700, mean_cost 23.529
+
+   <R1>    64.533    31.222
+   <R2>    51.336    42.479
+   <R3>    64.131    31.298
+OD(15,8) route_flow/trip 0.300, mean_cost 34.460
+   <P1>    0.000    31.213
+   <P2>    0.000    42.466
+   <P3>    420.000    31.321
+OD(15,8) path_flow/trip 0.700, mean_cost 31.321
+
+   <R1>    300.000    21.287
+OD(15,9) route_flow/trip 0.300, mean_cost 21.287
+   <P1>    700.000    21.263
+OD(15,9) path_flow/trip 0.700, mean_cost 21.263
+
+   <R1>    1200.000    14.356
+OD(15,10) route_flow/trip 0.300, mean_cost 14.356
+   <P1>    2800.000    14.325
+OD(15,10) path_flow/trip 0.700, mean_cost 14.325
+
+   <R1>    160.391    24.893
+   <R2>    103.701    46.878
+   <R3>    155.908    26.568
+OD(15,11) route_flow/trip 0.300, mean_cost 30.943
+   <P1>    239.383    25.096
+   <P2>    740.617    26.488
+OD(15,11) path_flow/trip 0.700, mean_cost 26.148
+
+   <R1>    55.262    37.724
+   <R2>    52.941    40.097
+   <R3>    48.080    44.967
+   <R4>    53.717    39.399
+OD(15,12) route_flow/trip 0.300, mean_cost 40.409
+   <P1>    60.935    37.903
+   <P2>    203.709    44.959
+   <P3>    225.355    39.295
+OD(15,12) path_flow/trip 0.700, mean_cost 41.477
+
+   <R1>    57.937    37.034
+   <R2>    46.551    48.028
+   <R3>    52.009    42.460
+   <R4>    53.502    40.786
+OD(15,13) route_flow/trip 0.300, mean_cost 41.771
+   <P1>    0.449    37.050
+   <P2>    0.000    58.991
+   <P3>    369.865    42.357
+   <P4>    119.686    40.965
+OD(15,13) path_flow/trip 0.700, mean_cost 42.012
+
+   <R1>    390.000    12.073
+OD(15,14) route_flow/trip 0.300, mean_cost 12.073
+   <P1>    910.000    12.169
+OD(15,14) path_flow/trip 0.700, mean_cost 12.169
+
+
+   <R1>    187.203    20.943
+   <R2>    172.797    24.699
+OD(15,16) route_flow/trip 0.300, mean_cost 22.746
+   <P1>    1.394    20.935
+   <P2>    838.606    24.721
+OD(15,16) path_flow/trip 0.700, mean_cost 24.715
+
+   <R1>    278.476    10.687
+   <R2>    171.524    35.485
+OD(15,17) route_flow/trip 0.300, mean_cost 20.139
+   <P1>    1050.000    10.684
+OD(15,17) path_flow/trip 0.700, mean_cost 10.684
+
+   <R1>    29.233    24.226
+   <R2>    30.767    21.418
+OD(15,18) route_flow/trip 0.300, mean_cost 22.786
+   <P1>    0.000    24.218
+   <P2>    140.000    21.440
+OD(15,18) path_flow/trip 0.700, mean_cost 21.440
+
+   <R1>    240.000    4.500
+OD(15,19) route_flow/trip 0.300, mean_cost 4.500
+   <P1>    560.000    4.501
+OD(15,19) path_flow/trip 0.700, mean_cost 4.501
+
+   <R1>    330.000    17.005
+OD(15,20) route_flow/trip 0.300, mean_cost 17.005
+   <P1>    770.000    17.027
+OD(15,20) path_flow/trip 0.700, mean_cost 17.027
+
+   <R1>    141.455    12.223
+   <R2>    98.545    30.154
+OD(15,21) route_flow/trip 0.300, mean_cost 19.586
+   <P1>    560.000    12.225
+OD(15,21) path_flow/trip 0.700, mean_cost 12.225
+
+   <R1>    471.699    7.164
+   <R2>    308.301    28.254
+OD(15,22) route_flow/trip 0.300, mean_cost 15.500
+   <P1>    1820.000    7.157
+OD(15,22) path_flow/trip 0.700, mean_cost 7.157
+
+   <R1>    114.429    18.565
+   <R2>    74.790    39.655
+   <R3>    110.780    20.072
+OD(15,23) route_flow/trip 0.300, mean_cost 24.379
+   <P1>    428.365    18.512
+   <P2>    271.635    20.186
+OD(15,23) path_flow/trip 0.700, mean_cost 19.162
+
+   <R1>    45.749    22.210
+   <R2>    29.349    44.207
+   <R3>    44.903    23.117
+OD(15,24) route_flow/trip 0.300, mean_cost 27.929
+   <P1>    176.171    22.230
+   <P2>    45.062    24.726
+   <P3>    58.768    23.053
+OD(15,24) path_flow/trip 0.700, mean_cost 22.805
+
+   <R1>    86.288    41.736
+   <R2>    63.712    56.825
+OD(16,1) route_flow/trip 0.300, mean_cost 48.145
+   <P1>    350.000    41.716
+   <P2>    0.000    56.841
+OD(16,1) path_flow/trip 0.700, mean_cost 41.716
+
+   <R1>    75.918    35.728
+   <R2>    44.082    62.832
+OD(16,2) route_flow/trip 0.300, mean_cost 45.685
+   <P1>    280.000    35.708
+   <P2>    0.000    38.595
+OD(16,2) path_flow/trip 0.700, mean_cost 35.708
+
+   <R1>    22.031    41.755
+   <R2>    17.642    52.785
+   <R3>    20.327    45.777
+OD(16,3) route_flow/trip 0.300, mean_cost 46.361
+   <P1>    62.631    41.775
+   <P2>    0.000    52.801
+   <P3>    77.369    45.757
+OD(16,3) path_flow/trip 0.700, mean_cost 43.976
+
+   <R1>    93.591    37.019
+   <R2>    74.947    48.049
+   <R3>    71.462    50.514
+OD(16,4) route_flow/trip 0.300, mean_cost 44.481
+   <P1>    559.996    37.036
+   <P2>    0.004    48.063
+   <P3>    0.000    50.491
+OD(16,4) path_flow/trip 0.700, mean_cost 37.036
+
+   <R1>    83.297    34.426
+   <R2>    66.703    45.456
+OD(16,5) route_flow/trip 0.300, mean_cost 39.331
+   <P1>    349.997    34.441
+   <P2>    0.003    42.582
+OD(16,5) path_flow/trip 0.700, mean_cost 34.441
+
+   <R1>    191.137    27.094
+   <R2>    78.863    71.289
+OD(16,6) route_flow/trip 0.300, mean_cost 40.003
+   <P1>    630.000    27.093
+   <P2>    0.000    29.980
+OD(16,6) path_flow/trip 0.700, mean_cost 27.093
+
+   <R1>    420.000    5.372
+OD(16,7) route_flow/trip 0.300, mean_cost 5.372
+   <P1>    980.000    5.372
+OD(16,7) path_flow/trip 0.700, mean_cost 5.372
+
+   <R1>    339.469    10.279
+   <R2>    320.531    13.164
+OD(16,8) route_flow/trip 0.300, mean_cost 11.680
+   <P1>    1540.000    10.278
+   <P2>    0.000    13.164
+OD(16,8) path_flow/trip 0.700, mean_cost 10.278
+
+   <R1>    144.502    29.654
+   <R2>    133.796    33.211
+   <R3>    141.701    30.326
+OD(16,9) route_flow/trip 0.300, mean_cost 31.014
+   <P1>    979.993    29.623
+   <P2>    0.007    37.765
+OD(16,9) path_flow/trip 0.700, mean_cost 29.623
+
+   <R1>    418.848    22.723
+   <R2>    294.676    40.009
+   <R3>    251.235    48.131
+   <R4>    355.241    30.831
+OD(16,10) route_flow/trip 0.300, mean_cost 33.600
+   <P1>    3080.000    22.685
+OD(16,10) path_flow/trip 0.700, mean_cost 22.685
+
+   <R1>    137.083    34.935
+   <R2>    84.427    58.802
+   <R3>    82.225    60.343
+   <R4>    116.265    43.043
+OD(16,11) route_flow/trip 0.300, mean_cost 46.951
+   <P1>    979.993    34.848
+   <P2>    0.007    42.991
+OD(16,11) path_flow/trip 0.700, mean_cost 34.848
+
+   <R1>    43.787    47.766
+   <R2>    36.286    56.891
+   <R3>    42.807    48.740
+   <R4>    41.809    49.883
+   <R5>    45.311    45.861
+OD(16,12) route_flow/trip 0.300, mean_cost 49.551
+   <P1>    0.000    47.655
+   <P2>    0.000    52.744
+   <P3>    0.001    48.755
+   <P4>    270.801    49.863
+   <P5>    219.198    45.881
+OD(16,12) path_flow/trip 0.700, mean_cost 48.082
+
+   <R1>    46.289    50.827
+   <R2>    51.150    45.677
+   <R3>    38.361    59.952
+   <R4>    44.199    52.944
+OD(16,13) route_flow/trip 0.300, mean_cost 51.828
+   <P1>    0.000    50.716
+   <P2>    5.151    59.969
+   <P3>    349.035    45.692
+   <P4>    65.815    52.925
+OD(16,13) path_flow/trip 0.700, mean_cost 47.001
+
+   <R1>    58.938    31.815
+   <R2>    51.568    38.528
+   <R3>    46.624    43.659
+   <R4>    52.869    37.408
+OD(16,14) route_flow/trip 0.300, mean_cost 37.501
+   <P1>    114.319    31.907
+   <P2>    14.268    38.479
+   <P3>    0.000    43.688
+   <P4>    361.413    37.534
+OD(16,14) path_flow/trip 0.700, mean_cost 36.249
+
+   <R1>    135.725    19.743
+   <R2>    121.747    25.336
+   <R3>    102.529    33.775
+OD(16,15) route_flow/trip 0.300, mean_cost 25.631
+   <P1>    211.022    19.738
+   <P2>    628.978    25.365
+OD(16,15) path_flow/trip 0.700, mean_cost 23.952
+
+
+   <R1>    618.130    9.569
+   <R2>    221.870    61.138
+OD(16,17) route_flow/trip 0.300, mean_cost 23.190
+   <P1>    1960.000    9.565
+OD(16,17) path_flow/trip 0.700, mean_cost 9.565
+
+   <R1>    150.000    3.283
+OD(16,18) route_flow/trip 0.300, mean_cost 3.283
+   <P1>    350.000    3.283
+OD(16,18) path_flow/trip 0.700, mean_cost 3.283
+
+   <R1>    154.260    15.274
+   <R2>    138.373    20.867
+   <R3>    97.367    38.275
+OD(16,19) route_flow/trip 0.300, mean_cost 23.001
+   <P1>    910.000    15.267
+OD(16,19) path_flow/trip 0.700, mean_cost 15.267
+
+   <R1>    480.000    7.718
+OD(16,20) route_flow/trip 0.300, mean_cost 7.718
+   <P1>    1120.000    7.717
+OD(16,20) path_flow/trip 0.700, mean_cost 7.717
+
+   <R1>    80.025    31.966
+   <R2>    99.975    20.867
+OD(16,21) route_flow/trip 0.300, mean_cost 25.801
+   <P1>    0.000    31.962
+   <P2>    420.000    20.867
+OD(16,21) path_flow/trip 0.700, mean_cost 20.867
+
+   <R1>    113.232    26.906
+   <R2>    132.718    18.966
+   <R3>    114.051    26.547
+OD(16,22) route_flow/trip 0.300, mean_cost 23.865
+   <P1>    0.000    26.895
+   <P2>    840.000    18.965
+   <P3>    0.000    26.532
+OD(16,22) path_flow/trip 0.700, mean_cost 18.965
+
+   <R1>    46.414    38.308
+   <R2>    54.401    30.368
+   <R3>    49.185    35.498
+OD(16,23) route_flow/trip 0.300, mean_cost 34.507
+   <P1>    0.000    38.250
+   <P2>    349.998    30.321
+   <P3>    0.002    35.530
+OD(16,23) path_flow/trip 0.700, mean_cost 30.321
+
+   <R1>    26.473    41.953
+   <R2>    33.072    30.853
+   <R3>    30.455    34.920
+OD(16,24) route_flow/trip 0.300, mean_cost 35.494
+   <P1>    0.000    41.968
+   <P2>    0.000    34.861
+   <P3>    210.000    30.873
+OD(16,24) path_flow/trip 0.700, mean_cost 30.873
+
+   <R1>    30.590    51.992
+   <R2>    30.655    51.808
+   <R3>    29.064    54.449
+   <R4>    29.691    53.346
+OD(17,1) route_flow/trip 0.300, mean_cost 52.875
+   <P1>    0.000    51.968
+   <P2>    279.879    51.831
+   <P3>    0.121    54.376
+   <P4>    0.000    53.295
+OD(17,1) path_flow/trip 0.700, mean_cost 51.832
+
+   <R1>    23.517    45.985
+   <R2>    18.533    57.815
+   <R3>    17.950    59.353
+OD(17,2) route_flow/trip 0.300, mean_cost 53.638
+   <P1>    139.997    45.960
+   <P2>    0.003    56.250
+OD(17,2) path_flow/trip 0.700, mean_cost 45.960
+
+   <R1>    7.194    52.011
+   <R2>    7.819    47.768
+   <R3>    7.413    50.409
+   <R4>    7.573    49.306
+OD(17,3) route_flow/trip 0.300, mean_cost 49.826
+   <P1>    0.000    52.026
+   <P2>    69.970    47.791
+   <P3>    0.030    50.336
+   <P4>    0.000    49.255
+OD(17,3) path_flow/trip 0.700, mean_cost 47.792
+
+   <R1>    47.778    47.275
+   <R2>    51.927    43.032
+   <R3>    50.295    44.570
+OD(17,4) route_flow/trip 0.300, mean_cost 44.899
+   <P1>    0.000    47.287
+   <P2>    349.849    43.052
+   <P3>    0.151    44.516
+OD(17,4) path_flow/trip 0.700, mean_cost 43.053
+
+   <R1>    19.764    44.682
+   <R2>    21.481    40.439
+   <R3>    18.755    47.166
+OD(17,5) route_flow/trip 0.300, mean_cost 43.940
+   <P1>    0.000    44.693
+   <P2>    140.000    40.458
+   <P3>    0.000    47.111
+OD(17,5) path_flow/trip 0.700, mean_cost 40.458
+
+   <R1>    96.154    37.351
+   <R2>    53.846    66.272
+OD(17,6) route_flow/trip 0.300, mean_cost 47.733
+   <P1>    350.000    37.345
+   <P2>    0.000    49.338
+OD(17,6) path_flow/trip 0.700, mean_cost 37.345
+
+   <R1>    209.632    15.629
+   <R2>    90.368    57.398
+OD(17,7) route_flow/trip 0.300, mean_cost 28.211
+   <P1>    700.000    15.623
+   <P2>    0.000    24.731
+OD(17,7) path_flow/trip 0.700, mean_cost 15.623
+
+   <R1>    269.422    20.535
+   <R2>    150.578    49.386
+OD(17,8) route_flow/trip 0.300, mean_cost 30.879
+   <P1>    980.000    20.529
+   <P2>    0.000    23.415
+OD(17,8) path_flow/trip 0.700, mean_cost 20.529
+
+   <R1>    119.644    39.911
+   <R2>    150.356    28.194
+OD(17,9) route_flow/trip 0.300, mean_cost 33.386
+   <P1>    0.000    39.874
+   <P2>    630.000    28.201
+OD(17,9) path_flow/trip 0.700, mean_cost 28.201
+
+   <R1>    518.456    32.980
+   <R2>    651.544    21.263
+OD(17,10) route_flow/trip 0.300, mean_cost 26.455
+   <P1>    0.000    32.936
+   <P2>    2730.000    21.263
+OD(17,10) path_flow/trip 0.700, mean_cost 21.263
+
+   <R1>    97.007    45.191
+   <R2>    121.907    33.474
+   <R3>    81.087    53.785
+OD(17,11) route_flow/trip 0.300, mean_cost 42.753
+   <P1>    0.000    45.100
+   <P2>    700.000    33.426
+OD(17,11) path_flow/trip 0.700, mean_cost 33.426
+
+   <R1>    53.231    58.022
+   <R2>    66.894    46.305
+   <R3>    59.875    51.874
+OD(17,12) route_flow/trip 0.300, mean_cost 51.623
+   <P1>    0.000    57.906
+   <P2>    200.511    51.897
+   <P3>    219.489    46.233
+OD(17,12) path_flow/trip 0.700, mean_cost 48.937
+
+   <R1>    53.245    47.208
+   <R2>    45.698    54.935
+   <R3>    51.057    49.367
+OD(17,13) route_flow/trip 0.300, mean_cost 50.297
+   <P1>    0.000    47.223
+   <P2>    167.092    54.959
+   <P3>    182.908    49.295
+OD(17,13) path_flow/trip 0.700, mean_cost 51.999
+
+   <R1>    130.990    22.246
+   <R2>    79.010    47.558
+OD(17,14) route_flow/trip 0.300, mean_cost 31.770
+   <P1>    490.000    22.342
+   <P2>    0.000    47.677
+OD(17,14) path_flow/trip 0.700, mean_cost 22.342
+
+   <R1>    280.693    10.174
+   <R2>    169.307    35.486
+OD(17,15) route_flow/trip 0.300, mean_cost 19.697
+   <P1>    1050.000    10.173
+OD(17,15) path_flow/trip 0.700, mean_cost 10.173
+
+   <R1>    623.272    10.257
+   <R2>    216.728    62.772
+OD(17,16) route_flow/trip 0.300, mean_cost 23.806
+   <P1>    1960.000    10.251
+OD(17,16) path_flow/trip 0.700, mean_cost 10.251
+
+
+   <R1>    128.894    13.540
+   <R2>    51.106    59.490
+OD(17,18) route_flow/trip 0.300, mean_cost 26.586
+   <P1>    420.000    13.534
+   <P2>    0.000    22.642
+OD(17,18) path_flow/trip 0.700, mean_cost 13.534
+
+   <R1>    339.099    5.705
+   <R2>    170.901    39.985
+OD(17,19) route_flow/trip 0.300, mean_cost 17.192
+   <P1>    1190.000    5.703
+OD(17,19) path_flow/trip 0.700, mean_cost 5.703
+
+   <R1>    211.416    18.211
+   <R2>    84.773    63.925
+   <R3>    213.811    17.975
+OD(17,20) route_flow/trip 0.300, mean_cost 25.711
+   <P1>    0.000    18.229
+   <P2>    1190.000    17.969
+OD(17,20) path_flow/trip 0.700, mean_cost 17.969
+
+   <R1>    82.663    22.397
+   <R2>    27.636    77.074
+   <R3>    69.701    31.123
+OD(17,21) route_flow/trip 0.300, mean_cost 34.171
+   <P1>    420.000    22.398
+   <P2>    0.000    47.733
+   <P3>    0.000    31.118
+OD(17,21) path_flow/trip 0.700, mean_cost 22.398
+
+   <R1>    255.834    17.338
+   <R2>    80.244    75.174
+   <R3>    173.922    36.804
+OD(17,22) route_flow/trip 0.300, mean_cost 33.076
+   <P1>    1190.000    17.330
+   <P2>    0.000    29.477
+OD(17,22) path_flow/trip 0.700, mean_cost 17.330
+
+   <R1>    60.073    28.739
+   <R2>    18.842    86.575
+   <R3>    42.967    45.755
+   <R4>    58.117    30.246
+OD(17,23) route_flow/trip 0.300, mean_cost 39.342
+   <P1>    257.104    28.685
+   <P2>    0.000    55.695
+   <P3>    0.000    45.781
+   <P4>    162.896    30.359
+OD(17,23) path_flow/trip 0.700, mean_cost 29.334
+
+   <R1>    28.730    32.384
+   <R2>    8.845    91.127
+   <R3>    24.225    41.110
+   <R4>    28.199    33.291
+OD(17,24) route_flow/trip 0.300, mean_cost 40.790
+   <P1>    148.559    32.403
+   <P2>    0.000    60.235
+   <P3>    0.000    41.124
+   <P4>    61.441    33.226
+OD(17,24) path_flow/trip 0.700, mean_cost 32.644
+
+   <R1>    16.835    41.338
+   <R2>    13.165    53.542
+OD(18,1) route_flow/trip 0.300, mean_cost 46.693
+   <P1>    70.000    41.320
+   <P2>    0.000    53.559
+OD(18,1) path_flow/trip 0.700, mean_cost 41.320
+
+
+
+   <R1>    11.487    36.621
+   <R2>    9.742    44.766
+   <R3>    8.771    50.116
+OD(18,4) route_flow/trip 0.300, mean_cost 43.211
+   <P1>    69.999    36.639
+   <P2>    0.001    44.780
+   <P3>    0.000    50.095
+OD(18,4) path_flow/trip 0.700, mean_cost 36.640
+
+
+   <R1>    20.877    26.696
+   <R2>    9.123    68.006
+OD(18,6) route_flow/trip 0.300, mean_cost 39.258
+   <P1>    70.000    26.697
+OD(18,6) path_flow/trip 0.700, mean_cost 26.697
+
+   <R1>    60.000    2.089
+OD(18,7) route_flow/trip 0.300, mean_cost 2.089
+   <P1>    140.000    2.089
+OD(18,7) path_flow/trip 0.700, mean_cost 2.089
+
+   <R1>    90.000    9.881
+OD(18,8) route_flow/trip 0.300, mean_cost 9.881
+   <P1>    210.000    9.881
+OD(18,8) path_flow/trip 0.700, mean_cost 9.881
+
+   <R1>    29.186    32.936
+   <R2>    30.814    29.928
+OD(18,9) route_flow/trip 0.300, mean_cost 31.391
+   <P1>    0.000    32.904
+   <P2>    140.000    29.928
+OD(18,9) path_flow/trip 0.700, mean_cost 29.928
+
+   <R1>    62.982    26.004
+   <R2>    50.525    36.726
+   <R3>    43.076    44.848
+   <R4>    53.417    34.113
+OD(18,10) route_flow/trip 0.300, mean_cost 34.512
+   <P1>    489.996    25.966
+   <P2>    0.004    34.109
+OD(18,10) path_flow/trip 0.700, mean_cost 25.966
+
+   <R1>    18.551    38.216
+   <R2>    13.028    55.519
+   <R3>    12.688    57.060
+   <R4>    15.734    46.325
+OD(18,11) route_flow/trip 0.300, mean_cost 48.084
+   <P1>    139.999    38.129
+   <P2>    0.000    48.883
+   <P3>    0.001    46.272
+OD(18,11) path_flow/trip 0.700, mean_cost 38.129
+
+   <R1>    11.535    51.047
+   <R2>    12.858    45.457
+   <R3>    10.899    53.608
+   <R4>    11.858    49.485
+   <R5>    12.851    45.463
+OD(18,12) route_flow/trip 0.300, mean_cost 48.809
+   <P1>    0.000    50.936
+   <P2>    0.001    53.624
+   <P3>    1.347    45.472
+   <P4>    77.371    49.467
+   <P5>    61.281    45.484
+OD(18,12) path_flow/trip 0.700, mean_cost 47.685
+
+   <R1>    11.692    42.394
+   <R2>    8.768    56.669
+   <R3>    9.539    52.546
+OD(18,13) route_flow/trip 0.300, mean_cost 49.795
+   <P1>    69.097    42.409
+   <P2>    0.858    56.686
+   <P3>    0.044    52.528
+OD(18,13) path_flow/trip 0.700, mean_cost 42.591
+
+   <R1>    7.648    35.097
+   <R2>    7.823    34.125
+   <R3>    7.630    35.245
+   <R4>    6.899    40.376
+OD(18,14) route_flow/trip 0.300, mean_cost 36.095
+   <P1>    0.000    35.188
+   <P2>    2.047    35.196
+   <P3>    0.000    40.406
+   <P4>    67.953    34.251
+OD(18,14) path_flow/trip 0.700, mean_cost 34.279
+
+   <R1>    20.803    23.024
+   <R2>    21.278    22.053
+   <R3>    17.919    30.492
+OD(18,15) route_flow/trip 0.300, mean_cost 24.910
+   <P1>    0.000    23.019
+   <P2>    140.000    22.083
+   <P3>    0.000    30.479
+OD(18,15) path_flow/trip 0.700, mean_cost 22.083
+
+   <R1>    150.000    3.281
+OD(18,16) route_flow/trip 0.300, mean_cost 3.281
+   <P1>    350.000    3.281
+OD(18,16) path_flow/trip 0.700, mean_cost 3.281
+
+   <R1>    127.725    12.850
+   <R2>    52.275    57.855
+OD(18,17) route_flow/trip 0.300, mean_cost 25.920
+   <P1>    420.000    12.846
+   <P2>    0.000    23.796
+OD(18,17) path_flow/trip 0.700, mean_cost 12.846
+
+
+   <R1>    32.816    18.556
+   <R2>    33.565    17.584
+   <R3>    23.618    34.992
+OD(18,19) route_flow/trip 0.300, mean_cost 22.507
+   <P1>    0.000    18.548
+   <P2>    210.000    17.612
+OD(18,19) path_flow/trip 0.700, mean_cost 17.612
+
+   <R1>    120.000    4.435
+OD(18,20) route_flow/trip 0.300, mean_cost 4.435
+   <P1>    280.000    4.435
+OD(18,20) path_flow/trip 0.700, mean_cost 4.435
+
+   <R1>    30.000    17.583
+OD(18,21) route_flow/trip 0.300, mean_cost 17.583
+   <P1>    70.000    17.584
+OD(18,21) path_flow/trip 0.700, mean_cost 17.584
+
+   <R1>    48.404    15.683
+   <R2>    41.596    23.264
+OD(18,22) route_flow/trip 0.300, mean_cost 19.187
+   <P1>    210.000    15.683
+   <P2>    0.000    23.249
+OD(18,22) path_flow/trip 0.700, mean_cost 15.683
+
+   <R1>    15.755    27.085
+   <R2>    14.245    32.215
+OD(18,23) route_flow/trip 0.300, mean_cost 29.521
+   <P1>    70.000    27.038
+   <P2>    0.000    32.247
+OD(18,23) path_flow/trip 0.700, mean_cost 27.038
+
+
+   <R1>    20.106    58.180
+   <R2>    23.964    49.370
+   <R3>    22.720    52.010
+   <R4>    23.210    50.907
+OD(19,1) route_flow/trip 0.300, mean_cost 52.401
+   <P1>    0.000    58.151
+   <P2>    209.909    49.364
+   <P3>    0.091    51.908
+   <P4>    0.000    50.827
+OD(19,1) path_flow/trip 0.700, mean_cost 49.365
+
+   <R1>    8.035    52.172
+   <R2>    7.531    55.377
+   <R3>    7.140    58.018
+   <R4>    7.294    56.915
+OD(19,2) route_flow/trip 0.300, mean_cost 55.521
+   <P1>    0.000    52.143
+   <P2>    0.863    53.782
+   <P3>    0.000    52.251
+   <P4>    69.137    55.442
+OD(19,2) path_flow/trip 0.700, mean_cost 55.422
+
+
+   <R1>    12.416    53.462
+   <R2>    15.991    40.457
+   <R3>    16.049    40.594
+   <R4>    15.544    42.131
+OD(19,4) route_flow/trip 0.300, mean_cost 43.619
+   <P1>    0.000    53.471
+   <P2>    139.939    40.585
+   <P3>    0.061    42.048
+OD(19,4) path_flow/trip 0.700, mean_cost 40.586
+
+   <R1>    8.769    50.870
+   <R2>    11.335    38.001
+   <R3>    9.897    44.728
+OD(19,5) route_flow/trip 0.300, mean_cost 43.981
+   <P1>    0.000    50.876
+   <P2>    70.000    37.990
+   <P3>    0.000    44.643
+OD(19,5) path_flow/trip 0.700, mean_cost 37.990
+
+   <R1>    16.545    43.538
+   <R2>    11.019    63.834
+   <R3>    16.443    43.614
+   <R4>    15.993    45.190
+OD(19,6) route_flow/trip 0.300, mean_cost 47.727
+   <P1>    0.000    43.528
+   <P2>    140.000    45.167
+   <P3>    0.000    43.636
+OD(19,6) path_flow/trip 0.700, mean_cost 45.167
+
+   <R1>    58.465    21.816
+   <R2>    61.535    19.007
+OD(19,7) route_flow/trip 0.300, mean_cost 20.376
+   <P1>    0.000    21.807
+   <P2>    280.000    19.028
+OD(19,7) path_flow/trip 0.700, mean_cost 19.028
+
+   <R1>    105.327    26.722
+   <R2>    104.673    26.799
+OD(19,8) route_flow/trip 0.300, mean_cost 26.760
+   <P1>    0.000    26.712
+   <P2>    490.000    26.820
+OD(19,8) path_flow/trip 0.700, mean_cost 26.820
+
+   <R1>    48.104    46.098
+   <R2>    71.896    25.756
+OD(19,9) route_flow/trip 0.300, mean_cost 33.910
+   <P1>    0.000    46.057
+   <P2>    280.000    25.733
+OD(19,9) path_flow/trip 0.700, mean_cost 25.733
+
+   <R1>    216.468    39.167
+   <R2>    323.532    18.824
+OD(19,10) route_flow/trip 0.300, mean_cost 26.979
+   <P1>    0.000    39.120
+   <P2>    1260.000    18.795
+OD(19,10) path_flow/trip 0.700, mean_cost 18.795
+
+   <R1>    45.826    29.362
+   <R2>    29.629    51.346
+   <R3>    44.545    31.036
+OD(19,11) route_flow/trip 0.300, mean_cost 35.412
+   <P1>    68.395    29.567
+   <P2>    211.605    30.959
+OD(19,11) path_flow/trip 0.700, mean_cost 30.619
+
+   <R1>    23.684    42.193
+   <R2>    22.689    44.565
+   <R3>    20.606    49.435
+   <R4>    23.022    43.867
+OD(19,12) route_flow/trip 0.300, mean_cost 44.877
+   <P1>    26.115    42.373
+   <P2>    87.304    49.430
+   <P3>    96.581    43.765
+OD(19,12) path_flow/trip 0.700, mean_cost 45.947
+
+   <R1>    24.830    41.503
+   <R2>    19.951    52.497
+   <R3>    22.290    46.929
+   <R4>    22.930    45.255
+OD(19,13) route_flow/trip 0.300, mean_cost 46.240
+   <P1>    0.000    41.520
+   <P2>    87.304    52.491
+   <P3>    96.582    46.827
+   <P4>    26.114    45.435
+OD(19,13) path_flow/trip 0.700, mean_cost 49.009
+
+   <R1>    56.821    16.541
+   <R2>    33.179    43.316
+OD(19,14) route_flow/trip 0.300, mean_cost 26.412
+   <P1>    210.000    16.639
+OD(19,14) path_flow/trip 0.700, mean_cost 16.639
+
+   <R1>    240.000    4.469
+OD(19,15) route_flow/trip 0.300, mean_cost 4.469
+   <P1>    560.000    4.470
+OD(19,15) path_flow/trip 0.700, mean_cost 4.470
+
+   <R1>    202.803    16.444
+   <R2>    187.197    20.200
+OD(19,16) route_flow/trip 0.300, mean_cost 18.247
+   <P1>    910.000    16.435
+OD(19,16) path_flow/trip 0.700, mean_cost 16.435
+
+   <R1>    336.711    6.187
+   <R2>    173.289    39.954
+OD(19,17) route_flow/trip 0.300, mean_cost 17.660
+   <P1>    1190.000    6.183
+OD(19,17) path_flow/trip 0.700, mean_cost 6.183
+
+   <R1>    43.849    19.727
+   <R2>    46.151    16.918
+OD(19,18) route_flow/trip 0.300, mean_cost 18.287
+   <P1>    0.000    19.718
+   <P2>    210.000    16.939
+OD(19,18) path_flow/trip 0.700, mean_cost 16.939
+
+
+   <R1>    360.000    12.506
+OD(19,20) route_flow/trip 0.300, mean_cost 12.506
+   <P1>    840.000    12.527
+OD(19,20) path_flow/trip 0.700, mean_cost 12.527
+
+   <R1>    65.439    16.692
+   <R2>    54.561    25.654
+OD(19,21) route_flow/trip 0.300, mean_cost 20.767
+   <P1>    280.000    16.695
+   <P2>    0.000    25.676
+OD(19,21) path_flow/trip 0.700, mean_cost 16.695
+
+   <R1>    201.994    11.632
+   <R2>    158.006    23.754
+OD(19,22) route_flow/trip 0.300, mean_cost 16.953
+   <P1>    840.000    11.627
+   <P2>    0.000    23.775
+OD(19,22) path_flow/trip 0.700, mean_cost 11.627
+
+   <R1>    32.723    23.034
+   <R2>    25.597    35.156
+   <R3>    31.680    24.540
+OD(19,23) route_flow/trip 0.300, mean_cost 27.012
+   <P1>    128.509    22.983
+   <P2>    0.000    35.130
+   <P3>    81.491    24.656
+OD(19,23) path_flow/trip 0.700, mean_cost 23.632
+
+   <R1>    10.912    26.679
+   <R2>    8.378    39.707
+   <R3>    10.710    27.585
+OD(19,24) route_flow/trip 0.300, mean_cost 30.641
+   <P1>    49.520    26.701
+   <P2>    0.000    39.671
+   <P3>    20.480    27.523
+OD(19,24) path_flow/trip 0.700, mean_cost 26.941
+
+   <R1>    50.505    45.750
+   <R2>    39.495    57.954
+OD(20,1) route_flow/trip 0.300, mean_cost 51.106
+   <P1>    210.000    45.732
+   <P2>    0.000    57.971
+OD(20,1) path_flow/trip 0.700, mean_cost 45.732
+
+   <R1>    18.576    39.743
+   <R2>    11.424    63.962
+OD(20,2) route_flow/trip 0.300, mean_cost 48.965
+   <P1>    70.000    39.724
+   <P2>    0.000    59.176
+OD(20,2) path_flow/trip 0.700, mean_cost 39.724
+
+
+   <R1>    33.499    41.033
+   <R2>    28.410    49.178
+   <R3>    28.091    49.862
+OD(20,4) route_flow/trip 0.300, mean_cost 46.360
+   <P1>    209.998    41.052
+   <P2>    0.002    49.192
+   <P3>    0.000    49.874
+OD(20,4) path_flow/trip 0.700, mean_cost 41.052
+
+   <R1>    16.233    38.440
+   <R2>    13.767    46.585
+OD(20,5) route_flow/trip 0.300, mean_cost 42.178
+   <P1>    69.999    38.457
+   <P2>    0.001    46.597
+OD(20,5) path_flow/trip 0.700, mean_cost 38.457
+
+   <R1>    62.632    31.109
+   <R2>    27.368    72.418
+OD(20,6) route_flow/trip 0.300, mean_cost 43.671
+   <P1>    210.000    31.109
+OD(20,6) path_flow/trip 0.700, mean_cost 31.109
+
+   <R1>    150.000    6.502
+OD(20,7) route_flow/trip 0.300, mean_cost 6.502
+   <P1>    350.000    6.501
+OD(20,7) path_flow/trip 0.700, mean_cost 6.501
+
+   <R1>    270.000    14.293
+OD(20,8) route_flow/trip 0.300, mean_cost 14.293
+   <P1>    630.000    14.293
+OD(20,8) path_flow/trip 0.700, mean_cost 14.293
+
+   <R1>    59.502    37.348
+   <R2>    57.677    38.905
+   <R3>    62.821    34.340
+OD(20,9) route_flow/trip 0.300, mean_cost 36.797
+   <P1>    0.000    37.316
+   <P2>    420.000    34.340
+OD(20,9) path_flow/trip 0.700, mean_cost 34.340
+
+   <R1>    269.237    30.417
+   <R2>    260.980    31.973
+   <R3>    219.783    40.413
+OD(20,10) route_flow/trip 0.300, mean_cost 33.888
+   <P1>    945.956    30.378
+   <P2>    804.044    31.973
+   <P3>    0.000    40.369
+OD(20,10) path_flow/trip 0.700, mean_cost 31.111
+
+   <R1>    40.133    42.629
+   <R2>    40.020    42.511
+   <R3>    28.184    59.931
+   <R4>    32.761    52.625
+   <R5>    38.902    44.185
+OD(20,11) route_flow/trip 0.300, mean_cost 47.467
+   <P1>    220.755    42.542
+   <P2>    0.000    59.942
+   <P3>    0.000    52.533
+   <P4>    143.146    44.136
+   <P5>    56.099    42.744
+OD(20,11) path_flow/trip 0.700, mean_cost 43.112
+
+   <R1>    60.414    41.022
+   <R2>    42.907    58.020
+   <R3>    46.679    53.897
+OD(20,12) route_flow/trip 0.300, mean_cost 49.891
+   <P1>    349.997    41.037
+   <P2>    0.000    62.607
+   <P3>    0.003    53.879
+OD(20,12) path_flow/trip 0.700, mean_cost 41.037
+
+   <R1>    77.857    37.959
+   <R2>    48.921    61.082
+   <R3>    53.222    56.959
+OD(20,13) route_flow/trip 0.300, mean_cost 49.861
+   <P1>    420.000    37.975
+   <P2>    0.000    41.963
+OD(20,13) path_flow/trip 0.700, mean_cost 37.975
+
+   <R1>    52.498    29.690
+   <R2>    51.206    30.810
+   <R3>    46.296    35.941
+OD(20,14) route_flow/trip 0.300, mean_cost 32.002
+   <P1>    339.768    29.817
+   <P2>    10.232    30.762
+   <P3>    0.000    35.971
+OD(20,14) path_flow/trip 0.700, mean_cost 29.844
+
+   <R1>    179.138    17.618
+   <R2>    150.862    26.057
+OD(20,15) route_flow/trip 0.300, mean_cost 21.476
+   <P1>    770.000    17.648
+   <P2>    0.000    26.044
+OD(20,15) path_flow/trip 0.700, mean_cost 17.648
+
+   <R1>    480.000    7.694
+OD(20,16) route_flow/trip 0.300, mean_cost 7.694
+   <P1>    1120.000    7.693
+OD(20,16) path_flow/trip 0.700, mean_cost 7.693
+
+   <R1>    199.580    19.336
+   <R2>    102.720    53.103
+   <R3>    207.700    17.263
+OD(20,17) route_flow/trip 0.300, mean_cost 25.293
+   <P1>    0.000    19.361
+   <P2>    1190.000    17.258
+OD(20,17) path_flow/trip 0.700, mean_cost 17.258
+
+   <R1>    120.000    4.413
+OD(20,18) route_flow/trip 0.300, mean_cost 4.413
+   <P1>    280.000    4.412
+OD(20,18) path_flow/trip 0.700, mean_cost 4.412
+
+   <R1>    211.309    13.149
+   <R2>    148.691    30.557
+OD(20,19) route_flow/trip 0.300, mean_cost 20.339
+   <P1>    840.000    13.178
+OD(20,19) path_flow/trip 0.700, mean_cost 13.178
+
+
+   <R1>    360.000    13.148
+OD(20,21) route_flow/trip 0.300, mean_cost 13.148
+   <P1>    840.000    13.150
+OD(20,21) path_flow/trip 0.700, mean_cost 13.150
+
+   <R1>    387.232    11.248
+   <R2>    332.768    18.829
+OD(20,22) route_flow/trip 0.300, mean_cost 14.752
+   <P1>    1680.000    11.248
+   <P2>    0.000    18.815
+OD(20,22) path_flow/trip 0.700, mean_cost 11.248
+
+   <R1>    110.287    22.650
+   <R2>    99.713    27.780
+OD(20,23) route_flow/trip 0.300, mean_cost 25.086
+   <P1>    489.997    22.603
+   <P2>    0.003    27.813
+OD(20,23) path_flow/trip 0.700, mean_cost 22.603
+
+   <R1>    62.472    23.135
+   <R2>    57.528    27.202
+OD(20,24) route_flow/trip 0.300, mean_cost 25.085
+   <P1>    280.000    23.155
+   <P2>    0.000    27.144
+OD(20,24) path_flow/trip 0.700, mean_cost 23.155
+
+   <R1>    19.837    36.017
+   <R2>    10.163    69.333
+OD(21,1) route_flow/trip 0.300, mean_cost 47.303
+   <P1>    70.000    36.031
+   <P2>    0.000    64.542
+OD(21,1) path_flow/trip 0.700, mean_cost 36.031
+
+
+
+   <R1>    37.058    36.713
+   <R2>    22.942    60.557
+OD(21,4) route_flow/trip 0.300, mean_cost 45.830
+   <P1>    140.000    36.725
+   <P2>    0.000    60.565
+OD(21,4) path_flow/trip 0.700, mean_cost 36.725
+
+   <R1>    10.188    46.441
+   <R2>    8.066    57.964
+   <R3>    11.745    39.310
+OD(21,5) route_flow/trip 0.300, mean_cost 46.747
+   <P1>    0.000    46.415
+   <P2>    0.000    57.970
+   <P3>    70.000    39.319
+OD(21,5) path_flow/trip 0.700, mean_cost 39.319
+
+   <R1>    9.346    42.487
+   <R2>    4.084    83.797
+   <R3>    8.630    46.500
+   <R4>    7.939    50.481
+OD(21,6) route_flow/trip 0.300, mean_cost 51.381
+   <P1>    0.003    42.482
+   <P2>    0.000    65.147
+   <P3>    25.797    46.497
+   <P4>    44.200    50.505
+OD(21,6) path_flow/trip 0.700, mean_cost 49.027
+
+   <R1>    60.000    17.880
+OD(21,7) route_flow/trip 0.300, mean_cost 17.880
+   <P1>    140.000    17.874
+OD(21,7) path_flow/trip 0.700, mean_cost 17.874
+
+   <R1>    120.000    25.671
+OD(21,8) route_flow/trip 0.300, mean_cost 25.671
+   <P1>    280.000    25.666
+OD(21,8) path_flow/trip 0.700, mean_cost 25.666
+
+   <R1>    50.232    34.196
+   <R2>    39.768    45.719
+OD(21,9) route_flow/trip 0.300, mean_cost 39.287
+   <P1>    210.000    34.158
+   <P2>    0.000    45.713
+OD(21,9) path_flow/trip 0.700, mean_cost 34.158
+
+   <R1>    208.469    27.265
+   <R2>    151.531    43.352
+OD(21,10) route_flow/trip 0.300, mean_cost 34.036
+   <P1>    840.000    27.220
+   <P2>    0.000    43.346
+OD(21,10) path_flow/trip 0.700, mean_cost 27.220
+
+   <R1>    49.647    35.613
+   <R2>    24.268    71.310
+   <R3>    46.085    39.477
+OD(21,11) route_flow/trip 0.300, mean_cost 44.316
+   <P1>    276.535    35.749
+   <P2>    0.000    55.509
+   <P3>    3.465    39.383
+OD(21,11) path_flow/trip 0.700, mean_cost 35.794
+
+   <R1>    62.729    27.873
+   <R2>    27.271    69.399
+OD(21,12) route_flow/trip 0.300, mean_cost 40.456
+   <P1>    210.000    27.888
+   <P2>    0.000    39.443
+OD(21,12) path_flow/trip 0.700, mean_cost 27.888
+
+   <R1>    129.998    24.811
+   <R2>    50.002    72.460
+OD(21,13) route_flow/trip 0.300, mean_cost 38.047
+   <P1>    420.000    24.825
+   <P2>    0.000    36.381
+OD(21,13) path_flow/trip 0.700, mean_cost 24.825
+
+   <R1>    71.554    22.792
+   <R2>    48.446    42.189
+OD(21,14) route_flow/trip 0.300, mean_cost 30.623
+   <P1>    280.000    22.821
+   <P2>    0.000    41.190
+OD(21,14) path_flow/trip 0.700, mean_cost 22.821
+
+   <R1>    138.980    12.909
+   <R2>    101.020    28.996
+OD(21,15) route_flow/trip 0.300, mean_cost 19.680
+   <P1>    560.000    12.895
+OD(21,15) path_flow/trip 0.700, mean_cost 12.895
+
+   <R1>    76.879    33.852
+   <R2>    103.121    19.072
+OD(21,16) route_flow/trip 0.300, mean_cost 25.385
+   <P1>    0.000    33.830
+   <P2>    420.000    19.066
+OD(21,16) path_flow/trip 0.700, mean_cost 19.066
+
+   <R1>    76.497    23.595
+   <R2>    34.251    64.481
+   <R3>    69.252    28.641
+OD(21,17) route_flow/trip 0.300, mean_cost 33.317
+   <P1>    419.999    23.579
+   <P2>    0.000    48.350
+   <P3>    0.001    28.631
+OD(21,17) path_flow/trip 0.700, mean_cost 23.579
+
+   <R1>    30.000    15.791
+OD(21,18) route_flow/trip 0.300, mean_cost 15.791
+   <P1>    70.000    15.785
+OD(21,18) path_flow/trip 0.700, mean_cost 15.785
+
+   <R1>    64.174    17.408
+   <R2>    55.826    24.527
+OD(21,19) route_flow/trip 0.300, mean_cost 20.720
+   <P1>    280.000    17.396
+   <P2>    0.000    24.550
+OD(21,19) path_flow/trip 0.700, mean_cost 17.396
+
+   <R1>    360.000    11.378
+OD(21,20) route_flow/trip 0.300, mean_cost 11.378
+   <P1>    840.000    11.373
+OD(21,20) path_flow/trip 0.700, mean_cost 11.373
+
+
+   <R1>    315.361    5.681
+   <R2>    224.639    22.627
+OD(21,22) route_flow/trip 0.300, mean_cost 12.730
+   <P1>    1260.000    5.665
+OD(21,22) path_flow/trip 0.700, mean_cost 5.665
+
+   <R1>    125.220    14.632
+   <R2>    84.780    34.028
+OD(21,23) route_flow/trip 0.300, mean_cost 22.463
+   <P1>    490.000    14.663
+   <P2>    0.000    17.021
+OD(21,23) path_flow/trip 0.700, mean_cost 14.663
+
+   <R1>    95.927    9.987
+   <R2>    54.073    38.580
+OD(21,24) route_flow/trip 0.300, mean_cost 20.294
+   <P1>    350.000    10.006
+OD(21,24) path_flow/trip 0.700, mean_cost 10.006
+
+   <R1>    47.299    41.076
+   <R2>    26.277    70.370
+   <R3>    46.424    41.983
+OD(22,1) route_flow/trip 0.300, mean_cost 47.842
+   <P1>    198.078    41.099
+   <P2>    0.000    70.401
+   <P3>    81.922    41.921
+OD(22,1) path_flow/trip 0.700, mean_cost 41.339
+
+   <R1>    7.878    52.158
+   <R2>    4.844    76.377
+   <R3>    8.720    47.084
+   <R4>    8.558    47.990
+OD(22,2) route_flow/trip 0.300, mean_cost 53.405
+   <P1>    0.000    52.154
+   <P2>    0.000    80.979
+   <P3>    49.520    47.106
+   <P4>    20.480    47.929
+OD(22,2) path_flow/trip 0.700, mean_cost 47.347
+
+   <R1>    11.825    37.036
+   <R2>    6.569    66.330
+   <R3>    11.606    37.943
+OD(22,3) route_flow/trip 0.300, mean_cost 43.802
+   <P1>    49.520    37.059
+   <P2>    0.000    70.932
+   <P3>    20.480    37.881
+OD(22,3) path_flow/trip 0.700, mean_cost 37.299
+
+   <R1>    25.315    43.217
+   <R2>    25.196    43.478
+   <R3>    17.585    61.594
+   <R4>    26.194    41.773
+   <R5>    25.710    42.680
+OD(22,4) route_flow/trip 0.300, mean_cost 45.534
+   <P1>    0.000    43.416
+   <P2>    0.000    61.622
+   <P3>    198.078    41.792
+   <P4>    81.922    42.615
+OD(22,4) path_flow/trip 0.700, mean_cost 42.033
+
+   <R1>    16.979    40.760
+   <R2>    11.752    59.001
+   <R3>    15.781    44.370
+   <R4>    15.489    45.276
+OD(22,5) route_flow/trip 0.300, mean_cost 46.448
+   <P1>    3.137    40.750
+   <P2>    0.000    59.027
+   <P3>    97.628    44.387
+   <P4>    39.235    45.210
+OD(22,5) path_flow/trip 0.700, mean_cost 44.536
+
+   <R1>    12.665    43.524
+   <R2>    5.534    84.834
+   <R3>    11.679    47.547
+   <R4>    10.784    51.559
+   <R5>    9.918    55.540
+   <R6>    9.421    56.447
+OD(22,6) route_flow/trip 0.300, mean_cost 53.577
+   <P1>    68.949    43.539
+   <P2>    16.337    56.395
+   <P3>    0.000    47.550
+   <P4>    17.265    51.564
+   <P5>    37.448    55.572
+OD(22,6) path_flow/trip 0.700, mean_cost 49.248
+
+   <R1>    78.036    18.917
+   <R2>    71.964    22.940
+OD(22,7) route_flow/trip 0.300, mean_cost 20.847
+   <P1>    350.000    18.932
+   <P2>    0.000    22.942
+OD(22,7) path_flow/trip 0.700, mean_cost 18.932
+
+   <R1>    78.036    26.709
+   <R2>    71.964    30.731
+OD(22,8) route_flow/trip 0.300, mean_cost 28.639
+   <P1>    350.000    26.724
+   <P2>    0.000    30.734
+OD(22,8) path_flow/trip 0.700, mean_cost 26.724
+
+   <R1>    124.101    28.515
+   <R2>    85.899    46.756
+OD(22,9) route_flow/trip 0.300, mean_cost 35.976
+   <P1>    490.000    28.493
+   <P2>    0.000    46.770
+OD(22,9) path_flow/trip 0.700, mean_cost 28.493
+
+   <R1>    476.923    21.584
+   <R2>    303.077    44.389
+OD(22,10) route_flow/trip 0.300, mean_cost 30.445
+   <P1>    1820.000    21.555
+   <P2>    0.000    44.403
+OD(22,10) path_flow/trip 0.700, mean_cost 21.555
+
+   <R1>    96.635    32.122
+   <R2>    96.183    32.383
+   <R3>    43.247    72.347
+   <R4>    93.935    33.796
+OD(22,11) route_flow/trip 0.300, mean_cost 37.946
+   <P1>    188.087    32.326
+   <P2>    0.000    56.567
+   <P3>    581.913    33.718
+OD(22,11) path_flow/trip 0.700, mean_cost 33.378
+
+   <R1>    85.611    32.933
+   <R2>    40.360    70.436
+   <R3>    84.029    33.840
+OD(22,12) route_flow/trip 0.300, mean_cost 40.503
+   <P1>    346.636    32.955
+   <P2>    143.364    33.778
+OD(22,12) path_flow/trip 0.700, mean_cost 33.196
+
+   <R1>    162.595    29.870
+   <R2>    67.816    73.498
+   <R3>    159.589    30.777
+OD(22,13) route_flow/trip 0.300, mean_cost 37.828
+   <P1>    643.753    29.893
+   <P2>    266.247    30.716
+OD(22,13) path_flow/trip 0.700, mean_cost 30.134
+
+   <R1>    180.422    19.301
+   <R2>    179.578    19.562
+OD(22,14) route_flow/trip 0.300, mean_cost 19.431
+   <P1>    732.943    19.399
+   <P2>    107.057    19.514
+OD(22,14) path_flow/trip 0.700, mean_cost 19.413
+
+   <R1>    476.923    7.228
+   <R2>    303.077    30.033
+OD(22,15) route_flow/trip 0.300, mean_cost 16.089
+   <P1>    1820.000    7.230
+OD(22,15) path_flow/trip 0.700, mean_cost 7.230
+
+   <R1>    110.629    28.171
+   <R2>    129.733    20.110
+   <R3>    119.637    24.132
+OD(22,16) route_flow/trip 0.300, mean_cost 23.924
+   <P1>    0.000    28.165
+   <P2>    840.000    20.124
+   <P3>    0.000    24.134
+OD(22,16) path_flow/trip 0.700, mean_cost 20.124
+
+   <R1>    240.414    17.915
+   <R2>    94.110    65.518
+   <R3>    175.476    33.701
+OD(22,17) route_flow/trip 0.300, mean_cost 32.131
+   <P1>    1190.000    17.914
+   <P2>    0.000    31.791
+OD(22,17) path_flow/trip 0.700, mean_cost 17.914
+
+   <R1>    46.822    16.828
+   <R2>    43.178    20.851
+OD(22,18) route_flow/trip 0.300, mean_cost 18.758
+   <P1>    210.000    16.842
+   <P2>    0.000    20.853
+OD(22,18) path_flow/trip 0.700, mean_cost 16.842
+
+   <R1>    204.481    11.728
+   <R2>    155.519    25.565
+OD(22,19) route_flow/trip 0.300, mean_cost 17.705
+   <P1>    840.000    11.731
+   <P2>    0.000    25.608
+OD(22,19) path_flow/trip 0.700, mean_cost 11.731
+
+   <R1>    374.575    12.416
+   <R2>    345.425    16.438
+OD(22,20) route_flow/trip 0.300, mean_cost 14.345
+   <P1>    1680.000    12.430
+   <P2>    0.000    16.441
+OD(22,20) path_flow/trip 0.700, mean_cost 12.430
+
+   <R1>    324.560    5.060
+   <R2>    215.440    25.564
+OD(22,21) route_flow/trip 0.300, mean_cost 13.240
+   <P1>    1260.000    5.068
+OD(22,21) path_flow/trip 0.700, mean_cost 5.068
+
+
+   <R1>    630.000    11.402
+OD(22,23) route_flow/trip 0.300, mean_cost 11.402
+   <P1>    1470.000    11.355
+OD(22,23) path_flow/trip 0.700, mean_cost 11.355
+
+   <R1>    166.539    15.046
+   <R2>    163.461    15.953
+OD(22,24) route_flow/trip 0.300, mean_cost 15.496
+   <P1>    544.714    15.073
+   <P2>    225.286    15.896
+OD(22,24) path_flow/trip 0.700, mean_cost 15.314
+
+   <R1>    66.277    30.581
+   <R2>    23.723    81.771
+OD(23,1) route_flow/trip 0.300, mean_cost 44.074
+   <P1>    210.000    30.566
+OD(23,1) path_flow/trip 0.700, mean_cost 30.566
+
+
+   <R1>    22.092    26.541
+   <R2>    7.908    77.731
+OD(23,3) route_flow/trip 0.300, mean_cost 40.035
+   <P1>    70.000    26.526
+OD(23,3) path_flow/trip 0.700, mean_cost 26.526
+
+   <R1>    60.933    32.076
+   <R2>    26.893    72.995
+   <R3>    62.174    31.278
+OD(23,4) route_flow/trip 0.300, mean_cost 39.082
+   <P1>    0.000    32.175
+   <P2>    350.000    31.260
+OD(23,4) path_flow/trip 0.700, mean_cost 31.260
+
+   <R1>    11.952    34.673
+   <R2>    5.852    70.402
+   <R3>    12.196    33.875
+OD(23,5) route_flow/trip 0.300, mean_cost 41.318
+   <P1>    0.000    34.770
+   <P2>    0.000    75.047
+   <P3>    70.000    33.854
+OD(23,5) path_flow/trip 0.700, mean_cost 33.854
+
+   <R1>    7.367    41.863
+   <R2>    5.687    54.926
+   <R3>    2.485    96.236
+   <R4>    6.943    45.045
+   <R5>    7.517    41.065
+OD(23,6) route_flow/trip 0.300, mean_cost 49.380
+   <P1>    0.000    41.947
+   <P2>    44.334    45.040
+   <P3>    25.666    41.031
+OD(23,6) path_flow/trip 0.700, mean_cost 43.570
+
+   <R1>    30.496    30.319
+   <R2>    29.504    32.020
+OD(23,7) route_flow/trip 0.300, mean_cost 31.155
+   <P1>    96.206    30.380
+   <P2>    43.794    31.969
+OD(23,7) path_flow/trip 0.700, mean_cost 30.877
+
+   <R1>    45.744    38.110
+   <R2>    44.256    39.811
+OD(23,8) route_flow/trip 0.300, mean_cost 38.947
+   <P1>    144.309    38.172
+   <P2>    65.691    39.761
+OD(23,8) path_flow/trip 0.700, mean_cost 38.669
+
+   <R1>    32.982    39.908
+   <R2>    33.038    39.917
+   <R3>    22.868    58.157
+   <R4>    31.989    41.621
+   <R5>    29.123    46.314
+OD(23,9) route_flow/trip 0.300, mean_cost 44.301
+   <P1>    62.356    40.065
+   <P2>    0.000    58.219
+   <P3>    73.012    41.536
+   <P4>    174.437    46.275
+   <P5>    40.195    39.941
+OD(23,9) path_flow/trip 0.700, mean_cost 43.453
+
+   <R1>    149.662    32.977
+   <R2>    149.914    32.985
+   <R3>    95.269    55.790
+   <R4>    145.155    34.689
+OD(23,10) route_flow/trip 0.300, mean_cost 37.464
+   <P1>    401.199    33.127
+   <P2>    0.000    55.852
+   <P3>    529.750    34.598
+   <P4>    329.051    33.003
+OD(23,10) path_flow/trip 0.700, mean_cost 33.713
+
+   <R1>    303.657    20.981
+   <R2>    86.343    83.748
+OD(23,11) route_flow/trip 0.300, mean_cost 34.877
+   <P1>    910.000    21.086
+   <P2>    0.000    35.462
+OD(23,11) path_flow/trip 0.700, mean_cost 21.086
+
+   <R1>    161.075    22.438
+   <R2>    48.925    81.837
+OD(23,12) route_flow/trip 0.300, mean_cost 36.276
+   <P1>    490.000    22.423
+OD(23,12) path_flow/trip 0.700, mean_cost 22.423
+
+   <R1>    189.167    19.375
+   <R2>    50.833    84.899
+OD(23,13) route_flow/trip 0.300, mean_cost 33.254
+   <P1>    560.000    19.360
+OD(23,13) path_flow/trip 0.700, mean_cost 19.360
+
+   <R1>    330.000    8.160
+OD(23,14) route_flow/trip 0.300, mean_cost 8.160
+   <P1>    770.000    8.158
+OD(23,14) path_flow/trip 0.700, mean_cost 8.158
+
+   <R1>    115.218    18.630
+   <R2>    73.220    41.435
+   <R3>    111.562    20.334
+OD(23,15) route_flow/trip 0.300, mean_cost 24.829
+   <P1>    323.856    18.678
+   <P2>    376.144    20.274
+OD(23,15) path_flow/trip 0.700, mean_cost 19.536
+
+   <R1>    45.355    39.573
+   <R2>    53.187    31.511
+   <R3>    51.457    33.212
+OD(23,16) route_flow/trip 0.300, mean_cost 34.532
+   <P1>    0.000    39.614
+   <P2>    240.515    31.572
+   <P3>    109.485    33.161
+OD(23,16) path_flow/trip 0.700, mean_cost 32.069
+
+   <R1>    57.592    29.316
+   <R2>    22.545    76.920
+   <R3>    44.100    42.781
+   <R4>    55.763    31.020
+OD(23,17) route_flow/trip 0.300, mean_cost 39.105
+   <P1>    194.314    29.363
+   <P2>    0.000    54.133
+   <P3>    0.000    42.726
+   <P4>    225.686    30.958
+OD(23,17) path_flow/trip 0.700, mean_cost 30.220
+
+   <R1>    15.248    28.230
+   <R2>    14.752    29.931
+OD(23,18) route_flow/trip 0.300, mean_cost 29.066
+   <P1>    48.103    28.291
+   <P2>    21.897    29.880
+OD(23,18) path_flow/trip 0.700, mean_cost 28.788
+
+   <R1>    32.981    23.129
+   <R2>    25.084    36.966
+   <R3>    31.935    24.833
+OD(23,19) route_flow/trip 0.300, mean_cost 27.590
+   <P1>    97.157    23.179
+   <P2>    0.000    37.056
+   <P3>    112.843    24.774
+OD(23,19) path_flow/trip 0.700, mean_cost 24.036
+
+   <R1>    106.736    23.817
+   <R2>    103.264    25.518
+OD(23,20) route_flow/trip 0.300, mean_cost 24.654
+   <P1>    336.721    23.879
+   <P2>    153.279    25.468
+OD(23,20) path_flow/trip 0.700, mean_cost 24.376
+
+   <R1>    128.619    14.140
+   <R2>    81.381    36.966
+OD(23,21) route_flow/trip 0.300, mean_cost 22.985
+   <P1>    489.990    14.095
+   <P2>    0.010    16.516
+OD(23,21) path_flow/trip 0.700, mean_cost 14.095
+
+   <R1>    630.000    11.401
+OD(23,22) route_flow/trip 0.300, mean_cost 11.401
+   <P1>    1470.000    11.449
+OD(23,22) path_flow/trip 0.700, mean_cost 11.449
+
+
+   <R1>    210.000    4.552
+OD(23,24) route_flow/trip 0.300, mean_cost 4.552
+   <P1>    490.000    4.540
+OD(23,24) path_flow/trip 0.700, mean_cost 4.540
+
+   <R1>    23.112    26.030
+   <R2>    6.888    86.416
+OD(24,1) route_flow/trip 0.300, mean_cost 39.894
+   <P1>    70.000    26.025
+OD(24,1) path_flow/trip 0.700, mean_cost 26.025
+
+
+
+   <R1>    44.114    26.727
+   <R2>    15.886    77.640
+OD(24,4) route_flow/trip 0.300, mean_cost 40.207
+   <P1>    140.000    26.719
+OD(24,4) path_flow/trip 0.700, mean_cost 26.719
+
+
+   <R1>    7.492    52.075
+   <R2>    2.817    100.881
+   <R3>    9.454    40.494
+   <R4>    10.236    36.513
+OD(24,6) route_flow/trip 0.300, mean_cost 47.699
+   <P1>    0.000    52.036
+   <P2>    44.334    40.499
+   <P3>    25.666    36.491
+OD(24,6) path_flow/trip 0.700, mean_cost 39.029
+
+   <R1>    16.124    27.468
+   <R2>    13.876    34.964
+OD(24,7) route_flow/trip 0.300, mean_cost 30.935
+   <P1>    70.000    27.429
+   <P2>    0.000    35.038
+OD(24,7) path_flow/trip 0.700, mean_cost 27.429
+
+   <R1>    32.248    35.260
+   <R2>    27.752    42.755
+OD(24,8) route_flow/trip 0.300, mean_cost 38.727
+   <P1>    140.000    35.220
+   <P2>    0.000    42.830
+OD(24,8) path_flow/trip 0.700, mean_cost 35.220
+
+   <R1>    22.030    43.784
+   <R2>    15.010    62.802
+   <R3>    22.960    41.762
+OD(24,9) route_flow/trip 0.300, mean_cost 47.768
+   <P1>    0.000    43.712
+   <P2>    0.000    62.877
+   <P3>    140.000    41.735
+OD(24,9) path_flow/trip 0.700, mean_cost 41.735
+
+   <R1>    44.219    36.853
+   <R2>    27.660    60.436
+   <R3>    39.200    42.883
+   <R4>    42.140    39.335
+   <R5>    43.493    37.630
+   <R6>    43.288    37.622
+OD(24,10) route_flow/trip 0.300, mean_cost 41.271
+   <P1>    169.903    36.774
+   <P2>    0.000    60.509
+   <P3>    0.000    42.963
+   <P4>    121.875    39.256
+   <P5>    114.064    37.661
+   <P6>    154.157    37.785
+OD(24,10) path_flow/trip 0.700, mean_cost 37.773
+
+   <R1>    82.323    25.626
+   <R2>    23.408    88.393
+   <R3>    74.270    30.888
+OD(24,11) route_flow/trip 0.300, mean_cost 35.960
+   <P1>    414.844    25.743
+   <P2>    0.000    49.824
+   <P3>    5.156    30.922
+OD(24,11) path_flow/trip 0.700, mean_cost 25.807
+
+   <R1>    119.724    17.886
+   <R2>    30.276    86.482
+OD(24,12) route_flow/trip 0.300, mean_cost 31.732
+   <P1>    350.000    17.882
+OD(24,12) path_flow/trip 0.700, mean_cost 17.882
+
+   <R1>    171.606    14.824
+   <R2>    38.394    89.544
+OD(24,13) route_flow/trip 0.300, mean_cost 28.485
+   <P1>    490.000    14.820
+OD(24,13) path_flow/trip 0.700, mean_cost 14.820
+
+   <R1>    120.000    12.805
+OD(24,14) route_flow/trip 0.300, mean_cost 12.805
+   <P1>    280.000    12.816
+OD(24,14) path_flow/trip 0.700, mean_cost 12.816
+
+   <R1>    33.687    22.497
+   <R2>    21.072    46.080
+   <R3>    32.105    24.979
+   <R4>    33.137    23.275
+OD(24,15) route_flow/trip 0.300, mean_cost 27.517
+   <P1>    115.213    22.449
+   <P2>    90.326    23.336
+   <P3>    74.462    24.931
+OD(24,15) path_flow/trip 0.700, mean_cost 23.395
+
+   <R1>    25.746    43.440
+   <R2>    34.534    28.661
+   <R3>    29.719    36.156
+OD(24,16) route_flow/trip 0.300, mean_cost 35.364
+   <P1>    0.000    43.385
+   <P2>    0.000    36.230
+   <P3>    210.000    28.621
+OD(24,16) path_flow/trip 0.700, mean_cost 28.621
+
+   <R1>    21.290    33.184
+   <R2>    8.204    81.565
+   <R3>    19.274    38.229
+   <R4>    20.289    35.665
+   <R5>    20.943    33.961
+OD(24,17) route_flow/trip 0.300, mean_cost 39.415
+   <P1>    86.452    33.133
+   <P2>    0.000    58.791
+   <P3>    0.000    38.185
+   <P4>    55.862    35.615
+   <P5>    67.685    34.020
+OD(24,17) path_flow/trip 0.700, mean_cost 34.079
+
+
+   <R1>    8.140    26.997
+   <R2>    6.094    41.611
+   <R3>    7.758    29.478
+   <R4>    8.007    27.774
+OD(24,19) route_flow/trip 0.300, mean_cost 30.815
+   <P1>    28.816    26.950
+   <P2>    0.000    41.714
+   <P3>    18.623    29.432
+   <P4>    22.562    27.837
+OD(24,19) path_flow/trip 0.700, mean_cost 27.896
+
+   <R1>    64.497    20.967
+   <R2>    55.503    28.462
+OD(24,20) route_flow/trip 0.300, mean_cost 24.434
+   <P1>    280.000    20.927
+   <P2>    0.000    28.536
+OD(24,20) path_flow/trip 0.700, mean_cost 20.927
+
+   <R1>    98.246    9.588
+   <R2>    51.754    41.611
+OD(24,21) route_flow/trip 0.300, mean_cost 20.637
+   <P1>    350.000    9.554
+OD(24,21) path_flow/trip 0.700, mean_cost 9.554
+
+   <R1>    166.304    15.269
+   <R2>    163.696    16.046
+OD(24,22) route_flow/trip 0.300, mean_cost 15.655
+   <P1>    441.685    15.219
+   <P2>    328.315    16.106
+OD(24,22) path_flow/trip 0.700, mean_cost 15.597
+
+   <R1>    210.000    4.645
+OD(24,23) route_flow/trip 0.300, mean_cost 4.645
+   <P1>    490.000    4.658
+OD(24,23) path_flow/trip 0.700, mean_cost 4.658
+
+
+
+<Input Total Flows> 360600.000000
+<Output Total Flows> 360600.000000

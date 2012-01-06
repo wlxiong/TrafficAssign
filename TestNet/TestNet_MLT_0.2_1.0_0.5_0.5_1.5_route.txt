@@ -1,0 +1,32 @@
+<METADATA>
+<File Name> ./TestNet/TestNet_MLT_0.2_1.0_0.5_0.5_1.5_route.txt
+<Number of Pairs> 1
+<Number of Zones> 6
+<theta | lambda> 0.200000 | 1.000000
+<stoch | determ> 0.500000 | 0.500000
+<Optimal Objective> 5451.080510
+<System Cost> 21627.066492
+
+<ROUTES>
+<PATHS>
+~ Origin | Destination | Flow | Cost
+   <R1>    5.890    713.954
+   <R2>    1.190    722.475
+   <R3>    0.002    807.010
+   <R4>    5.715    714.300
+   <R5>    0.723    728.040
+   <R6>    0.519    726.628
+   <R7>    0.962    720.884
+OD(1,12) route_flow/trip 0.500, mean_cost 716.335
+   <P1>    0.219    3245.769
+   <P2>    2.603    3236.377
+   <P3>    4.595    3235.542
+   <P4>    1.143    3235.501
+   <P5>    4.395    3236.198
+   <P6>    1.091    3237.141
+   <P7>    0.954    3236.421
+OD(1,12) path_flow/trip 0.500, mean_cost 3236.198
+
+
+<Input Total Flows> 30.000000
+<Output Total Flows> 30.000000
