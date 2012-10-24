@@ -41,7 +41,7 @@ How to write a script file
 - "run_script.txt" in this directory is a simple example to start with. 
 - In a script file, any line starts with "~" is ignored. 
 - Each line specifies a traffic assignment problem. 
-- There are 10 columns in each line: 
+- There are 8 columns in each line: 
 	- case_name: the name of the folder containing the network data;
 	- algorithm: traffic assignment algorithms:
 		- FW: Frank-Wolf
