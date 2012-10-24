@@ -96,13 +96,12 @@ void run_case(const char* case_file){
 	fprintf(fout, "mean_n_path | mean_path_cost | mean_n_route | mean_route_cost\n");
 
 
-// ~ case_name | algo | line_search_eps | obj_converg_eps | flow_converg_eps | 
-//   theta | stoch_part | distant_tol
+// case_name | algorithm | line_search_eps | obj_converg_eps | flow_converg_eps | theta | stoch_part | distant_tol
 	while(getln(fin, line) != NULL){
 		if(line[0] == '~')
 			continue;
 		sscanf(line, "%s %s %lf %lf %lf %lf %lf %lf", 
-			&metadata.case_name, &metadata.algo, &metadata.line_search_eps, 
+			metadata.case_name, metadata.algo, &metadata.line_search_eps, 
 			&metadata.obj_converg_eps, &metadata.flow_converg_eps, 
 			&metadata.theta, &metadata.determ_part, &metadata.distant_tol);
 
@@ -123,9 +122,12 @@ int main(int argc, char *argv[]){
 	int i;
 	char line[MAX_LINE];
 
-	printf("\n *** Traffic Assignment Program is Running ***\n\n");
 	if(argc <2){
-		printf("? ");
+        printf("usage: assign script1 script2 script3 ...\n\n");
+        printf("  The program will process all the traffic assignment problems\n");
+        printf("  specified in files: script1, script2, script3...\n");
+        printf("  \"run_script.txt\" in this directory is a simple example to start with. \n\n");
+		printf("Path of the run script: ");
 		scanf("%s", line);
 		run_case(line);
 	}
