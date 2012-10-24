@@ -59,10 +59,10 @@ How to write a script file
 - A sample script file is shown as follows. 
 
         ~ Columns: case_name | algorithm | line_search_eps | obj_converg_eps | flow_converg_eps | theta | stoch_part | distant_tol
-        TestNet		FW	    1e-8	1e-4	1e-4	0.2	    1.0	    0.5
-        TestNet		FW	    1e-8	1e-4	1e-4	0.2	    1.0	    0.5
-        SiouxFalls	    FW	    1e-8	1e-4	1e-4	0.02	0.1	2.0
-        SiouxFalls	    COL	    1e-8	1e-4	1e-4	0.02	0.1	2.0
-        SiouxFalls	    DSD	    1e-8	1e-4	1e-4	0.02	0.1	2.0
-        SiouxFalls	    MIX	    1e-8	1e-4	1e-4	0.02	0.1	1.05
-        SiouxFalls	    MIX	    1e-8	1e-4	1e-4	0.02	0.1	1.1
+        TestNet		    FW	    1e-8	1e-4	1e-4	0.2	    1.0	    0.5
+        TestNet		    FW	    1e-8	1e-4	1e-4	0.2	    1.0	    0.5
+        SiouxFalls	    FW	    1e-8	1e-4	1e-4	0.02	0.1     2.0
+        SiouxFalls	    COL	    1e-8	1e-4	1e-4	0.02	0.1     2.0
+        SiouxFalls	    DSD	    1e-8	1e-4	1e-4	0.02	0.1     2.0
+        SiouxFalls	    MIX	    1e-8	1e-4	1e-4	0.02	0.1     1.05
+        SiouxFalls	    MIX	    1e-8	1e-4	1e-4	0.02	0.1     1.1
