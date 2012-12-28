@@ -18,7 +18,9 @@ explicit integration of user constraints leads to a better performance than
 stochastic user equilibrium, while _simultaneously_ guaranteeing superior 
 fairness compared to the pure system optimum.
 
-This research is part of my undergraduate thesis in Chinese, 信息环境下的混合网络均衡模型.
+This research is part of my undergraduate thesis in Chinese, 信息环境下的混合网络均衡模型 
+([PDF](https://dl.dropbox.com/u/4415273/thesis-swjtu/thesis_4th.pdf), 
+[HTML](https://dl.dropbox.com/u/4415273/thesis-swjtu/thesis_2st.htm)).
 
 
 How to run the program
