@@ -131,8 +131,8 @@ void logit_route_load(){
 }
 
 double master_problem_route(double criterion){
-	double eps = INFINITE, _INT = 0.0, INT, step;
-	
+	double eps = INFINITE, step = 0.0;
+
 //	printf("master_porblem_route()\n");
 	while(eps > criterion){
 		update_route_cost();
@@ -149,8 +149,7 @@ double master_problem_route(double criterion){
 }
 
 void dsd_logit(double criterion){
-	double step, eps = INFINITE, _INT = INFINITE, INT;
-	char ch;
+	double eps = INFINITE, _INT = INFINITE, INT;
 	bool new_route = true;
 
 	init_route_set();

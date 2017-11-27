@@ -14,9 +14,9 @@
 #include "show_status.h"
 using namespace std;
 
-double trips[MAX_PAIR];
+static double trips[MAX_PAIR];
 
-void load_part_trip(double percent){
+static void load_part_trip(double percent){
 	int i;
 	for(i=0; i<metadata.n_pair; i++)
 		pairs[i].trip = percent*trips[i];
@@ -29,7 +29,7 @@ void logit_mult_direction(){
 	search_path_direction();
 }
 
-void init_mult_set(){
+static void init_mult_set(){
 	printf("init_mult_set()\n");
 	load_part_trip(metadata.stoch_part);
 	init_route_set();
@@ -55,7 +55,7 @@ void logit_mult_load(){
 }
 
 double master_problem_mult(double criterion){
-	double eps = INFINITE, e1, e2, _INT = 0.0, INT, step;
+	double eps = INFINITE, e1, e2, step = 0.0;
 	
 	printf("master_porblem_mult()\n");
 	while(eps > criterion){
@@ -78,11 +78,11 @@ double master_problem_mult(double criterion){
 	return metadata.objective(step);
 }
 
-bool column_gen_mult(){
+static bool column_gen_mult(){
 	bool new_gen = false;	
 //	printf("column_gen_mult()\n");
 	load_part_trip(metadata.stoch_part);
-	new_gen = column_gen();
+	new_gen = column_gen_path();
 	load_part_trip(metadata.determ_part);
 	new_gen = column_gen_path() || new_gen;
 	
@@ -92,7 +92,7 @@ bool column_gen_mult(){
 void mult_logit(double criterion){
 	int i;
 	bool new_route = true;
-	double step, eps = INFINITE, _INT = INFINITE, INT;
+	double eps = INFINITE, _INT = INFINITE, INT;
 
 	for(i=0; i<metadata.n_pair; i++)
 		trips[i] = pairs[i].trip;

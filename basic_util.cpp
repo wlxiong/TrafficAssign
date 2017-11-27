@@ -178,7 +178,7 @@ double update_link_flow(double step){
 }
 
 double update_route_flow(double step){
-	int i, j, l;
+	int i, j;
 	double sum_flow = 0.0, sqr_flow = 0.0, last_flow;
 
 	for(i=0; i<metadata.n_pair; i++){
@@ -196,7 +196,7 @@ double update_route_flow(double step){
 }
 
 double update_path_flow(double step){
-	int i, j, l;
+	int i, j;
 	double sum_flow = 0.0, sqr_flow = 0.0, last_flow;
 
 	for(i=0; i<metadata.n_pair; i++){

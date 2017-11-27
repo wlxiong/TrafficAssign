@@ -59,7 +59,7 @@ void destination_to_node(int d){
 }
 
 void dial_direction(){
-	int i, j, k, O = -1, D = -1, s, t, l, m, n;
+	int i, j, k, O = -1, D = -1, s, t, l, n;
 	double Dr, Ds, Sw, Sx;
 	pair<double, int> order[MAX_NODE];
 

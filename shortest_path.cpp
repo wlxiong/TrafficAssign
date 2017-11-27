@@ -1,3 +1,4 @@
+#include <cstdio>
 #include <queue>
 #include <set>
 #include "data_struct.h"

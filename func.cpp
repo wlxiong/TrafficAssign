@@ -69,7 +69,7 @@ double SUE_route_logit(double step){
 
 double SUE_SO_mixed(double step){
 	double INT = 0.0, flow;
-	int p, r, l, i, j, k;
+	int p, r, l;
 
 // the first term of objective
 	for(p=0; p<metadata.n_pair; p++){

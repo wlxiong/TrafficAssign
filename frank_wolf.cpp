@@ -41,8 +41,7 @@ void all_or_nothing(){
 }
 
 void frank_wolf(double criterion){
-	double step, eps = INFINITE, _INT = 0.0, INT;
-	char ch;
+	double step, eps = INFINITE;
 
 	printf("frank_wolf()\n");
 	set_flow(0.0);

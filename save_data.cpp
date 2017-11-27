@@ -144,7 +144,7 @@ void save_flow(const char* flow_file){
 
 void save_route(const char* route_file){
 	FILE* fout;
-	int i, p, r;
+	int p, r;
 	double mean_cost = 0.0, total_flow = 0.0, trip = 0.0;
 
 	show_msg("Save routes:", route_file);
@@ -204,7 +204,7 @@ void save_route(const char* route_file){
 
 void save_route_plain(const char* route_file){
 	FILE* fout;
-	int i, p, r, nm;
+	int p, r, nm;
 	double mean_cost = 0.0, total_flow = 0.0, trip = 0.0;
 
 	show_msg("Save routes:", route_file);

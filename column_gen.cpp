@@ -64,8 +64,7 @@ bool column_gen_path(){
 
 void search_path_direction(){
 	int p, r, k_min;
-	double Sw, min_cost;
-	
+
 //	printf("search_path_direction()\n");
 
 	for(p=0; p<metadata.n_pair; p++){
@@ -113,7 +112,7 @@ void init_path_flow(){
 }
 
 double master_problem_path(double criterion){
-	double eps = INFINITE, _INT = 0.0, INT, step;
+	double eps = INFINITE, step = 0.0;
 	
 //	printf("master_porblem_path()\n");
 	while(eps > criterion){
@@ -133,8 +132,7 @@ double master_problem_path(double criterion){
 }
 
 void column_FW(double criterion){
-	double step, eps = INFINITE, _INT = INFINITE, INT;
-	char ch;
+	double eps = INFINITE, _INT = INFINITE, INT;
 	bool new_path = true;
 
 //	init_link_length();

@@ -1,4 +1,16 @@
-CC = g++
+CXX=g++
+CXXFLAGS=-Wall -O2
+LDFLAGS=
+INCLUDE=-I.
 
-all: basic_util.o global_var.o load_data.o save_data.o shortest_path.o logit_load.o show_status.o func.o dsd.o column_gen.o mixed_equ.o frank_wolf.o msa.o main.o
-	$(CC) -o assign basic_util.o global_var.o load_data.o save_data.o shortest_path.o logit_load.o show_status.o func.o dsd.o column_gen.o mixed_equ.o frank_wolf.o msa.o main.o
+CXXSRCS = $(wildcard *.cpp)
+
+CXXOBJS = $(CXXSRCS:.cpp=.o)
+OBJECTS = $(CXXOBJS)
+TARGET = assign
+
+all: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(OBJECTS) -o $(TARGET)
+
+clean:
+	rm -rf $(OBJECTS) $(TARGET)
